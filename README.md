@@ -20,9 +20,9 @@ it, simply add the following line to your Podfile:
 pod "LocalizableUI"
 ```
 
-## Author
+## Authors
 
-Jan Weiß, weiss19ja@gmail.com
+Jan Weiß, Philipp Weiß
 
 ## License
 
