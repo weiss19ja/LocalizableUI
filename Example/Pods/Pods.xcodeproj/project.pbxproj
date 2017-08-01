@@ -19,6 +19,10 @@
 		8FB72CC10CCE802C1C51A716BB8EFC57 /* Pods-LocalizableUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06ED2D381DA8ABD6F4A6B6DDA14752E8 /* Pods-LocalizableUI_Example-dummy.m */; };
 		940FA90DFA3783DBAE8464475C017475 /* LocalizableUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DA65939E87079A85C7DC9ABEE7B941 /* LocalizableUI-dummy.m */; };
 		C096A05DCA970142B498E5C5003B2E26 /* Pods-LocalizableUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4391B7E2F753FC119313F26385E173E7 /* Pods-LocalizableUI_Tests-dummy.m */; };
+		DC63CDFC1F30FF9200026ED9 /* UIButton+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63CDFB1F30FF9200026ED9 /* UIButton+LocalizableUI.swift */; };
+		DC63CDFE1F31003800026ED9 /* UITextView+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63CDFD1F31003800026ED9 /* UITextView+LocalizableUI.swift */; };
+		DC63CE001F31015600026ED9 /* UIViewController+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63CDFF1F31015600026ED9 /* UIViewController+LocalizableUI.swift */; };
+		DC63CE021F31067700026ED9 /* UINavigationItem+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63CE011F31067700026ED9 /* UINavigationItem+LocalizableUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		BC693E263C37BD236517FAD7DD5E0EE1 /* Pods-LocalizableUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalizableUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C52D62083C41E67F14FEBD25289EF0EE /* Pods-LocalizableUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalizableUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D7239FCD5E0C9990DC5DB2F69C251C45 /* Pods-LocalizableUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalizableUI_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DC63CDFB1F30FF9200026ED9 /* UIButton+LocalizableUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+LocalizableUI.swift"; sourceTree = "<group>"; };
+		DC63CDFD1F31003800026ED9 /* UITextView+LocalizableUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+LocalizableUI.swift"; sourceTree = "<group>"; };
+		DC63CDFF1F31015600026ED9 /* UIViewController+LocalizableUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LocalizableUI.swift"; sourceTree = "<group>"; };
+		DC63CE011F31067700026ED9 /* UINavigationItem+LocalizableUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+LocalizableUI.swift"; sourceTree = "<group>"; };
 		E273E8C311624B30105FEA3A0E375E0D /* Pods-LocalizableUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalizableUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F129DA4918CDE1F117189745092B2278 /* LocalizableUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LocalizableUI.modulemap; sourceTree = "<group>"; };
 		F3A22C6E2DEFF47B39136C9C6C736A0D /* Pods-LocalizableUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalizableUI_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -143,9 +151,13 @@
 		72B3A414107B4D13C1D497CC8B82CFAC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DC63CDFF1F31015600026ED9 /* UIViewController+LocalizableUI.swift */,
+				DC63CDFD1F31003800026ED9 /* UITextView+LocalizableUI.swift */,
+				DC63CDFB1F30FF9200026ED9 /* UIButton+LocalizableUI.swift */,
 				3D86CBE21F30E6A000656CB1 /* UIView+LocalizableUI.swift */,
 				3D86CBE41F30EE3100656CB1 /* UILabel+LocalizableUI.swift */,
 				3D86CBE81F30F59700656CB1 /* LocalizationService.swift */,
+				DC63CE011F31067700026ED9 /* UINavigationItem+LocalizableUI.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -345,8 +357,12 @@
 			files = (
 				3D86CBE51F30EE3100656CB1 /* UILabel+LocalizableUI.swift in Sources */,
 				940FA90DFA3783DBAE8464475C017475 /* LocalizableUI-dummy.m in Sources */,
+				DC63CDFE1F31003800026ED9 /* UITextView+LocalizableUI.swift in Sources */,
+				DC63CE001F31015600026ED9 /* UIViewController+LocalizableUI.swift in Sources */,
+				DC63CDFC1F30FF9200026ED9 /* UIButton+LocalizableUI.swift in Sources */,
 				3D86CBE91F30F59700656CB1 /* LocalizationService.swift in Sources */,
 				3D86CBE31F30E6A000656CB1 /* UIView+LocalizableUI.swift in Sources */,
+				DC63CE021F31067700026ED9 /* UINavigationItem+LocalizableUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
