@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D86CBEC1F30F7F100656CB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D86CBEE1F30F7F100656CB1 /* Localizable.strings */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,11 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43077646E5D7550B7977ACC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3D86CBED1F30F7F100656CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		43077646E5D7550B7977ACC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4453DA1A2FE2E1F4BBFD362C /* Pods_LocalizableUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalizableUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		498E913EC6C21775C686E44C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		498E913EC6C21775C686E44C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4DF66F1CAD410B5D860FCA77 /* Pods-LocalizableUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizableUI_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocalizableUI_Tests/Pods-LocalizableUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5141B24B7C2F74567E0848F2 /* LocalizableUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LocalizableUI.podspec; path = ../LocalizableUI.podspec; sourceTree = "<group>"; };
+		5141B24B7C2F74567E0848F2 /* LocalizableUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LocalizableUI.podspec; path = ../LocalizableUI.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LocalizableUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizableUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				3D86CBEE1F30F7F100656CB1 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				3D86CBEC1F30F7F100656CB1 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -385,6 +389,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3D86CBEE1F30F7F100656CB1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D86CBED1F30F7F100656CB1 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

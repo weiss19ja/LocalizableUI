@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  LocalizableUI
+
+  Created by Jan Weiß on 01.08.17.
+  Copyright © 2017 CocoaPods. All rights reserved.
+*/
+
+"test-label-content" = "This is test content for a label";

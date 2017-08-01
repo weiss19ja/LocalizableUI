@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A3CA3D80CDDA7EA5734BBA7649529FD /* Pods-LocalizableUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AE0AAD7FA9B8BD4FB6BA4F9D0F55C3 /* Pods-LocalizableUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29BF34EF0EBAE2E835D8A87BB2F491BE /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B324ED2EE089F5C36AF2D3121F53F7 /* ReplaceMe.swift */; };
 		2E321136E9E9DC9EBFAC0570A309D517 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3D86CBE31F30E6A000656CB1 /* UIView+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D86CBE21F30E6A000656CB1 /* UIView+LocalizableUI.swift */; };
+		3D86CBE51F30EE3100656CB1 /* UILabel+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D86CBE41F30EE3100656CB1 /* UILabel+LocalizableUI.swift */; };
+		3D86CBE91F30F59700656CB1 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D86CBE81F30F59700656CB1 /* LocalizationService.swift */; };
 		460498474479C3A080235F1105D21E5A /* Pods-LocalizableUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A22C6E2DEFF47B39136C9C6C736A0D /* Pods-LocalizableUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EAEDB527702C587DF2C73E9411E3FBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		556E7B45534D8E54FDE4D3DFA49A17DD /* LocalizableUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC5D39B4C9C17EC16324CF8F6D63BB6 /* LocalizableUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,16 +33,18 @@
 
 /* Begin PBXFileReference section */
 		01F774D8EB1FE058C6E6D67DE9F25C73 /* Pods-LocalizableUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalizableUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		04B324ED2EE089F5C36AF2D3121F53F7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		06ED2D381DA8ABD6F4A6B6DDA14752E8 /* Pods-LocalizableUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalizableUI_Example-dummy.m"; sourceTree = "<group>"; };
-		07C4C0822B561504990F99A49F84D75D /* Pods-LocalizableUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LocalizableUI_Example.modulemap"; sourceTree = "<group>"; };
+		07C4C0822B561504990F99A49F84D75D /* Pods-LocalizableUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LocalizableUI_Example.modulemap"; sourceTree = "<group>"; };
 		0C579F91EFB51D7998C9C44DF44D0472 /* Pods-LocalizableUI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalizableUI_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		13F1C5629905CBFD30F6595194B898AD /* LocalizableUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocalizableUI.framework; path = LocalizableUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F1C5629905CBFD30F6595194B898AD /* LocalizableUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalizableUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B36A745A8DABC2C88256BE29BEEBB6 /* Pods-LocalizableUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalizableUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1BF41AE171AC8E09CC23AF56A930B9A2 /* Pods-LocalizableUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LocalizableUI_Tests.modulemap"; sourceTree = "<group>"; };
+		1BF41AE171AC8E09CC23AF56A930B9A2 /* Pods-LocalizableUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LocalizableUI_Tests.modulemap"; sourceTree = "<group>"; };
 		22AE0AAD7FA9B8BD4FB6BA4F9D0F55C3 /* Pods-LocalizableUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalizableUI_Example-umbrella.h"; sourceTree = "<group>"; };
-		24257E7D1583D8CE41B6475E033BC6E6 /* Pods_LocalizableUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalizableUI_Example.framework; path = "Pods-LocalizableUI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24257E7D1583D8CE41B6475E033BC6E6 /* Pods_LocalizableUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalizableUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		252A490D6C0EA245C9E06718C345E6F9 /* Pods-LocalizableUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalizableUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3D86CBE21F30E6A000656CB1 /* UIView+LocalizableUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LocalizableUI.swift"; sourceTree = "<group>"; };
+		3D86CBE41F30EE3100656CB1 /* UILabel+LocalizableUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+LocalizableUI.swift"; sourceTree = "<group>"; };
+		3D86CBE81F30F59700656CB1 /* LocalizationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
 		4391B7E2F753FC119313F26385E173E7 /* Pods-LocalizableUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalizableUI_Tests-dummy.m"; sourceTree = "<group>"; };
 		4DDF1B9CA9768E94F5CD74D37CC83E0A /* Pods-LocalizableUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalizableUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		58BFA7CC81313C2780AB3B9359450E10 /* LocalizableUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalizableUI-prefix.pch"; sourceTree = "<group>"; };
@@ -49,16 +53,16 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66DA65939E87079A85C7DC9ABEE7B941 /* LocalizableUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocalizableUI-dummy.m"; sourceTree = "<group>"; };
 		726B16EAC075F888F6F79C8AE6BCDAF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		786CCC6888035D452B077D7199C6D445 /* Pods_LocalizableUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalizableUI_Tests.framework; path = "Pods-LocalizableUI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		786CCC6888035D452B077D7199C6D445 /* Pods_LocalizableUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalizableUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8604A36033A943639555B5B9A25A2756 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EC5D39B4C9C17EC16324CF8F6D63BB6 /* LocalizableUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalizableUI-umbrella.h"; sourceTree = "<group>"; };
 		A328993AE788C3E420E19AEDFD076697 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC693E263C37BD236517FAD7DD5E0EE1 /* Pods-LocalizableUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalizableUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C52D62083C41E67F14FEBD25289EF0EE /* Pods-LocalizableUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalizableUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D7239FCD5E0C9990DC5DB2F69C251C45 /* Pods-LocalizableUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalizableUI_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E273E8C311624B30105FEA3A0E375E0D /* Pods-LocalizableUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalizableUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F129DA4918CDE1F117189745092B2278 /* LocalizableUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LocalizableUI.modulemap; sourceTree = "<group>"; };
+		F129DA4918CDE1F117189745092B2278 /* LocalizableUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LocalizableUI.modulemap; sourceTree = "<group>"; };
 		F3A22C6E2DEFF47B39136C9C6C736A0D /* Pods-LocalizableUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalizableUI_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F61990DCDB676B066D411276BF0D5659 /* LocalizableUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocalizableUI.xcconfig; sourceTree = "<group>"; };
 		FF9259E46C544336CD9470B80EB38680 /* Pods-LocalizableUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalizableUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -105,7 +109,6 @@
 			children = (
 				72B3A414107B4D13C1D497CC8B82CFAC /* Classes */,
 			);
-			name = LocalizableUI;
 			path = LocalizableUI;
 			sourceTree = "<group>";
 		};
@@ -140,9 +143,10 @@
 		72B3A414107B4D13C1D497CC8B82CFAC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				04B324ED2EE089F5C36AF2D3121F53F7 /* ReplaceMe.swift */,
+				3D86CBE21F30E6A000656CB1 /* UIView+LocalizableUI.swift */,
+				3D86CBE41F30EE3100656CB1 /* UILabel+LocalizableUI.swift */,
+				3D86CBE81F30F59700656CB1 /* LocalizationService.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -339,8 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D86CBE51F30EE3100656CB1 /* UILabel+LocalizableUI.swift in Sources */,
 				940FA90DFA3783DBAE8464475C017475 /* LocalizableUI-dummy.m in Sources */,
-				29BF34EF0EBAE2E835D8A87BB2F491BE /* ReplaceMe.swift in Sources */,
+				3D86CBE91F30F59700656CB1 /* LocalizationService.swift in Sources */,
+				3D86CBE31F30E6A000656CB1 /* UIView+LocalizableUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
