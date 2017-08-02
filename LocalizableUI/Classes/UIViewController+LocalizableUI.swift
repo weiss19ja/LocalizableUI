@@ -40,13 +40,13 @@ extension UIViewController {
     func updateLocalizedStrings() {
 
         if let localizedKey = localizedTitleKey {
-            let localizedContent = LocalizationService.localizedStringFor(localizedKey)
+            let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             title = localizedContent
         }
 
         if let localizedKey = localizedBackButtonKey {
-            let localizedContent = LocalizationService.localizedStringFor(localizedKey)
-            navigationItem.backBarButtonItem?.title = LocalizationService.localizedStringFor(localizedContent)
+            let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
+            navigationItem.backBarButtonItem?.title = LocalizationManager.localizedStringFor(localizedContent)
         }
     }
     

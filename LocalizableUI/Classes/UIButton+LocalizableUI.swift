@@ -15,7 +15,7 @@ extension UIButton {
         super.updateLocalizedStrings()
 
         if let localizedKey = localizedKey {
-            let localizedContent = LocalizationService.localizedStringFor(localizedKey)
+            let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             setTitle(localizedContent, for: .normal)
         }
     }

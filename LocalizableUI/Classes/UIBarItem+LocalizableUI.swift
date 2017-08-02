@@ -31,7 +31,7 @@ extension UIBarItem {
     
     func updateLocalizedStrings() {
         if let localizedKey = localizedKey {
-            title = LocalizationService.localizedStringFor(localizedKey)
+            title = LocalizationManager.localizedStringFor(localizedKey)
         }
     }
     

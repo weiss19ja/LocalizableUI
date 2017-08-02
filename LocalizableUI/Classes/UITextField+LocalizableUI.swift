@@ -28,11 +28,11 @@ extension UITextField {
         super.updateLocalizedStrings()
         
         if let localizedKey = localizedKey {
-            text = LocalizationService.localizedStringFor(localizedKey)
+            text = LocalizationManager.localizedStringFor(localizedKey)
         }
         
         if let localizedPlaceHolderKey = localizedPlaceholderKey {
-            placeholder = LocalizationService.localizedStringFor(localizedPlaceHolderKey)
+            placeholder = LocalizationManager.localizedStringFor(localizedPlaceHolderKey)
         }
     }
     

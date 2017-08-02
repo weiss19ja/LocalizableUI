@@ -12,7 +12,7 @@ import UIKit
 extension UIBarButtonItem {
     
     convenience init(localizedKey: String, style: UIBarButtonItemStyle, target: Any?, action: Selector?) {
-        let localizedTitle = LocalizationService.localizedStringFor(localizedKey)
+        let localizedTitle = LocalizationManager.localizedStringFor(localizedKey)
         self.init(title: localizedTitle, style: style, target: target, action: action)
         self.localizedKey = localizedKey
     }
