@@ -11,7 +11,7 @@ import UIKit
 
 private var AssociatedObjectPointer: UInt8 = 0
 
-extension UIView {
+extension UIView: Localizable {
     
     // Stores the property of the localized key
     @IBInspectable var localizedKey: String? {
@@ -21,12 +21,17 @@ extension UIView {
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
+
+            /// Add the Element to the LocalizationManager
+            LocalizationManager.sharedInstance.add(localizable: self)
         }
     }
     
     convenience init(localizedKey: String?) {
         self.init()
         self.localizedKey = localizedKey
+
+
     }
     
     convenience init(frame: CGRect, localizedKey: String?) {

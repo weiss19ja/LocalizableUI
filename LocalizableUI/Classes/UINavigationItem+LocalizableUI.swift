@@ -12,7 +12,7 @@ import UIKit
 private var AssociatedObjectPointerTitle: UInt8 = 0
 private var AssociatedObjectPointerBackButton: UInt8 = 0
 
-extension UINavigationItem {
+extension UINavigationItem: Localizable {
 
     // Stores the property of the localized key
     @IBInspectable var localizedTitleKey: String? {
@@ -22,6 +22,9 @@ extension UINavigationItem {
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointerTitle, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
+
+            /// Add the Element to the LocalizationManager
+            LocalizationManager.sharedInstance.add(localizable: self)
         }
     }
 

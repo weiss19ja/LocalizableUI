@@ -11,7 +11,7 @@ import UIKit
 
 private var AssociatedObjectPointer: UInt8 = 0
 
-extension UIBarItem {
+extension UIBarItem: Localizable {
     
     // Stores the property of the localized key
     @IBInspectable var localizedKey: String? {
@@ -21,6 +21,9 @@ extension UIBarItem {
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
+
+            /// Add the Element to the LocalizationManager
+            LocalizationManager.sharedInstance.add(localizable: self)
         }
     }
     
