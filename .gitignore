@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
-build/
-DerivedData/
-
-## Various settings
-=======
 # OS X
 .DS_Store
 
 # Xcode
 build/
->>>>>>> Initial commit
+DerivedData/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
