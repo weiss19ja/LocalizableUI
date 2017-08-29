@@ -23,7 +23,7 @@ extension UIBarItem: Localizable {
             updateLocalizedStrings()
 
             /// Add the Element to the LocalizationManager
-            LocalizationManager.sharedInstance.add(localizable: self)
+            LocalizationManager.sharedInstance().add(localizable: self)
         }
     }
     

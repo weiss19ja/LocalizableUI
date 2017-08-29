@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0984AF1F561E48002DE5BF /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D0984B11F561E48002DE5BF /* CustomLocalizable.strings */; };
 		3D86CBEC1F30F7F100656CB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D86CBEE1F30F7F100656CB1 /* Localizable.strings */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D0984B01F561E48002DE5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/CustomLocalizable.strings; sourceTree = "<group>"; };
 		3D86CBED1F30F7F100656CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		43077646E5D7550B7977ACC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4453DA1A2FE2E1F4BBFD362C /* Pods_LocalizableUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalizableUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
 				3D86CBEE1F30F7F100656CB1 /* Localizable.strings */,
+				3D0984B11F561E48002DE5BF /* CustomLocalizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				3D86CBEC1F30F7F100656CB1 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				3D0984AF1F561E48002DE5BF /* CustomLocalizable.strings in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +393,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3D0984B11F561E48002DE5BF /* CustomLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D0984B01F561E48002DE5BF /* Base */,
+			);
+			name = CustomLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		3D86CBEE1F30F7F100656CB1 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

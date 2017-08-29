@@ -1,0 +1,12 @@
+/* 
+  CustomLocalizable.strings
+  LocalizableUI
+
+  Created by Jan Weiß on 29.08.17.
+  Copyright © 2017 CocoaPods. All rights reserved.
+*/
+
+"test-label-content" = "This is test content for language changed";
+"test-1" = "Content 1 Test";
+"test-2" = "Content 2 Test";
+"test-3" = "Content 3 Test";

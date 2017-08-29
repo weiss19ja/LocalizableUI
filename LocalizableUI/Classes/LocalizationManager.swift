@@ -10,11 +10,22 @@ import Foundation
 
 open class LocalizationManager {
 
+    /// The shared manager instance
+    private static var _localizationManager: LocalizationManager!
+    
     /// Singleton of the LocalizationManager
-    static let sharedInstance = LocalizationManager()
+    public static func sharedInstance() -> LocalizationManager {
+        if _localizationManager == nil {
+            _localizationManager = LocalizationManager()
+        }
+        return _localizationManager
+    }
 
     /// Weak storage of the Localizable Items
     private var weakHash = NSHashTable<AnyObject>(options: NSHashTableWeakMemory)
+    
+    /// The string table to search for localized values
+    private var tableName: String?
 
     /// private init for the singleton
     /// adding locale changed notification
@@ -39,20 +50,28 @@ open class LocalizationManager {
     internal func add(localizable: Localizable) {
         weakHash.add(localizable)
     }
-
-    // TODO: Add functionality for custom (in-app language change) localization
+    
+    /// Changes the language to a custom one.
+    /// Use this mehtod to provide a language change independently from the system one.
+    /// It also sets the tableName to the custom one. If the tableName is nil the Localizable.strings is used.
+    ///
+    /// - Parameter tableName: The custom tableName or the default one if nil is passed
+    public func changeLanguage(for tableName: String?) {
+        self.tableName = tableName
+        weakHash.allObjects.flatMap { $0 as? Localizable}.forEach { $0.updateLocalizedStrings() }
+    }
 
     /// Method to get the right Localization for a Key that is included in the localized.strings.
-    /// USe this MEthod instead of the system method!
+    /// Use this Method instead of the system method!
     ///
     /// - Parameters:
     ///   - key: key
-    ///   - tableName: table name
     ///   - bundle: bundle name
     ///   - value: value -> default ""
     ///   - comment: comment -> default ""
     /// - Returns: The localized string
-    static func localizedStringFor(_ key: String, tableName: String? = nil, bundle: Bundle = Bundle.main, value: String = "", comment: String = "") -> String {
+    static func localizedStringFor(_ key: String, bundle: Bundle = Bundle.main, value: String = "", comment: String = "") -> String {
+        let tableName = _localizationManager?.tableName
         return NSLocalizedString(key, tableName: tableName, bundle: bundle, value: value, comment: comment)
     }
     

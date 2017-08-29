@@ -18,7 +18,7 @@ extension UITextView {
         self.localizedKey = localizedKey
 
         /// Add the Element to the LocalizationManager
-        LocalizationManager.sharedInstance.add(localizable: self)
+        LocalizationManager.sharedInstance().add(localizable: self)
     }
 
     override func updateLocalizedStrings() {
