@@ -10,6 +10,11 @@ import Foundation
 
 extension UISegmentedControl {
     
+    convenience init(items: [Any]?, localizedKey: String?) {
+        self.init(items: items)
+        self.localizedKey = localizedKey
+    }
+    
     override func updateLocalizedStrings() {
         super.updateLocalizedStrings()
         
