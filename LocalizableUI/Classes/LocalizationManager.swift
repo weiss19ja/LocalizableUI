@@ -1,5 +1,5 @@
 //
-//  LocalizationService.swift
+//  LocalizationManager.swift
 //  Pods
 //
 //  Created by Jan Weiß on 01.08.17.
@@ -55,8 +55,17 @@ open class LocalizationManager {
     /// Use this mehtod to provide a language change independently from the system one.
     /// It also sets the tableName to the custom one. If the tableName is nil the Localizable.strings is used.
     ///
-    /// - Parameter tableName: The custom tableName or the default one if nil is passed
-    public func changeLanguage(for tableName: String?) {
+    /// - Parameters:
+    ///   - tableName: The custom tableName or the default one if nil is passed
+    ///   - bundle: Optional Parameter. The bundle which contains the strings table or uses the main bundle if none is passed
+    /// - Throws: A `LocalizableError` if the string table does not exist
+    public func changeLanguage(to tableName: String?, from bundle: Bundle = Bundle.main) throws {
+        guard let filePath = bundle.path(forResource: tableName, ofType: "strings"),
+            FileManager.default.fileExists(atPath: filePath) == true else {
+                
+                throw LocalizableError.languageFileNotFound
+        }
+        
         self.tableName = tableName
         weakHash.allObjects.flatMap { $0 as? Localizable}.forEach { $0.updateLocalizedStrings() }
     }
@@ -76,4 +85,3 @@ open class LocalizationManager {
     }
     
 }
-
