@@ -15,7 +15,7 @@ extension UILabel {
         super.updateLocalizedStrings()
         
         if let localizedKey = localizedKey {
-            let localizedContent = LocalizationService.localizedStringFor(localizedKey)
+            let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             text = localizedContent
         }
     }

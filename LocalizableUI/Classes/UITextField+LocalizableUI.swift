@@ -21,6 +21,9 @@ extension UITextField {
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
+
+            /// Add the Element to the LocalizationManager
+            LocalizationManager.sharedInstance().add(localizable: self)
         }
     }
     
@@ -28,11 +31,11 @@ extension UITextField {
         super.updateLocalizedStrings()
         
         if let localizedKey = localizedKey {
-            text = LocalizationService.localizedStringFor(localizedKey)
+            text = LocalizationManager.localizedStringFor(localizedKey)
         }
         
         if let localizedPlaceHolderKey = localizedPlaceholderKey {
-            placeholder = LocalizationService.localizedStringFor(localizedPlaceHolderKey)
+            placeholder = LocalizationManager.localizedStringFor(localizedPlaceHolderKey)
         }
     }
     

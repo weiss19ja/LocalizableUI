@@ -16,13 +16,16 @@ extension UITextView {
         self.init(frame: frame, textContainer: textContainer)
 
         self.localizedKey = localizedKey
+
+        /// Add the Element to the LocalizationManager
+        LocalizationManager.sharedInstance().add(localizable: self)
     }
 
     override func updateLocalizedStrings() {
         super.updateLocalizedStrings()
 
         if let localizedKey = localizedKey {
-            let localizedContent = LocalizationService.localizedStringFor(localizedKey)
+            let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             text = localizedContent
         }
     }
