@@ -10,12 +10,13 @@ import Foundation
 
 extension UISegmentedControl {
     
-    convenience init(items: [Any]?, localizedKey: String?) {
+    public convenience init(items: [Any]?, localizedKey: String?) {
         self.init(items: items)
         self.localizedKey = localizedKey
     }
     
-    override func updateLocalizedStrings() {
+    /// Updates all subviews with their given localizedKeys
+    override internal func updateLocalizedStrings() {
         super.updateLocalizedStrings()
         
         if let localizedKeys = localizedKey {

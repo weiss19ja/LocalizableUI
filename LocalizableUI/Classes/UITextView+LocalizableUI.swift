@@ -11,19 +11,20 @@ import UIKit
 
 extension UITextView {
 
-
-    convenience init(frame: CGRect, textContainer: NSTextContainer?, localizedKey: String?) {
+    /// Convenience init for a new text view with a frame, a textContainer
+    /// and the localized key for the text
+    ///
+    /// - Parameters:
+    ///   - frame: The frame rectangle of the text view.
+    ///   - textContainer: The text container to use for the receiver (can be nil).
+    ///   - localizedKey: The localized key for the text
+    public convenience init(frame: CGRect, textContainer: NSTextContainer?, localizedKey: String?) {
         self.init(frame: frame, textContainer: textContainer)
-
         self.localizedKey = localizedKey
-
-        /// Add the Element to the LocalizationManager
-        LocalizationManager.sharedInstance().add(localizable: self)
     }
 
-    override func updateLocalizedStrings() {
-        super.updateLocalizedStrings()
-
+    /// Updates all subviews with their given localizedKeys
+    override internal func updateLocalizedStrings() {
         if let localizedKey = localizedKey {
             let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             text = localizedContent

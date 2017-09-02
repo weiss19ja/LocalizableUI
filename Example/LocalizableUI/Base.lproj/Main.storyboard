@@ -1,99 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cMS-XM-hG0">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--test-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Language Change View Controller-->
+        <scene sceneID="pc8-E3-xNs">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2XC-ff-RtU" customClass="LanguageChangeViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="9P6-mc-Z4w"/>
+                        <viewControllerLayoutGuide type="bottom" id="ydm-Tf-XaJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="up0-3R-Zew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QY9-ou-R6i">
-                                <rect key="frame" x="48" y="169" width="431" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-nM-ObE">
+                                <rect key="frame" x="36" y="89" width="250" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="test-label-content"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-language-changed"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pN5-LR-fcq">
-                                <rect key="frame" x="20" y="387" width="938" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                </segments>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="segmented-1,segmented-2,segmented-3,segmented-4"/>
-                                </userDefinedRuntimeAttributes>
-                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvg-tf-6up">
+                                <rect key="frame" x="306" y="84" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="2XC-ff-RtU" eventType="valueChanged" id="LxL-UN-Bmu"/>
+                                </connections>
+                            </switch>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="test" id="p0i-Nb-NRL">
-                        <barButtonItem key="rightBarButtonItem" id="Sx5-tD-Rzd">
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="test-1"/>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <segue destination="kxd-hC-jz8" kind="show" id="Nl5-ck-M9y"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="758.203125" y="45.680819912152266"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tTv-gZ-tGZ">
-            <objects>
-                <viewController id="kxd-hC-jz8" customClass="ViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6o4-48-Vs6"/>
-                        <viewControllerLayoutGuide type="bottom" id="CHT-Fy-mXE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2UV-CT-G1k">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gvg-tf-6up" secondAttribute="trailing" constant="20" id="ARG-t2-ww2"/>
+                            <constraint firstItem="yvm-nM-ObE" firstAttribute="leading" secondItem="up0-3R-Zew" secondAttribute="leadingMargin" constant="20" id="KaC-Yh-1et"/>
+                            <constraint firstItem="gvg-tf-6up" firstAttribute="leading" secondItem="yvm-nM-ObE" secondAttribute="trailing" constant="20" id="OE4-RJ-Xpq"/>
+                            <constraint firstItem="yvm-nM-ObE" firstAttribute="centerY" secondItem="gvg-tf-6up" secondAttribute="centerY" id="aok-43-JlW"/>
+                            <constraint firstItem="gvg-tf-6up" firstAttribute="top" secondItem="9P6-mc-Z4w" secondAttribute="bottom" constant="20" id="j1S-wm-TKm"/>
+                        </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="test-2"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedBackButtonKey" value="example-back-button"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XTB-kO-aKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIA-FD-67e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1461" y="46"/>
+            <point key="canvasLocation" x="1944.8" y="992.65367316341838"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="RGs-3D-urW">
+            <objects>
+                <viewController id="b2E-15-6dM" customClass="TabBarViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b7z-w6-Jj1"/>
+                        <viewControllerLayoutGuide type="bottom" id="3TE-xs-phN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wj5-1o-tJI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwX-xh-Eha">
+                                <rect key="frame" x="166" y="156.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-tab-button-2"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NwX-xh-Eha" firstAttribute="centerY" secondItem="wj5-1o-tJI" secondAttribute="centerY" multiplier="0.5" id="FbY-xs-eS2"/>
+                            <constraint firstItem="NwX-xh-Eha" firstAttribute="centerX" secondItem="wj5-1o-tJI" secondAttribute="centerX" id="JM7-hl-InX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1bZ-ag-YLY">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="hiu-RF-vbi">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-bar-button-cancel"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="CancelClicked:" destination="b2E-15-6dM" id="5ZN-0O-ONW"/>
+                            </connections>
+                        </barButtonItem>
+                        <connections>
+                            <outlet property="leftBarButtonItem" destination="hiu-RF-vbi" id="nqK-Jz-ZZr"/>
+                        </connections>
+                    </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="example-tab-button-2"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8G-Tw-Eat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4004" y="590"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="zsp-5u-n0c">
+            <objects>
+                <viewController id="mOP-ay-kGb" customClass="TabBarViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OeM-hf-1hm"/>
+                        <viewControllerLayoutGuide type="bottom" id="eTn-Mu-WFn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PFE-UD-3jG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5B1-sz-kmc">
+                                <rect key="frame" x="166" y="156.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-tab-button-1"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5B1-sz-kmc" firstAttribute="centerX" secondItem="PFE-UD-3jG" secondAttribute="centerX" id="BgW-A5-cRA"/>
+                            <constraint firstItem="5B1-sz-kmc" firstAttribute="centerY" secondItem="PFE-UD-3jG" secondAttribute="centerY" multiplier="0.5" id="R4h-ZD-oWL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hc4-il-RDp">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="wTQ-t8-LFg">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-bar-button-cancel"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="CancelClicked:" destination="mOP-ay-kGb" id="k8A-rD-3Zm"/>
+                            </connections>
+                        </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="example-tab-button-1"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="leftBarButtonItem" destination="wTQ-t8-LFg" id="0Qx-eA-SW5"/>
+                        </connections>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPk-wH-dMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4004" y="-65"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wNi-Il-fAo">
+            <objects>
+                <tabBarController id="d1U-Xg-9Dv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="awU-x8-LYb"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Vy2-QN-LaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="example-cell-tabbar"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="Yla-aY-TOf" kind="relationship" relationship="viewControllers" id="qeP-WB-hvT"/>
+                        <segue destination="6Uf-g3-NWf" kind="relationship" relationship="viewControllers" id="wPo-Re-im0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IF8-Yn-DnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dnr-Gl-7e9">
@@ -106,12 +187,319 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zy9-2g-AQx"/>
+                        <segue destination="umy-sW-ch0" kind="relationship" relationship="rootViewController" id="9WQ-eD-MVk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yur-gN-0Ln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33.984375" y="45.680819912152266"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="b27-8K-hMW">
+            <objects>
+                <tableViewController id="umy-sW-ch0" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Veq-dv-qmb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="VJr-fi-HkI">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="emu-G8-pxo" style="IBUITableViewCellStyleDefault" id="1lI-DH-ueB">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1lI-DH-ueB" id="d4s-Y6-wSc">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="emu-G8-pxo">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-cell-text-segmented-control"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="5jg-hR-chJ" kind="show" id="OZw-eo-t4m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="sNt-Qo-Db1" style="IBUITableViewCellStyleDefault" id="dYZ-uu-ARB">
+                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYZ-uu-ARB" id="KJc-uu-B7s">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sNt-Qo-Db1">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-cell-text-label"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="NgG-X8-HEO" kind="show" id="mUy-Sm-wgh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="iet-fX-reQ" style="IBUITableViewCellStyleDefault" id="aqS-j3-sTQ">
+                                        <rect key="frame" x="0.0" y="123" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aqS-j3-sTQ" id="LBC-w2-04C">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iet-fX-reQ">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-cell-tabbar"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="d1U-Xg-9Dv" kind="presentation" id="Jt6-BR-Zi5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="nc6-tD-QaP" style="IBUITableViewCellStyleDefault" id="yim-6C-bXQ">
+                                        <rect key="frame" x="0.0" y="167" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yim-6C-bXQ" id="wRa-dw-08F">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nc6-tD-QaP">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-cell-language-change"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="2XC-ff-RtU" kind="show" id="Q4p-zw-A6m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="mUe-sC-BCo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="NqD-58-yrq" style="IBUITableViewCellStyleDefault" id="JVp-cv-lcO">
+                                        <rect key="frame" x="0.0" y="247" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JVp-cv-lcO" id="QM2-4g-UJe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NqD-58-yrq">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-overview-cell-description"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="umy-sW-ch0" id="UaR-08-iMe"/>
+                            <outlet property="delegate" destination="umy-sW-ch0" id="jCx-co-d4z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3xU-c9-DD6"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="example-title-overview"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedBackButtonKey" value="example-back-button"/>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ott-HL-LLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="45"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZJd-aB-UBo">
+            <objects>
+                <viewController id="NgG-X8-HEO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wbt-9f-fQq"/>
+                        <viewControllerLayoutGuide type="bottom" id="rXo-Hv-2gt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fQa-Pj-Usb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugE-Pg-pQo">
+                                <rect key="frame" x="166" y="156.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPP-ti-hMc">
+                                <rect key="frame" x="36" y="318.5" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholderKey" value="example-textfield-placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OpE-iF-NDd">
+                                <rect key="frame" x="36" y="436.5" width="303" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="NDU-RL-cQ8"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-textview-text"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ugE-Pg-pQo" firstAttribute="centerX" secondItem="fQa-Pj-Usb" secondAttribute="centerX" id="6vr-9A-qoy"/>
+                            <constraint firstItem="OpE-iF-NDd" firstAttribute="centerX" secondItem="fQa-Pj-Usb" secondAttribute="centerX" id="AkK-7b-IJd"/>
+                            <constraint firstItem="ugE-Pg-pQo" firstAttribute="centerY" secondItem="fQa-Pj-Usb" secondAttribute="centerY" multiplier="0.5" id="GJs-mL-cS0"/>
+                            <constraint firstItem="VPP-ti-hMc" firstAttribute="centerX" secondItem="fQa-Pj-Usb" secondAttribute="centerX" id="J81-jJ-iUI"/>
+                            <constraint firstItem="OpE-iF-NDd" firstAttribute="leading" secondItem="fQa-Pj-Usb" secondAttribute="leadingMargin" constant="20" id="Jll-Hf-EmC"/>
+                            <constraint firstItem="VPP-ti-hMc" firstAttribute="leading" secondItem="fQa-Pj-Usb" secondAttribute="leadingMargin" constant="20" id="TQb-qH-ct7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VPP-ti-hMc" secondAttribute="trailing" constant="20" id="TiJ-ZR-aUT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OpE-iF-NDd" secondAttribute="trailing" constant="20" id="WBm-QI-tEA"/>
+                            <constraint firstItem="OpE-iF-NDd" firstAttribute="centerY" secondItem="fQa-Pj-Usb" secondAttribute="centerY" multiplier="1.5" id="pPp-4e-UAT"/>
+                            <constraint firstItem="VPP-ti-hMc" firstAttribute="centerY" secondItem="fQa-Pj-Usb" secondAttribute="centerY" id="siq-cR-f51"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="example-cell-text-label"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7R7-vJ-1Na" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="-420"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c2w-LQ-me6">
+            <objects>
+                <viewController id="5jg-hR-chJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JIe-q2-TC7"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4d-el-8EJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dwB-fw-v7V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-2j-nIm">
+                                <rect key="frame" x="164" y="152" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-button"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oCu-YG-kaY">
+                                <rect key="frame" x="36" y="486.5" width="303" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                </segments>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-segment-1,example-segment-2,example-segment-3,example-segment-4"/>
+                                </userDefinedRuntimeAttributes>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oCu-YG-kaY" secondAttribute="trailing" constant="20" id="9S1-eg-YtI"/>
+                            <constraint firstItem="oCu-YG-kaY" firstAttribute="centerX" secondItem="dwB-fw-v7V" secondAttribute="centerX" id="XVr-Z4-cTU"/>
+                            <constraint firstItem="f2U-2j-nIm" firstAttribute="centerY" secondItem="dwB-fw-v7V" secondAttribute="centerY" multiplier="0.5" id="cQ6-Di-idh"/>
+                            <constraint firstItem="oCu-YG-kaY" firstAttribute="leading" secondItem="dwB-fw-v7V" secondAttribute="leadingMargin" constant="20" id="gox-bg-ZEp"/>
+                            <constraint firstItem="oCu-YG-kaY" firstAttribute="centerY" secondItem="dwB-fw-v7V" secondAttribute="centerY" multiplier="1.5" id="iC8-9M-mji"/>
+                            <constraint firstItem="f2U-2j-nIm" firstAttribute="centerX" secondItem="dwB-fw-v7V" secondAttribute="centerX" id="k9k-cM-pkl"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedBackButtonKey" value="example-back-button"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="example-cell-text-segmented-control"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RgV-dN-Rfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="-1151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oSC-n4-oHc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yla-aY-TOf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" id="Q3x-cO-xEE">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-tab-button-1"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tbU-e1-RN7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mOP-ay-kGb" kind="relationship" relationship="rootViewController" id="vIv-LY-H8I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZ6-J9-gC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3065" y="-65"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="rgP-Pb-0dp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Uf-g3-NWf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="uIq-be-YuO">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="example-tab-button-2"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nCW-wd-4II">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b2E-15-6dM" kind="relationship" relationship="rootViewController" id="tn3-rQ-h9w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nD6-vo-9dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3065" y="590"/>
         </scene>
     </scenes>
 </document>

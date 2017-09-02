@@ -11,13 +11,13 @@ import UIKit
 
 extension UITabBarItem {
     
-    convenience init(localizedKey: String, image: UIImage?, tag: Int) {
+    public convenience init(localizedKey: String, image: UIImage?, tag: Int) {
         let localizedTitle = LocalizationManager.localizedStringFor(localizedKey)
         self.init(title: localizedTitle, image: image, tag: tag)
         self.localizedKey = localizedKey
     }
     
-    convenience init(localizedKey: String, image: UIImage?, selectedImage: UIImage?) {
+    public convenience init(localizedKey: String, image: UIImage?, selectedImage: UIImage?) {
         let localizedTitle = LocalizationManager.localizedStringFor(localizedKey)
         self.init(title: localizedTitle, image: image, selectedImage: selectedImage)
         self.localizedKey = localizedKey

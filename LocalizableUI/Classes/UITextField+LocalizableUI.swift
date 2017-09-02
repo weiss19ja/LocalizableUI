@@ -14,7 +14,7 @@ private var AssociatedObjectPointer: UInt8 = 0
 extension UITextField {
     
     // Stores the property of the localized placeholder key
-    @IBInspectable var localizedPlaceholderKey: String? {
+    @IBInspectable public var localizedPlaceholderKey: String? {
         get {
             return objc_getAssociatedObject(self, &AssociatedObjectPointer) as? String
         }
@@ -27,7 +27,8 @@ extension UITextField {
         }
     }
     
-    override func updateLocalizedStrings() {
+    /// Updates all subviews with their given localizedKeys
+    override public func updateLocalizedStrings() {
         super.updateLocalizedStrings()
         
         if let localizedKey = localizedKey {

@@ -14,7 +14,7 @@ private var AssociatedObjectPointer: UInt8 = 0
 extension UIView: Localizable {
     
     // Stores the property of the localized key
-    @IBInspectable var localizedKey: String? {
+    @IBInspectable public var localizedKey: String? {
         get {
             return objc_getAssociatedObject(self, &AssociatedObjectPointer) as? String
         }
@@ -27,20 +27,18 @@ extension UIView: Localizable {
         }
     }
     
-    convenience init(localizedKey: String?) {
+    public convenience init(localizedKey: String?) {
         self.init()
         self.localizedKey = localizedKey
-
-
     }
     
-    convenience init(frame: CGRect, localizedKey: String?) {
+    public convenience init(frame: CGRect, localizedKey: String?) {
         self.init(frame: frame)
         self.localizedKey = localizedKey
     }
     
     /// Updates all subviews with their given localizedKeys
-    func updateLocalizedStrings() {
+    internal func updateLocalizedStrings() {
         for view in subviews {
             view.updateLocalizedStrings()
         }

@@ -27,15 +27,23 @@ extension UIBarItem: Localizable {
         }
     }
     
-    convenience init(localizedKey: String?) {
+    public convenience init(localizedKey: String?) {
         self.init()
         self.localizedKey = localizedKey
     }
     
+    public convenience init?(coder aDecoder: NSCoder, localizedKey: String?) {
+        self.init(coder: aDecoder)
+        self.localizedKey = localizedKey
+    }
+    
+    /// Updates all subviews with their given localizedKeys
     func updateLocalizedStrings() {
         if let localizedKey = localizedKey {
             title = LocalizationManager.localizedStringFor(localizedKey)
         }
+        
+        
     }
     
 }

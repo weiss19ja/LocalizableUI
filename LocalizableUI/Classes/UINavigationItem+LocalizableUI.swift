@@ -15,7 +15,7 @@ private var AssociatedObjectPointerBackButton: UInt8 = 0
 extension UINavigationItem: Localizable {
 
     // Stores the property of the localized key
-    @IBInspectable var localizedTitleKey: String? {
+    @IBInspectable public var localizedTitleKey: String? {
         get {
             return objc_getAssociatedObject(self, &AssociatedObjectPointerTitle) as? String
         }
@@ -29,7 +29,7 @@ extension UINavigationItem: Localizable {
     }
 
     // Stores the property of the localized key
-    @IBInspectable var localizedBackButtonKey: String? {
+    @IBInspectable public var localizedBackButtonKey: String? {
         get {
             return objc_getAssociatedObject(self, &AssociatedObjectPointerBackButton) as? String
         }
@@ -37,6 +37,11 @@ extension UINavigationItem: Localizable {
             objc_setAssociatedObject(self, &AssociatedObjectPointerBackButton, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
         }
+    }
+    
+    public convenience init(localizedKey: String?) {
+        self.init()
+        self.localizedTitleKey = localizedKey
     }
 
     /// Updates all subviews with their given localizedKeys

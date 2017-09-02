@@ -6,7 +6,29 @@
   Copyright © 2017 CocoaPods. All rights reserved.
 */
 
-"test-label-content" = "This is test content for a label";
-"test-1" = "Test Content 1";
-"test-2" = "Test Content 2";
-"test-3" = "Test Content 3";
+"example-title-overview" = "Overview";
+"example-back-button" = "Custom Back";
+
+"example-cell-text-segmented-control" = "Example for UIButton and UISegmentedControl";
+"example-cell-text-label" = "Example for UILabel, UITextField and UITextView";
+"example-cell-tabbar" = "Example for UITabBar";
+"example-cell-language-change" = "Example for custom language change";
+"example-overview-cell-description" = "This cells are also localized from the storyboard.";
+
+"example-tab-button-1" = "Tab 1";
+"example-tab-button-2" = "Tab 2";
+
+"example-bar-button-cancel" = "Cancel";
+
+"example-button" = "Custom button text";
+
+"example-segment-1" = "Segment 1";
+"example-segment-2" = "Segment 2";
+"example-segment-3" = "Segment 3";
+"example-segment-4" = "Segment 4";
+
+"example-label" = "Custom label text";
+"example-textfield-placeholder" = "Custom placeholder text";
+"example-textview-text" = "Custom text view text";
+
+"example-language-changed" = "Click to change language";

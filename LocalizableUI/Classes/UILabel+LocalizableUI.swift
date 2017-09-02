@@ -11,7 +11,8 @@ import UIKit
 
 extension UILabel {
     
-    override func updateLocalizedStrings() {
+    /// Updates all subviews with their given localizedKeys
+    override internal func updateLocalizedStrings() {
         super.updateLocalizedStrings()
         
         if let localizedKey = localizedKey {
