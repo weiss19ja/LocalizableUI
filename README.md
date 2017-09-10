@@ -1,6 +1,6 @@
 # LocalizableUI
 
-[![CI Status](http://img.shields.io/travis/weiss19ja/LocalizableUI.svg?style=flat)](https://travis-ci.org/Jan Weiß/LocalizableUI)
+[![CI Status](http://img.shields.io/travis/weiss19ja/LocalizableUI.svg?style=flat)](https://travis-ci.org/weiss19ja/LocalizableUI)
 [![Version](https://img.shields.io/cocoapods/v/LocalizableUI.svg?style=flat)](http://cocoapods.org/pods/LocalizableUI)
 [![License](https://img.shields.io/cocoapods/l/LocalizableUI.svg?style=flat)](http://cocoapods.org/pods/LocalizableUI)
 [![Platform](https://img.shields.io/cocoapods/p/LocalizableUI.svg?style=flat)](http://cocoapods.org/pods/LocalizableUI)
@@ -10,6 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+A project which supports at least swift 3.
 
 ## Installation
 
