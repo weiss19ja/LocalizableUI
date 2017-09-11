@@ -12,7 +12,7 @@ open class LocalizationManager {
 
     /// The shared manager instance
     private static var _localizationManager: LocalizationManager!
-    
+
     /// Singleton of the LocalizationManager
     public static func sharedInstance() -> LocalizationManager {
         if _localizationManager == nil {
@@ -23,7 +23,7 @@ open class LocalizationManager {
 
     /// Weak storage of the Localizable Items
     private var weakHash = NSHashTable<AnyObject>(options: NSHashTableWeakMemory)
-    
+
     /// The string table to search for localized values
     private var tableName: String?
 
@@ -48,9 +48,16 @@ open class LocalizationManager {
     ///
     /// - Parameter localizable: Localizable Element to add
     internal func add(localizable: Localizable) {
+
+        /// return if the object already exists
+        guard weakHash.contains(localizable) else {
+            return
+        }
+
         weakHash.add(localizable)
+
     }
-    
+
     /// Changes the language to a custom one.
     /// Use this mehtod to provide a language change independently from the system one.
     /// It also sets the tableName to the custom one. If the tableName is nil the Localizable.strings is used.
@@ -62,10 +69,10 @@ open class LocalizationManager {
     public func changeLanguage(to tableName: String?, from bundle: Bundle = Bundle.main) throws {
         guard let filePath = bundle.path(forResource: tableName, ofType: "strings"),
             FileManager.default.fileExists(atPath: filePath) == true else {
-                
+
                 throw LocalizableError.languageFileNotFound
         }
-        
+
         self.tableName = tableName
         weakHash.allObjects.flatMap { $0 as? Localizable}.forEach { $0.updateLocalizedStrings() }
     }
