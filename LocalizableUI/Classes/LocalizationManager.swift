@@ -69,7 +69,8 @@ open class LocalizationManager {
     ///   - tableName: The custom tableName or the default one if nil is passed
     ///   - bundle: Optional Parameter. The bundle which contains the strings table or uses default bundle from the LocalizationManager
     /// - Throws: A `LocalizableError` if the string table does not exist
-    public func changeLanguage(to tableName: String?, from bundle: Bundle = LocalizationManager.sharedInstance().bundle) throws {
+    public func changeLanguage(to tableName: String?, from bundle: Bundle? = nil) throws {
+        let bundle = bundle ?? self.bundle
         guard let filePath = bundle.path(forResource: tableName, ofType: "strings"),
             FileManager.default.fileExists(atPath: filePath) == true else {
 
