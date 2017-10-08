@@ -48,9 +48,6 @@
                             <constraint firstItem="gvg-tf-6up" firstAttribute="top" secondItem="9P6-mc-Z4w" secondAttribute="bottom" constant="20" id="j1S-wm-TKm"/>
                         </constraints>
                     </view>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="localizedBackButtonKey" value="example-title-overview"/>
-                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIA-FD-67e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,7 +329,6 @@
                     <navigationItem key="navigationItem" id="3xU-c9-DD6"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="example-title-overview"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="localizedBackButtonKey" value="example-back-button"/>
                     </userDefinedRuntimeAttributes>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ott-HL-LLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
