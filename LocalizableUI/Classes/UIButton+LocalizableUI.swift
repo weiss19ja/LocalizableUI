@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIButton {
+extension UIButton: Localizable {
 
     /// Convenience int for a new button with a type and
     /// the localized key for the title
@@ -23,8 +23,7 @@ extension UIButton {
     }
     
     /// Updates all subviews with their given localizedKeys
-    override internal func updateLocalizedStrings() {
-        super.updateLocalizedStrings()
+    internal func updateLocalizedStrings() {
 
         if let localizedKey = localizedKey {
             let localizedContent = LocalizationManager.localizedStringFor(localizedKey)

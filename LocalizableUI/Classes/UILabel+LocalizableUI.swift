@@ -9,12 +9,10 @@
 import Foundation
 import UIKit
 
-extension UILabel {
+extension UILabel: Localizable {
     
     /// Updates all subviews with their given localizedKeys
-    override internal func updateLocalizedStrings() {
-        super.updateLocalizedStrings()
-        
+    internal func updateLocalizedStrings() {
         if let localizedKey = localizedKey {
             let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             text = localizedContent

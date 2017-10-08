@@ -11,7 +11,7 @@ import UIKit
 
 private var AssociatedObjectPointer: UInt8 = 0
 
-extension UITextField {
+extension UITextField: Localizable {
     
     // Stores the property of the localized placeholder key
     @IBInspectable public var localizedPlaceholderKey: String? {
@@ -21,15 +21,12 @@ extension UITextField {
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
-
-            /// Add the Element to the LocalizationManager
-            LocalizationManager.sharedInstance().add(localizable: self)
+            addToManager()
         }
     }
     
     /// Updates all subviews with their given localizedKeys
-    override public func updateLocalizedStrings() {
-        super.updateLocalizedStrings()
+    public func updateLocalizedStrings() {
         
         if let localizedKey = localizedKey {
             text = LocalizationManager.localizedStringFor(localizedKey)
