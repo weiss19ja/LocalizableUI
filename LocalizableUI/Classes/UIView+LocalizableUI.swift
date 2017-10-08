@@ -23,6 +23,8 @@ extension UIView {
             
             if let localizableSelf = self as? Localizable {
                 localizableSelf.updateLocalizedStrings()
+                
+                // Add the Element to the LocalizationManager
                 localizableSelf.addToManager()
             }
         }
