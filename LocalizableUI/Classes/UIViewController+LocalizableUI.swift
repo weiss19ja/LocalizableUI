@@ -22,9 +22,9 @@ extension UIViewController: Localizable {
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointerTitle, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
-
-            /// Add the Element to the LocalizationManager
-            LocalizationManager.sharedInstance().add(localizable: self)
+            
+            // Add the Element to the LocalizationManager
+            addToManager()
         }
     }
 
@@ -36,6 +36,9 @@ extension UIViewController: Localizable {
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointerBackButton, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
+            
+            // Add the Element to the LocalizationManager
+            addToManager()
         }
     }
     
@@ -72,7 +75,8 @@ extension UIViewController: Localizable {
 
         if let localizedKey = localizedBackButtonKey {
             let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
-            navigationItem.backBarButtonItem?.title = LocalizationManager.localizedStringFor(localizedContent)
+            let backButton = UIBarButtonItem(localizedKey: localizedContent, style: .plain, target: nil, action: nil)
+            navigationItem.backBarButtonItem = backButton
         }
     }
     

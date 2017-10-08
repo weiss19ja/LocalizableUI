@@ -20,6 +20,8 @@ extension UITableViewCell: Localizable {
         set {
             objc_setAssociatedObject(self, &associatedDetailObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
+            
+            // Add the Element to the LocalizationManager
             addToManager()
         }
     }
