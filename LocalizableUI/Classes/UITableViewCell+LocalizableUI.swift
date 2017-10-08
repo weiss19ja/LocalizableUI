@@ -10,7 +10,7 @@ import Foundation
 
 private var associatedDetailObjectPointer: UInt8 = 0
 
-extension UITableViewCell {
+extension UITableViewCell: Localizable {
     
     // Stores the property of the detail label text
     @IBInspectable var detailLocalizedKey: String? {
@@ -20,8 +20,7 @@ extension UITableViewCell {
         set {
             objc_setAssociatedObject(self, &associatedDetailObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             updateLocalizedStrings()
-            
-            LocalizationManager.sharedInstance().add(localizable: self)
+            addToManager()
         }
     }
     
@@ -32,7 +31,7 @@ extension UITableViewCell {
     }
     
     /// Updates all subviews with their given localizedKeys
-    override internal func updateLocalizedStrings() {
+    internal func updateLocalizedStrings() {
         if let localizedKey = localizedKey {
             textLabel?.text = LocalizationManager.localizedStringFor(localizedKey)
         }

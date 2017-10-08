@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UISegmentedControl {
+extension UISegmentedControl: Localizable {
     
     public convenience init(items: [Any]?, localizedKey: String?) {
         self.init(items: items)
@@ -16,9 +16,7 @@ extension UISegmentedControl {
     }
     
     /// Updates all subviews with their given localizedKeys
-    override internal func updateLocalizedStrings() {
-        super.updateLocalizedStrings()
-        
+    internal func updateLocalizedStrings() {
         if let localizedKeys = localizedKey {
             let keys = localizedKeys.components(separatedBy: ",")
             for (index, key) in keys.enumerated() {

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UITextView {
+extension UITextView: Localizable {
 
     /// Convenience init for a new text view with a frame, a textContainer
     /// and the localized key for the text
@@ -24,7 +24,7 @@ extension UITextView {
     }
 
     /// Updates all subviews with their given localizedKeys
-    override internal func updateLocalizedStrings() {
+    internal func updateLocalizedStrings() {
         if let localizedKey = localizedKey {
             let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             text = localizedContent
