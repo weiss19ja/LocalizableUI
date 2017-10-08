@@ -71,6 +71,9 @@ extension UIViewController: Localizable {
         if let localizedKey = localizedTitleKey {
             let localizedContent = LocalizationManager.localizedStringFor(localizedKey)
             title = localizedContent
+            
+            // Updates the default back button title if no custom is given
+            updateDefaultBackButtonOfFollowing(with: localizedContent)
         }
 
         if let localizedKey = localizedBackButtonKey {
@@ -80,4 +83,35 @@ extension UIViewController: Localizable {
         }
     }
     
+    /// Updates the back button of the following view controller of a localized view controller title
+    /// if the following view controller does not provide a custom localized back button
+    ///
+    /// - Parameter localizedText: The localized string of the custom view controller title
+    private func updateDefaultBackButtonOfFollowing(with localizedText: String) {
+        guard let navController = navigationController else {
+            return
+        }
+        
+        if let indexOfCurrent = navController.viewControllers.index(of: self),
+            let followingVC = navController.viewControllers[safe: indexOfCurrent + 1] {
+            
+            // Check if the following view controller doesn't have a custom back button title
+            guard followingVC.localizedBackButtonKey == nil else {
+                return
+            }
+            
+            let backButton = UIBarButtonItem(title: localizedText, style: .plain, target: nil, action: nil)
+            followingVC.navigationItem.backBarButtonItem = backButton
+        }
+        
+    }
+    
+}
+
+private extension Collection {
+    
+    /// Returns the element at the specified index iff it is within bounds, otherwise nil.
+    subscript (safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
 }
