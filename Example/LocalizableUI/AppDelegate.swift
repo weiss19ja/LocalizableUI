@@ -3,7 +3,7 @@
 //  LocalizableUI
 //
 //  Created by Jan Weiß on 08/01/2017.
-//  Copyright (c) 2017 Jan Weiß. All rights reserved.
+//  Copyright (c) 2017 Jan Weiß, Philipp Weiß. All rights reserved.
 //
 
 import UIKit

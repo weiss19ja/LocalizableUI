@@ -11,11 +11,14 @@
 		3D0984B91F5967BF002DE5BF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0984B81F5967BF002DE5BF /* TabBarViewController.swift */; };
 		3D0984BB1F5B22BF002DE5BF /* LanguageChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0984BA1F5B22BF002DE5BF /* LanguageChangeViewController.swift */; };
 		3D86CBEC1F30F7F100656CB1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D86CBEE1F30F7F100656CB1 /* Localizable.strings */; };
+		3DAF46A01F8FEA4E00E0AA7E /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF469F1F8FEA4E00E0AA7E /* UIViewControllerTests.swift */; };
+		3DAF46A41F90040900E0AA7E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF46A31F90040900E0AA7E /* Localizable.strings */; };
+		3DAF46A51F90041200E0AA7E /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF46A11F8FEB1100E0AA7E /* SampleViewController.xib */; };
+		3DAF46A71F90068200E0AA7E /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF46A61F90068200E0AA7E /* CustomLocalizable.strings */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		EA8DBF4FEB0284A700F0BC6F /* Pods_LocalizableUI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4453DA1A2FE2E1F4BBFD362C /* Pods_LocalizableUI_Tests.framework */; };
 		FD5B245A08D9FD09788453EA /* Pods_LocalizableUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2986B8963F52F5509F935A2 /* Pods_LocalizableUI_Example.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +38,10 @@
 		3D0984B81F5967BF002DE5BF /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3D0984BA1F5B22BF002DE5BF /* LanguageChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageChangeViewController.swift; sourceTree = "<group>"; };
 		3D86CBED1F30F7F100656CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DAF469F1F8FEA4E00E0AA7E /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
+		3DAF46A11F8FEB1100E0AA7E /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
+		3DAF46A31F90040900E0AA7E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3DAF46A61F90068200E0AA7E /* CustomLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CustomLocalizable.strings; sourceTree = "<group>"; };
 		43077646E5D7550B7977ACC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4453DA1A2FE2E1F4BBFD362C /* Pods_LocalizableUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalizableUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		498E913EC6C21775C686E44C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -48,7 +55,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* LocalizableUI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		93597D1062E5EEEFB66D9C26 /* Pods-LocalizableUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizableUI_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalizableUI_Tests/Pods-LocalizableUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		994E47CBEC0A97F671D2A974 /* Pods-LocalizableUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizableUI_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalizableUI_Example/Pods-LocalizableUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C2986B8963F52F5509F935A2 /* Pods_LocalizableUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalizableUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +130,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				3DAF469F1F8FEA4E00E0AA7E /* UIViewControllerTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -134,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACEA1AFB9204008FA782 /* Info.plist */,
+				3DAF46A11F8FEB1100E0AA7E /* SampleViewController.xib */,
+				3DAF46A31F90040900E0AA7E /* Localizable.strings */,
+				3DAF46A61F90068200E0AA7E /* CustomLocalizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -269,6 +278,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DAF46A51F90041200E0AA7E /* SampleViewController.xib in Resources */,
+				3DAF46A41F90040900E0AA7E /* Localizable.strings in Resources */,
+				3DAF46A71F90068200E0AA7E /* CustomLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				3DAF46A01F8FEA4E00E0AA7E /* UIViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +553,7 @@
 				INFOPLIST_FILE = LocalizableUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.weiss.LocalizableUI-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -556,7 +568,7 @@
 				INFOPLIST_FILE = LocalizableUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.weiss.LocalizableUI-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -578,6 +590,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalizableUI_Example.app/LocalizableUI_Example";
 			};
 			name = Debug;
 		};
@@ -592,6 +605,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalizableUI_Example.app/LocalizableUI_Example";
 			};
 			name = Release;
 		};

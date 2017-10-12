@@ -3,7 +3,7 @@
 //  LocalizableUI
 //
 //  Created by Jan Weiß on 02.09.17.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Copyright © 2017 Jan Weiß, Philipp Weiß. All rights reserved.
 //
 
 import UIKit
