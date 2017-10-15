@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D7F84DA1F92BB5A00806968 /* LocalizableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7F84D01F92BB5900806968 /* LocalizableUI.framework */; };
-		3D7F84DF1F92BB5A00806968 /* LocalizableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F84DE1F92BB5A00806968 /* LocalizableUITests.swift */; };
 		3D7F84E11F92BB5A00806968 /* LocalizableUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D7F84D31F92BB5900806968 /* LocalizableUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D7F85241F92C68400806968 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85211F92C68400806968 /* LocalizationManager.swift */; };
 		3D7F85251F92C68500806968 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85221F92C68400806968 /* Localizable.swift */; };
@@ -29,6 +28,9 @@
 		3DA52CDD1F93C7FC0039CB5F /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F852A1F92C6DB00806968 /* SampleViewController.xib */; };
 		3DA52CDE1F93C7FF0039CB5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85281F92C6DB00806968 /* Localizable.strings */; };
 		3DA52CDF1F93C8020039CB5F /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85291F92C6DB00806968 /* CustomLocalizable.strings */; };
+		3DA52CE21F93D0030039CB5F /* LocalizationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52CE11F93D0030039CB5F /* LocalizationManagerTests.swift */; };
+		3DD816011F93F4F400490F5A /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816001F93F4F400490F5A /* UITextViewTests.swift */; };
+		3DD816031F93F65600490F5A /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816021F93F65600490F5A /* BaseTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,6 @@
 		3D7F84D31F92BB5900806968 /* LocalizableUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableUI.h; sourceTree = "<group>"; };
 		3D7F84D41F92BB5900806968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D7F84D91F92BB5A00806968 /* LocalizableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D7F84DE1F92BB5A00806968 /* LocalizableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableUITests.swift; sourceTree = "<group>"; };
 		3D7F84E01F92BB5A00806968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D7F85151F92C66C00806968 /* UIView+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LocalizableUI.swift"; sourceTree = "<group>"; };
 		3D7F85161F92C66C00806968 /* UILabel+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+LocalizableUI.swift"; sourceTree = "<group>"; };
@@ -67,6 +68,9 @@
 		3D7F85291F92C6DB00806968 /* CustomLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CustomLocalizable.strings; sourceTree = "<group>"; };
 		3D7F852A1F92C6DB00806968 /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		3D7F852B1F92C6E900806968 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
+		3DA52CE11F93D0030039CB5F /* LocalizationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManagerTests.swift; sourceTree = "<group>"; };
+		3DD816001F93F4F400490F5A /* UITextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewTests.swift; sourceTree = "<group>"; };
+		3DD816021F93F65600490F5A /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +125,8 @@
 		3D7F84DD1F92BB5A00806968 /* LocalizableUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3D7F84DE1F92BB5A00806968 /* LocalizableUITests.swift */,
-				3D7F852B1F92C6E900806968 /* UIViewControllerTests.swift */,
-				3D7F84E01F92BB5A00806968 /* Info.plist */,
+				3DA52CE11F93D0030039CB5F /* LocalizationManagerTests.swift */,
+				3DA52CE01F93CB930039CB5F /* LocalizedItems */,
 				3D7F85271F92C6C200806968 /* Supporting Files */,
 			);
 			path = LocalizableUITests;
@@ -151,9 +154,11 @@
 		3D7F85271F92C6C200806968 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D7F84E01F92BB5A00806968 /* Info.plist */,
 				3D7F852A1F92C6DB00806968 /* SampleViewController.xib */,
 				3D7F85281F92C6DB00806968 /* Localizable.strings */,
 				3D7F85291F92C6DB00806968 /* CustomLocalizable.strings */,
+				3DD816021F93F65600490F5A /* BaseTestCase.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,6 +170,15 @@
 				3D7F84D41F92BB5900806968 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DA52CE01F93CB930039CB5F /* LocalizedItems */ = {
+			isa = PBXGroup;
+			children = (
+				3D7F852B1F92C6E900806968 /* UIViewControllerTests.swift */,
+				3DD816001F93F4F400490F5A /* UITextViewTests.swift */,
+			);
+			path = LocalizedItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD816031F93F65600490F5A /* BaseTestCase.swift in Sources */,
+				3DD816011F93F4F400490F5A /* UITextViewTests.swift in Sources */,
 				3D7F852C1F92C6E900806968 /* UIViewControllerTests.swift in Sources */,
-				3D7F84DF1F92BB5A00806968 /* LocalizableUITests.swift in Sources */,
+				3DA52CE21F93D0030039CB5F /* LocalizationManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +496,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LocalizableUITests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LocalizableUITests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +510,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LocalizableUITests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LocalizableUITests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
