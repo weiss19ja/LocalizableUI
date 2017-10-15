@@ -1,0 +1,34 @@
+/* 
+  CustomLocalizable.strings
+  LocalizableUI
+
+  Created by Jan Weiß on 29.08.17.
+  Copyright © 2017 Jan Weiß, Philipp Weiß. All rights reserved.
+*/
+
+"example-title-overview" = "Übersicht";
+"example-back-button" = "Spezierlles zurück";
+
+"example-cell-text-segmented-control" = "Beispiel für UIButton und UISegmentedControl";
+"example-cell-text-label" = "Beispiel für UILabel, UITextField und UITextView";
+"example-cell-tabbar" = "Beispiel für UITabBar";
+"example-cell-language-change" = "Beispiel für eigenen Sprachwechsel";
+"example-overview-cell-description" = "Die Zellen wurden auch im Storyboard localisiert.";
+
+"example-tab-button-1" = "Tap 1";
+"example-tab-button-2" = "Tap 2";
+
+"example-bar-button-cancel" = "Abbrechen";
+
+"example-button" = "Beispiel Button Text";
+
+"example-segment-1" = "Segment 1";
+"example-segment-2" = "Segment 2";
+"example-segment-3" = "Segment 3";
+"example-segment-4" = "Segment 4";
+
+"example-label" = "Beispiel für ein Label";
+"example-textfield-placeholder" = "Eigener Platzhalter";
+"example-textview-text" = "Dies ist eine Text View";
+
+"example-language-changed" = "Deaktivieren zum Sprachwechsel";
