@@ -26,6 +26,9 @@
 		3DA52CD51F92CF670039CB5F /* UITextField+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F851D1F92C66C00806968 /* UITextField+LocalizableUI.swift */; };
 		3DA52CD61F92CF6A0039CB5F /* UITextView+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85171F92C66C00806968 /* UITextView+LocalizableUI.swift */; };
 		3DA52CD71F92CF6E0039CB5F /* UIView+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85151F92C66C00806968 /* UIView+LocalizableUI.swift */; };
+		3DA52CDD1F93C7FC0039CB5F /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F852A1F92C6DB00806968 /* SampleViewController.xib */; };
+		3DA52CDE1F93C7FF0039CB5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85281F92C6DB00806968 /* Localizable.strings */; };
+		3DA52CDF1F93C8020039CB5F /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85291F92C6DB00806968 /* CustomLocalizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA52CDD1F93C7FC0039CB5F /* SampleViewController.xib in Resources */,
+				3DA52CDE1F93C7FF0039CB5F /* Localizable.strings in Resources */,
+				3DA52CDF1F93C8020039CB5F /* CustomLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
