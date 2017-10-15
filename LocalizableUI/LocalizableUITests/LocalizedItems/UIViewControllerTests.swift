@@ -15,13 +15,7 @@ private enum Constants {
     static let viewControllerLocalizedBackButtonKey = "localized-key-2"
 }
 
-class UIViewControllerTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        let bundle = Bundle(for: type(of: self))
-        try! LocalizationManager.sharedInstance().changeLanguage(to: nil, from: bundle)
-    }
+class UIViewControllerTests: BaseTestCase {
     
     func testViewControllerInitialization() {
         let bundle = Bundle(for: type(of: self))
@@ -53,7 +47,7 @@ class UIViewControllerTests: XCTestCase {
         XCTAssertEqual(navigationController.visibleViewController?.title, "Sample1")
         XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, "Sample2")
         
-        try! LocalizationManager.sharedInstance().changeLanguage(to: "CustomLocalizable", from: bundle)
+        changeLanguage()
         
         XCTAssertEqual(viewController.title, "Test1")
         XCTAssertEqual(viewController2.title, "Test1")
@@ -81,7 +75,7 @@ class UIViewControllerTests: XCTestCase {
         XCTAssertEqual(navigationController.visibleViewController?.title, "Sample1")
         XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, "Sample2")
         
-        try! LocalizationManager.sharedInstance().changeLanguage(to: "CustomLocalizable", from: bundle)
+        changeLanguage()
         
         XCTAssertEqual(viewController.title, "Test1")
         XCTAssertEqual(viewController2.title, "Test1")

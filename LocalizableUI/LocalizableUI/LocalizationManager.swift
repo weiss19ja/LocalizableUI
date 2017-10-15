@@ -98,4 +98,9 @@ open class LocalizationManager {
         return NSLocalizedString(key, tableName: tableName, bundle: bundle, value: value, comment: comment)
     }
     
+    /// Resets the manager
+    public static func clear() {
+        _localizationManager = nil
+    }
+    
 }
