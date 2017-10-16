@@ -14,11 +14,11 @@ class BaseTestCase: XCTestCase {
     override func setUp() {
         super.setUp()
         let bundle = Bundle(for: type(of: self))
-        try! LocalizationManager.sharedInstance().changeLanguage(to: nil, from: bundle)
+        try! LocalizationManager.sharedInstance.changeLanguage(to: nil, from: bundle)
     }
     
     func changeLanguage() {
-        try! LocalizationManager.sharedInstance().changeLanguage(to: "CustomLocalizable", from: Bundle(for: type(of: self)))
+        try! LocalizationManager.sharedInstance.changeLanguage(to: "CustomLocalizable", from: Bundle(for: type(of: self)))
     }
     
 }

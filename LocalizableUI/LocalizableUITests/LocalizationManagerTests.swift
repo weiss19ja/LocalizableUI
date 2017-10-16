@@ -25,7 +25,7 @@ class LocalizationManagerTests: BaseTestCase {
     }
 
     func testErrorLanguageChanged() {
-        XCTAssertThrowsError(try LocalizationManager.sharedInstance().changeLanguage(to: "NotExistingStringTable"))
+        XCTAssertThrowsError(try LocalizationManager.sharedInstance.changeLanguage(to: "NotExistingStringTable"))
     }
     
     func testDeinitLocalizationManager() {
