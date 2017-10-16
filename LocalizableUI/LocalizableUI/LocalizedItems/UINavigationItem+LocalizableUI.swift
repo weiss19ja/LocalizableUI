@@ -42,9 +42,10 @@ extension UINavigationItem: Localizable {
         }
     }
     
-    public convenience init(localizedKey: String?) {
+    public convenience init(localizedKey: String?, backButtonKey: String? = nil) {
         self.init()
         self.localizedTitleKey = localizedKey
+        self.localizedBackButtonKey = backButtonKey
     }
 
     /// Updates all subviews with their given localizedKeys
