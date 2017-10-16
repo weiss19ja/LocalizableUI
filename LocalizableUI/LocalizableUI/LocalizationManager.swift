@@ -11,14 +11,14 @@ import Foundation
 open class LocalizationManager {
 
     /// The shared manager instance
-    private static var _localizationManager: LocalizationManager!
+    public static var sharedInstance: LocalizationManager! = LocalizationManager.sharedInstance1()
 
     /// Singleton of the LocalizationManager
-    public static func sharedInstance() -> LocalizationManager {
-        if _localizationManager == nil {
-            _localizationManager = LocalizationManager()
+    private static func sharedInstance1() -> LocalizationManager {
+        if sharedInstance == nil {
+            sharedInstance = LocalizationManager()
         }
-        return _localizationManager
+        return sharedInstance
     }
 
     /// Weak storage of the Localizable Items
@@ -92,15 +92,15 @@ open class LocalizationManager {
     ///   - value: value -> default ""
     ///   - comment: comment -> default ""
     /// - Returns: The localized string
-    static func localizedStringFor(_ key: String, bundle: Bundle = LocalizationManager.sharedInstance().bundle, value: String = "", comment: String = "") -> String {
-        let tableName = _localizationManager?.tableName
+    static func localizedStringFor(_ key: String, bundle: Bundle = LocalizationManager.sharedInstance.bundle, value: String = "", comment: String = "") -> String {
+        let tableName = sharedInstance?.tableName
 
         return NSLocalizedString(key, tableName: tableName, bundle: bundle, value: value, comment: comment)
     }
     
     /// Resets the manager
     public static func clear() {
-        _localizationManager = nil
+        sharedInstance = nil
     }
     
 }
