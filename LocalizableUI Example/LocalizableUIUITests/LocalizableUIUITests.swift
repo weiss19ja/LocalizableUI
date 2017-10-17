@@ -105,7 +105,6 @@ class LocalizableUIUITests: XCTestCase {
 
         let switch2 = app.switches["1"]
         switch2.swipeLeft()
-        switch2.swipeRight()
 
         app.switches["0"].swipeRight()
     }
