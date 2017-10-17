@@ -27,6 +27,12 @@ extension UITextField: Localizable {
         }
     }
     
+    public convenience init(frame: CGRect, localizedKey: String?, localizedPlaceholderKey: String?) {
+        self.init(frame: frame)
+        self.localizedKey = localizedKey
+        self.localizedPlaceholderKey = localizedPlaceholderKey
+    }
+    
     /// Updates all subviews with their given localizedKeys
     public func updateLocalizedStrings() {
         
