@@ -39,5 +39,4 @@ public extension UIView {
         self.init(frame: frame)
         self.localizedKey = localizedKey
     }
-    
 }
