@@ -9,15 +9,6 @@
 import XCTest
 @testable import LocalizableUI
 
-private enum Constants {
-    static let sampleStringKey = "localized-key-1"
-    static let sampleStringKey2 = "localized-key-2"
-    static let localizedSampleStringEn = "Sample1"
-    static let localizedSampleStringDe = "Test1"
-    static let localizedSampleStringEn2 = "Sample2"
-    static let localizedSampleStringDe2 = "Test2"
-}
-
 class UIButtonsTests: BaseTestCase {
 
     func testLocalizableUIButton() {

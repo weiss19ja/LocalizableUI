@@ -32,8 +32,14 @@
 		3DD816011F93F4F400490F5A /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816001F93F4F400490F5A /* UITextViewTests.swift */; };
 		3DD816031F93F65600490F5A /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816021F93F65600490F5A /* BaseTestCase.swift */; };
 		3DD816051F93FA6800490F5A /* UINavigationItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */; };
-		DC02BA3F1F96540F0037ED60 /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA3E1F96540F0037ED60 /* UIButtonTests.swift */; };
 		3DFEF1481F965CDD001AD572 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEF1471F965CDD001AD572 /* UIViewTests.swift */; };
+		DC02BA3F1F96540F0037ED60 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		DC02BA431F966CE80037ED60 /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA421F966CE80037ED60 /* UIButtonTests.swift */; };
+		DC02BA471F966D4F0037ED60 /* UIBarButtonItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA441F966D270037ED60 /* UIBarButtonItemTests.swift */; };
+		DC02BA491F966DEF0037ED60 /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA481F966DEF0037ED60 /* UILabelTests.swift */; };
+		DC02BA4B1F966E6A0037ED60 /* UISegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4A1F966E6A0037ED60 /* UISegmentedControlTests.swift */; };
+		DC02BA4D1F9670EF0037ED60 /* UITabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4C1F9670EF0037ED60 /* UITabBarItemTests.swift */; };
+		DC02BA4F1F9671B90037ED60 /* UITableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +82,12 @@
 		3DD816021F93F65600490F5A /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItemTests.swift; sourceTree = "<group>"; };
 		3DFEF1471F965CDD001AD572 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
+		DC02BA421F966CE80037ED60 /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
+		DC02BA441F966D270037ED60 /* UIBarButtonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemTests.swift; sourceTree = "<group>"; };
+		DC02BA481F966DEF0037ED60 /* UILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTests.swift; sourceTree = "<group>"; };
+		DC02BA4A1F966E6A0037ED60 /* UISegmentedControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlTests.swift; sourceTree = "<group>"; };
+		DC02BA4C1F9670EF0037ED60 /* UITabBarItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemTests.swift; sourceTree = "<group>"; };
+		DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +192,15 @@
 		3DA52CE01F93CB930039CB5F /* LocalizedItems */ = {
 			isa = PBXGroup;
 			children = (
+				DC02BA441F966D270037ED60 /* UIBarButtonItemTests.swift */,
+				DC02BA421F966CE80037ED60 /* UIButtonTests.swift */,
+				DC02BA481F966DEF0037ED60 /* UILabelTests.swift */,
+				3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */,
+				DC02BA4A1F966E6A0037ED60 /* UISegmentedControlTests.swift */,
+				DC02BA4C1F9670EF0037ED60 /* UITabBarItemTests.swift */,
+				DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */,
 				3D7F852B1F92C6E900806968 /* UIViewControllerTests.swift */,
 				3DD816001F93F4F400490F5A /* UITextViewTests.swift */,
-				3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */,
 				3DFEF1471F965CDD001AD572 /* UIViewTests.swift */,
 			);
 			path = LocalizedItems;
@@ -325,9 +343,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD816051F93FA6800490F5A /* UINavigationItemTests.swift in Sources */,
-				DC02BA3F1F96540F0037ED60 /* UIButtonTests.swift in Sources */,
+				DC02BA3F1F96540F0037ED60 /* (null) in Sources */,
+				DC02BA471F966D4F0037ED60 /* UIBarButtonItemTests.swift in Sources */,
+				DC02BA4F1F9671B90037ED60 /* UITableViewCellTests.swift in Sources */,
 				3DD816031F93F65600490F5A /* BaseTestCase.swift in Sources */,
+				DC02BA431F966CE80037ED60 /* UIButtonTests.swift in Sources */,
 				3DFEF1481F965CDD001AD572 /* UIViewTests.swift in Sources */,
+				DC02BA4D1F9670EF0037ED60 /* UITabBarItemTests.swift in Sources */,
+				DC02BA4B1F966E6A0037ED60 /* UISegmentedControlTests.swift in Sources */,
+				DC02BA491F966DEF0037ED60 /* UILabelTests.swift in Sources */,
 				3DD816011F93F4F400490F5A /* UITextViewTests.swift in Sources */,
 				3D7F852C1F92C6E900806968 /* UIViewControllerTests.swift in Sources */,
 				3DA52CE21F93D0030039CB5F /* LocalizationManagerTests.swift in Sources */,
