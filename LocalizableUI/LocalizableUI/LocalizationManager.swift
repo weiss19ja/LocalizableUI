@@ -22,7 +22,7 @@ open class LocalizationManager {
     private static var _sharedInstance: LocalizationManager!
     
     /// Weak storage of the Localizable Items
-    private var weakHash = NSHashTable<AnyObject>(options: NSHashTableWeakMemory)
+    internal var weakHash = NSHashTable<AnyObject>(options: NSHashTableWeakMemory)
     
     /// The string table to search for localized values
     private var tableName: String?
