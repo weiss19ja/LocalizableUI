@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import LocalizableUI
+@testable import LocalizableUI
 
 private enum Constants {
     static let sampleStringKey = "localized-key-1"
@@ -30,6 +30,41 @@ class LocalizationManagerTests: BaseTestCase {
     
     func testDeinitLocalizationManager() {
         LocalizationManager.clear()
+    }
+
+    func testWeakCount() {
+        let uiManager = LocalizationManager.sharedInstance!
+
+        autoreleasepool {
+            XCTAssertEqual(uiManager.weakHash.allObjects.count, 0)
+            var button: UIButton? = UIButton(type: .custom, localizedKey: Constants.sampleStringKey)
+            XCTAssertEqual(uiManager.weakHash.allObjects.count, 1)
+
+            button = nil
+        }
+
+        XCTAssertEqual(uiManager.weakHash.allObjects.count, 0)
+
+        var button4: UIButton?
+
+        autoreleasepool {
+            XCTAssertEqual(uiManager.weakHash.allObjects.count, 0)
+            var button1: UIButton? = UIButton(type: .custom, localizedKey: Constants.sampleStringKey)
+            XCTAssertEqual(uiManager.weakHash.allObjects.count, 1)
+            var button2: UIButton? = UIButton(type: .custom, localizedKey: Constants.sampleStringKey)
+            XCTAssertEqual(uiManager.weakHash.allObjects.count, 2)
+            var button3: UIButton? = UIButton(type: .custom, localizedKey: Constants.sampleStringKey)
+            XCTAssertEqual(uiManager.weakHash.allObjects.count, 3)
+            button4 = UIButton(type: .custom, localizedKey: Constants.sampleStringKey)
+            XCTAssertEqual(uiManager.weakHash.allObjects.count, 4)
+
+            button1 = nil
+            button2 = nil
+            button3 = nil
+        }
+
+        XCTAssertEqual(uiManager.weakHash.allObjects.count, 1)
+
     }
     
 }
