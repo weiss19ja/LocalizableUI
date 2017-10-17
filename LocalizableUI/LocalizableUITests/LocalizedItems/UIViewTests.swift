@@ -12,7 +12,11 @@ import XCTest
 class UIViewTests: BaseTestCase {
     
     func testViewContructors() {
+        let view1 = UIView(localizedKey: Constants.sampleStringKey)
+        XCTAssertEqual(view1.localizedKey, Constants.sampleStringKey)
         
+        let view2 = UIView(frame: CGRect.zero, localizedKey: Constants.sampleStringKey2)
+        XCTAssertEqual(view2.localizedKey, Constants.sampleStringKey2)
     }
     
 }
