@@ -9,12 +9,6 @@
 import XCTest
 import LocalizableUI
 
-private enum Constants {
-    static let sampleStringKey = "localized-key-1"
-    static let localizedSampleStringEn = "Sample1"
-    static let localizedSampleStringDe = "Test1"
-}
-
 class LocalizationManagerTests: BaseTestCase {
     
     func testChangeLanguageWithCustomBundle() {

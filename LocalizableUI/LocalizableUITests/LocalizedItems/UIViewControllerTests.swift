@@ -9,10 +9,8 @@
 import XCTest
 import LocalizableUI
 
-private enum Constants {
+private extension Constants {
     static let testViewControllerNibName = "SampleViewController"
-    static let viewControllerLocalizedTitleKey = "localized-key-1"
-    static let viewControllerLocalizedBackButtonKey = "localized-key-2"
 }
 
 class UIViewControllerTests: BaseTestCase {
@@ -21,65 +19,65 @@ class UIViewControllerTests: BaseTestCase {
         let bundle = Bundle(for: type(of: self))
         let viewController = UIViewController(nibName: Constants.testViewControllerNibName,
                                               bundle: bundle,
-                                              localizedTitleKey: Constants.viewControllerLocalizedTitleKey,
-                                              localizedBackButtonKey: Constants.viewControllerLocalizedBackButtonKey)
+                                              localizedTitleKey: Constants.sampleStringKey,
+                                              localizedBackButtonKey: Constants.sampleStringKey2)
         
-        XCTAssertEqual(viewController.title, "Sample1")
+        XCTAssertEqual(viewController.title, Constants.localizedSampleStringEn)
     }
     
     func testViewControllerLanguageChanged() {
         let bundle = Bundle(for: type(of: self))
         let viewController = UIViewController(nibName: Constants.testViewControllerNibName,
                                               bundle: bundle,
-                                              localizedTitleKey: Constants.viewControllerLocalizedTitleKey,
-                                              localizedBackButtonKey: Constants.viewControllerLocalizedBackButtonKey)
+                                              localizedTitleKey: Constants.sampleStringKey,
+                                              localizedBackButtonKey: Constants.sampleStringKey2)
         
-        XCTAssertEqual(viewController.title, "Sample1")
+        XCTAssertEqual(viewController.title, Constants.localizedSampleStringEn)
         
         let navigationController = UINavigationController(rootViewController: viewController)
         
         let viewController2 = UIViewController(nibName: Constants.testViewControllerNibName,
                                               bundle: bundle,
-                                              localizedTitleKey: Constants.viewControllerLocalizedTitleKey)
+                                              localizedTitleKey: Constants.sampleStringKey)
         
         navigationController.pushViewController(viewController2, animated: false)
         
-        XCTAssertEqual(navigationController.visibleViewController?.title, "Sample1")
-        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, "Sample2")
+        XCTAssertEqual(navigationController.visibleViewController?.title, Constants.localizedSampleStringEn)
+        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringEn2)
         
         changeLanguage()
         
-        XCTAssertEqual(viewController.title, "Test1")
-        XCTAssertEqual(viewController2.title, "Test1")
-        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, "Test2")
+        XCTAssertEqual(viewController.title, Constants.localizedSampleStringDe)
+        XCTAssertEqual(viewController2.title, Constants.localizedSampleStringDe)
+        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringDe2)
     }
     
     func testViewControllerLanguageChangedWithCustomBackButtons() {
         let bundle = Bundle(for: type(of: self))
         let viewController = UIViewController(nibName: Constants.testViewControllerNibName,
                                               bundle: bundle,
-                                              localizedTitleKey: Constants.viewControllerLocalizedTitleKey,
-                                              localizedBackButtonKey: Constants.viewControllerLocalizedBackButtonKey)
+                                              localizedTitleKey: Constants.sampleStringKey,
+                                              localizedBackButtonKey: Constants.sampleStringKey2)
         
-        XCTAssertEqual(viewController.title, "Sample1")
+        XCTAssertEqual(viewController.title, Constants.localizedSampleStringEn)
         
         let navigationController = UINavigationController(rootViewController: viewController)
         
         let viewController2 = UIViewController(nibName: Constants.testViewControllerNibName,
                                                bundle: bundle,
-                                               localizedTitleKey: Constants.viewControllerLocalizedTitleKey,
-                                               localizedBackButtonKey: Constants.viewControllerLocalizedBackButtonKey)
+                                               localizedTitleKey: Constants.sampleStringKey,
+                                               localizedBackButtonKey: Constants.sampleStringKey2)
         
         navigationController.pushViewController(viewController2, animated: false)
         
-        XCTAssertEqual(navigationController.visibleViewController?.title, "Sample1")
-        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, "Sample2")
+        XCTAssertEqual(navigationController.visibleViewController?.title, Constants.localizedSampleStringEn)
+        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringEn2)
         
         changeLanguage()
         
-        XCTAssertEqual(viewController.title, "Test1")
-        XCTAssertEqual(viewController2.title, "Test1")
-        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, "Test2")
+        XCTAssertEqual(viewController.title, Constants.localizedSampleStringDe)
+        XCTAssertEqual(viewController2.title, Constants.localizedSampleStringDe)
+        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringDe2)
     }
     
 }
