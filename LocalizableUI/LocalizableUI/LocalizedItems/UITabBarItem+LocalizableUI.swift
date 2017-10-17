@@ -32,11 +32,6 @@ extension UITabBarItem: Localizable {
         self.localizedKey = localizedKey
     }
     
-    public convenience init(localizedKey: String?, tabBarSystemItem: UITabBarSystemItem, tag: Int) {
-        self.init(tabBarSystemItem: tabBarSystemItem, tag: tag)
-        self.localizedKey = localizedKey
-    }
-    
     public convenience init(localizedKey: String, image: UIImage?, tag: Int) {
         let localizedTitle = LocalizationManager.localizedStringFor(localizedKey)
         self.init(title: localizedTitle, image: image, tag: tag)

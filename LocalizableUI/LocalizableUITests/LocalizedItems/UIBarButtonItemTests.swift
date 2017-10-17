@@ -13,11 +13,14 @@ class UIBarButtonItemTests: BaseTestCase {
 
     func testUIBarButtonItem() {
         let barButtonItem = UIBarButtonItem(localizedKey: Constants.sampleStringKey, style: .plain, target: nil, action: nil)
+        let barButtonItem2 = UIBarButtonItem(localizedKey: Constants.sampleStringKey2)
 
         XCTAssertEqual(barButtonItem.title, Constants.localizedSampleStringEn)
+        XCTAssertEqual(barButtonItem2.title, Constants.localizedSampleStringEn2)
 
         changeLanguage()
         XCTAssertEqual(barButtonItem.title, Constants.localizedSampleStringDe)
+        XCTAssertEqual(barButtonItem2.title, Constants.localizedSampleStringDe2)
     }
 
 }
