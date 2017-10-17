@@ -12,10 +12,25 @@ import XCTest
 class UITabBarItemTests: BaseTestCase {
 
     func testUITabBarItem() {
-        let barButtonItem = UIBarButtonItem(localizedKey: Constants.sampleStringKey, style: .plain, target: nil, action: nil)
-        XCTAssertEqual(barButtonItem.title, Constants.localizedSampleStringEn)
-
+        var tabBarItems = [UITabBarItem]()
+        
+        let tabBarItem = UITabBarItem(localizedKey: Constants.sampleStringKey)
+        tabBarItems.append(tabBarItem)
+        
+        let tabBarItem2 = UITabBarItem(localizedKey: Constants.sampleStringKey, image: nil, tag: 1)
+        tabBarItems.append(tabBarItem2)
+        
+        let tabBarItem3 = UITabBarItem(localizedKey: Constants.sampleStringKey, image: nil, selectedImage: nil)
+        tabBarItems.append(tabBarItem3)
+        
+        for item in tabBarItems {
+            XCTAssertEqual(item.title, Constants.localizedSampleStringEn)
+        }
+        
         changeLanguage()
-        XCTAssertEqual(barButtonItem.title, Constants.localizedSampleStringDe)
+        
+        for item in tabBarItems {
+            XCTAssertEqual(item.title, Constants.localizedSampleStringDe)
+        }
     }
 }
