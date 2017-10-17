@@ -9,7 +9,33 @@
 import Foundation
 import UIKit
 
-public extension UITabBarItem {
+private var AssociatedObjectPointer: UInt8 = 0
+
+extension UITabBarItem: Localizable {
+    
+    // Stores the property of the localized key
+    @IBInspectable var localizedKey: String? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedObjectPointer) as? String
+        }
+        set {
+            objc_setAssociatedObject(self, &AssociatedObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            updateLocalizedStrings()
+            
+            // Add the Element to the LocalizationManager
+            addToManager()
+        }
+    }
+    
+    public convenience init(localizedKey: String?) {
+        self.init()
+        self.localizedKey = localizedKey
+    }
+    
+    public convenience init(localizedKey: String?, tabBarSystemItem: UITabBarSystemItem, tag: Int) {
+        self.init(tabBarSystemItem: tabBarSystemItem, tag: tag)
+        self.localizedKey = localizedKey
+    }
     
     public convenience init(localizedKey: String, image: UIImage?, tag: Int) {
         let localizedTitle = LocalizationManager.localizedStringFor(localizedKey)
@@ -21,6 +47,13 @@ public extension UITabBarItem {
         let localizedTitle = LocalizationManager.localizedStringFor(localizedKey)
         self.init(title: localizedTitle, image: image, selectedImage: selectedImage)
         self.localizedKey = localizedKey
+    }
+    
+    /// Updates all subviews with their given localizedKeys
+    public func updateLocalizedStrings() {
+        if let localizedKey = localizedKey {
+            title = LocalizationManager.localizedStringFor(localizedKey)
+        }
     }
     
 }
