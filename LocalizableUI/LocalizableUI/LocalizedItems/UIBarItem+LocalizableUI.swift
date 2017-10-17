@@ -29,6 +29,7 @@ extension UIBarItem: Localizable {
     
     public convenience init(localizedKey: String?) {
         self.init()
+        
         self.localizedKey = localizedKey
     }
     
@@ -42,8 +43,5 @@ extension UIBarItem: Localizable {
         if let localizedKey = localizedKey {
             title = LocalizationManager.localizedStringFor(localizedKey)
         }
-        
-        
     }
-    
 }

@@ -30,5 +30,4 @@ extension UIButton: Localizable {
             setTitle(localizedContent, for: .normal)
         }
     }
-
 }
