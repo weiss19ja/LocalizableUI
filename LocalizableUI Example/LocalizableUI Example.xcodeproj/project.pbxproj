@@ -17,6 +17,7 @@
 		3D7F852D1F92C91500806968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F850F1F92BCE600806968 /* Main.storyboard */; };
 		3D7F852F1F92C94100806968 /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85121F92BCF500806968 /* CustomLocalizable.strings */; };
 		3D7F85301F92C94400806968 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85131F92BCF600806968 /* Localizable.strings */; };
+		DC089B9D1F95D875002DF892 /* LocalizableUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3D7F84CF1F92BB5900806968;
 			remoteInfo = LocalizableUI;
+		};
+		DC089B9F1F95D875002DF892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D7F84A91F92BB3D00806968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D7F84B01F92BB3D00806968;
+			remoteInfo = "LocalizableUI Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -69,6 +77,9 @@
 		3D7F850F1F92BCE600806968 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3D7F85121F92BCF500806968 /* CustomLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CustomLocalizable.strings; sourceTree = "<group>"; };
 		3D7F85131F92BCF600806968 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableUIUITests.swift; sourceTree = "<group>"; };
+		DC089B9E1F95D875002DF892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +91,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC089B971F95D875002DF892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3D7F84B31F92BB3D00806968 /* LocalizableUI Example */,
+				DC089B9B1F95D875002DF892 /* LocalizableUIUITests */,
 				3D7F84B21F92BB3D00806968 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3D7F84B11F92BB3D00806968 /* LocalizableUI Example.app */,
+				DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +153,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DC089B9B1F95D875002DF892 /* LocalizableUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */,
+				DC089B9E1F95D875002DF892 /* Info.plist */,
+			);
+			path = LocalizableUIUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +184,24 @@
 			productReference = 3D7F84B11F92BB3D00806968 /* LocalizableUI Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DC089B991F95D875002DF892 /* LocalizableUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC089BA11F95D875002DF892 /* Build configuration list for PBXNativeTarget "LocalizableUIUITests" */;
+			buildPhases = (
+				DC089B961F95D875002DF892 /* Sources */,
+				DC089B971F95D875002DF892 /* Frameworks */,
+				DC089B981F95D875002DF892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC089BA01F95D875002DF892 /* PBXTargetDependency */,
+			);
+			name = LocalizableUIUITests;
+			productName = LocalizableUIUITests;
+			productReference = DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +215,11 @@
 					3D7F84B01F92BB3D00806968 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					DC089B991F95D875002DF892 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D7F84B01F92BB3D00806968;
 					};
 				};
 			};
@@ -191,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				3D7F84B01F92BB3D00806968 /* LocalizableUI Example */,
+				DC089B991F95D875002DF892 /* LocalizableUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +278,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC089B981F95D875002DF892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,6 +298,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC089B961F95D875002DF892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC089B9D1F95D875002DF892 /* LocalizableUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -245,6 +313,11 @@
 			isa = PBXTargetDependency;
 			name = LocalizableUI;
 			targetProxy = 3D7F850A1F92BC3600806968 /* PBXContainerItemProxy */;
+		};
+		DC089BA01F95D875002DF892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D7F84B01F92BB3D00806968 /* LocalizableUI Example */;
+			targetProxy = DC089B9F1F95D875002DF892 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +468,34 @@
 			};
 			name = Release;
 		};
+		DC089BA21F95D875002DF892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LocalizableUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LocalizableUI Example";
+			};
+			name = Debug;
+		};
+		DC089BA31F95D875002DF892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LocalizableUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LocalizableUI Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -412,6 +513,15 @@
 			buildConfigurations = (
 				3D7F84C41F92BB3D00806968 /* Debug */,
 				3D7F84C51F92BB3D00806968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC089BA11F95D875002DF892 /* Build configuration list for PBXNativeTarget "LocalizableUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC089BA21F95D875002DF892 /* Debug */,
+				DC089BA31F95D875002DF892 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
