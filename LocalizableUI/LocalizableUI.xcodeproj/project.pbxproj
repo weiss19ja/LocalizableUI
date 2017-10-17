@@ -15,7 +15,6 @@
 		3D7F852C1F92C6E900806968 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F852B1F92C6E900806968 /* UIViewControllerTests.swift */; };
 		3DA52CCC1F92CF4D0039CB5F /* UIViewController+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85181F92C66C00806968 /* UIViewController+LocalizableUI.swift */; };
 		3DA52CCD1F92CF520039CB5F /* UIBarButtonItem+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85191F92C66C00806968 /* UIBarButtonItem+LocalizableUI.swift */; };
-		3DA52CCE1F92CF550039CB5F /* UIBarItem+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F851B1F92C66C00806968 /* UIBarItem+LocalizableUI.swift */; };
 		3DA52CCF1F92CF580039CB5F /* UIButton+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F851E1F92C66C00806968 /* UIButton+LocalizableUI.swift */; };
 		3DA52CD01F92CF5A0039CB5F /* UILabel+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85161F92C66C00806968 /* UILabel+LocalizableUI.swift */; };
 		3DA52CD11F92CF5D0039CB5F /* UINavigationItem+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F851A1F92C66C00806968 /* UINavigationItem+LocalizableUI.swift */; };
@@ -65,7 +64,6 @@
 		3D7F85181F92C66C00806968 /* UIViewController+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LocalizableUI.swift"; sourceTree = "<group>"; };
 		3D7F85191F92C66C00806968 /* UIBarButtonItem+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+LocalizableUI.swift"; sourceTree = "<group>"; };
 		3D7F851A1F92C66C00806968 /* UINavigationItem+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+LocalizableUI.swift"; sourceTree = "<group>"; };
-		3D7F851B1F92C66C00806968 /* UIBarItem+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarItem+LocalizableUI.swift"; sourceTree = "<group>"; };
 		3D7F851C1F92C66C00806968 /* UISegmentedControl+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+LocalizableUI.swift"; sourceTree = "<group>"; };
 		3D7F851D1F92C66C00806968 /* UITextField+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+LocalizableUI.swift"; sourceTree = "<group>"; };
 		3D7F851E1F92C66C00806968 /* UIButton+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+LocalizableUI.swift"; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				3D7F85191F92C66C00806968 /* UIBarButtonItem+LocalizableUI.swift */,
-				3D7F851B1F92C66C00806968 /* UIBarItem+LocalizableUI.swift */,
 				3D7F851E1F92C66C00806968 /* UIButton+LocalizableUI.swift */,
 				3D7F85161F92C66C00806968 /* UILabel+LocalizableUI.swift */,
 				3D7F851A1F92C66C00806968 /* UINavigationItem+LocalizableUI.swift */,
@@ -336,7 +333,6 @@
 				3DA52CD31F92CF620039CB5F /* UITabBarItem+LocalizableUI.swift in Sources */,
 				3DA52CD71F92CF6E0039CB5F /* UIView+LocalizableUI.swift in Sources */,
 				3DA52CCF1F92CF580039CB5F /* UIButton+LocalizableUI.swift in Sources */,
-				3DA52CCE1F92CF550039CB5F /* UIBarItem+LocalizableUI.swift in Sources */,
 				3DA52CD01F92CF5A0039CB5F /* UILabel+LocalizableUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
