@@ -15,6 +15,7 @@
 "example-cell-language-change" = "Example for custom language change";
 "example-overview-cell-description" = "This cells are also localized from the storyboard.";
 "example-cell-CustomView" = "Example for a custom View";
+"example-cell-Alert" = "Example Alert";
 
 "example-tab-button-1" = "Tab 1";
 "example-tab-button-2" = "Tab 2";
@@ -35,3 +36,7 @@
 "example-language-changed" = "Click to change language";
 
 "example-customView-Label" = "My Custom View";
+
+"example-alert-title" = "title";
+"example-alert-message" = "message";
+"example-alert-button" = "button";
