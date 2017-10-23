@@ -18,6 +18,7 @@
 		3D7F852F1F92C94100806968 /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85121F92BCF500806968 /* CustomLocalizable.strings */; };
 		3D7F85301F92C94400806968 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85131F92BCF600806968 /* Localizable.strings */; };
 		DC089B9D1F95D875002DF892 /* LocalizableUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */; };
+		DCDFA1DB1F9DA8B200638440 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1DA1F9DA8B200638440 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableUIUITests.swift; sourceTree = "<group>"; };
 		DC089B9E1F95D875002DF892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCDFA1DA1F9DA8B200638440 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				3D7F850F1F92BCE600806968 /* Main.storyboard */,
 				3D7F850E1F92BCE600806968 /* TabBarViewController.swift */,
 				3D7F84BD1F92BB3D00806968 /* LaunchScreen.storyboard */,
+				DCDFA1DA1F9DA8B200638440 /* CustomView.swift */,
 				3D7F84F31F92BB7400806968 /* Supporting Files */,
 				3D7F84FD1F92BBDE00806968 /* LocalizableUI.xcodeproj */,
 			);
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7F85101F92BCE600806968 /* LanguageChangeViewController.swift in Sources */,
+				DCDFA1DB1F9DA8B200638440 /* CustomView.swift in Sources */,
 				3D7F85111F92BCE600806968 /* TabBarViewController.swift in Sources */,
 				3D7F84B51F92BB3D00806968 /* AppDelegate.swift in Sources */,
 			);
