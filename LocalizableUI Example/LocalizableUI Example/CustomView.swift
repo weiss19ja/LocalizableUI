@@ -10,7 +10,7 @@ import UIKit
 import LocalizableUI
 
 private enum Constants {
-    static let titleStringID = "example-customView-Label"
+    static let titleStringID = "example-customView-label"
 }
 
 /// Implementation of a custom view.
