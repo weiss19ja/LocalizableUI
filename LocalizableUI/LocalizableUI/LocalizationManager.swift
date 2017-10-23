@@ -25,10 +25,10 @@ open class LocalizationManager {
     internal var weakHash = NSHashTable<AnyObject>(options: NSHashTableWeakMemory)
     
     /// The string table to search for localized values
-    private var tableName: String?
+    public var tableName: String?
     
     /// The bundle to that inclued the table information. Default is main
-    private var bundle: Bundle = Bundle.main
+    public var bundle: Bundle = Bundle.main
     
     /// private init for the singleton
     /// adding locale changed notification
@@ -92,7 +92,7 @@ open class LocalizationManager {
     ///   - value: value -> default ""
     ///   - comment: comment -> default ""
     /// - Returns: The localized string
-    static func localizedStringFor(_ key: String, bundle: Bundle = LocalizationManager.sharedInstance.bundle, value: String = "", comment: String = "") -> String {
+    public static func localizedStringFor(_ key: String, bundle: Bundle = LocalizationManager.sharedInstance.bundle, value: String = "", comment: String = "") -> String {
         let tableName = sharedInstance?.tableName
         
         return NSLocalizedString(key, tableName: tableName, bundle: bundle, value: value, comment: comment)
