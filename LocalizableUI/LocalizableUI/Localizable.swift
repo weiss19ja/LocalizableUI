@@ -19,6 +19,7 @@ public extension Localizable {
     
     /// Adds the Element itself to the LocalizationManager
     func addToManager() {
+        updateLocalizedStrings()
         LocalizationManager.sharedInstance.add(localizable: self)
     }
     
