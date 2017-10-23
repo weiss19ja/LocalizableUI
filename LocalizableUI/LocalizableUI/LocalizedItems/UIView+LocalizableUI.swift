@@ -22,8 +22,6 @@ public extension UIView {
             objc_setAssociatedObject(self, &AssociatedObjectPointer, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             
             if let localizableSelf = self as? Localizable {
-                localizableSelf.updateLocalizedStrings()
-                
                 // Add the Element to the LocalizationManager
                 localizableSelf.addToManager()
             }
