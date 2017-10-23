@@ -29,6 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3D7F84D81F92BB5A00806968"
+               BuildableName = "LocalizableUITests.xctest"
+               BlueprintName = "LocalizableUITests"
+               ReferencedContainer = "container:LocalizableUI/LocalizableUI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DC089B991F95D875002DF892"
+               BuildableName = "LocalizableUIUITests.xctest"
+               BlueprintName = "LocalizableUIUITests"
+               ReferencedContainer = "container:LocalizableUI Example/LocalizableUI Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
