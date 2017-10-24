@@ -40,6 +40,8 @@
 		DC02BA4B1F966E6A0037ED60 /* UISegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4A1F966E6A0037ED60 /* UISegmentedControlTests.swift */; };
 		DC02BA4D1F9670EF0037ED60 /* UITabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4C1F9670EF0037ED60 /* UITabBarItemTests.swift */; };
 		DC02BA4F1F9671B90037ED60 /* UITableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */; };
+		DCDFA1E11F9DB83A00638440 /* UIAlertController+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E01F9DB83A00638440 /* UIAlertController+LocalizableUI.swift */; };
+		DCDFA1E91F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E81F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		DC02BA4A1F966E6A0037ED60 /* UISegmentedControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlTests.swift; sourceTree = "<group>"; };
 		DC02BA4C1F9670EF0037ED60 /* UITabBarItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemTests.swift; sourceTree = "<group>"; };
 		DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellTests.swift; sourceTree = "<group>"; };
+		DCDFA1E01F9DB83A00638440 /* UIAlertController+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+LocalizableUI.swift"; sourceTree = "<group>"; };
+		DCDFA1E81F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+LocalizableUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 				3D7F85171F92C66C00806968 /* UITextView+LocalizableUI.swift */,
 				3D7F85151F92C66C00806968 /* UIView+LocalizableUI.swift */,
 				3D7F85181F92C66C00806968 /* UIViewController+LocalizableUI.swift */,
+				DCDFA1E01F9DB83A00638440 /* UIAlertController+LocalizableUI.swift */,
+				DCDFA1E81F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift */,
 			);
 			path = LocalizedItems;
 			sourceTree = "<group>";
@@ -322,10 +328,12 @@
 			files = (
 				3DA52CD61F92CF6A0039CB5F /* UITextView+LocalizableUI.swift in Sources */,
 				3DA52CD11F92CF5D0039CB5F /* UINavigationItem+LocalizableUI.swift in Sources */,
+				DCDFA1E91F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift in Sources */,
 				3DA52CD51F92CF670039CB5F /* UITextField+LocalizableUI.swift in Sources */,
 				3D7F85261F92C68500806968 /* LocalizableError.swift in Sources */,
 				3D7F85251F92C68500806968 /* Localizable.swift in Sources */,
 				3DA52CD21F92CF5F0039CB5F /* UISegmentedControl+LocalizableUI.swift in Sources */,
+				DCDFA1E11F9DB83A00638440 /* UIAlertController+LocalizableUI.swift in Sources */,
 				3DA52CCD1F92CF520039CB5F /* UIBarButtonItem+LocalizableUI.swift in Sources */,
 				3D7F85241F92C68400806968 /* LocalizationManager.swift in Sources */,
 				3DA52CD41F92CF640039CB5F /* UITableViewCell+LocalizableUI.swift in Sources */,
