@@ -20,7 +20,7 @@ Another feature of the library are custom language changes. The changes can be d
   s.homepage     = "https://github.com/weiss19ja/LocalizableUI"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.authors      = { "Jan Weiß" => "weiss19ja@gmail.com" }
+  s.authors      = { "Jan Weiss" => "weiss19ja@gmail.com", "Philipp Weiss" => "philipp307@gmail.com" }
   # s.social_media_url   = "http://twitter.com/weiss19ja"
 
   s.ios.deployment_target = "9.0"
