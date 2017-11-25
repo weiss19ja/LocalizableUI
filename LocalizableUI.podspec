@@ -23,7 +23,7 @@ Another feature of the library are custom language changes. The changes can be d
   s.authors      = { "Jan Weiß" => "weiss19ja@gmail.com" }
   # s.social_media_url   = "http://twitter.com/weiss19ja"
 
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/weiss19ja/LocalizableUI.git", :tag => "#{s.version}" }
 
