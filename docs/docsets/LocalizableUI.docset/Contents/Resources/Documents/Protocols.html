@@ -4,111 +4,144 @@
     <title>Protocols  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
+
+
     <a title="Protocols  Reference"></a>
-    <header>
-      <div class="content-wrapper">
-        <p><a href="index.html">LocalizableUI Docs</a> (47% documented)</p>
-      </div>
-    </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="index.html">LocalizableUI Reference</a>
-        <img id="carat" src="img/carat.png" />
-        Protocols  Reference
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          LocalizableUI Docs
+        </a>
+         (47% documented)
       </p>
-    </div>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/weiss19ja/LocalizableUI/">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fweiss19ja%2FLocalizableUI%2Fdocsets%2FLocalizableUI%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">LocalizableUI Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Protocols  Reference
+    </p>
+
     <div class="content-wrapper">
-      <nav class="sidebar">
+      <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/LocalizationManager.html">LocalizationManager</a>
+                <a class="nav-group-task-link" href="Classes/LocalizationManager.html">LocalizationManager</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Enums.html">Enumerations</a>
+            <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/LocalizableError.html">LocalizableError</a>
+                <a class="nav-group-task-link" href="Enums/LocalizableError.html">LocalizableError</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Extensions.html">Extensions</a>
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions/Collection.html">Collection</a>
+                <a class="nav-group-task-link" href="Extensions/Collection.html">Collection</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UIAlertAction.html">UIAlertAction</a>
+                <a class="nav-group-task-link" href="Extensions/UIAlertAction.html">UIAlertAction</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UIAlertController.html">UIAlertController</a>
+                <a class="nav-group-task-link" href="Extensions/UIAlertController.html">UIAlertController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UIBarButtonItem.html">UIBarButtonItem</a>
+                <a class="nav-group-task-link" href="Extensions/UIBarButtonItem.html">UIBarButtonItem</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UIButton.html">UIButton</a>
+                <a class="nav-group-task-link" href="Extensions/UIButton.html">UIButton</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UILabel.html">UILabel</a>
+                <a class="nav-group-task-link" href="Extensions/UILabel.html">UILabel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UINavigationItem.html">UINavigationItem</a>
+                <a class="nav-group-task-link" href="Extensions/UINavigationItem.html">UINavigationItem</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UISegmentedControl.html">UISegmentedControl</a>
+                <a class="nav-group-task-link" href="Extensions/UISegmentedControl.html">UISegmentedControl</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UITabBarItem.html">UITabBarItem</a>
+                <a class="nav-group-task-link" href="Extensions/UITabBarItem.html">UITabBarItem</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UITableViewCell.html">UITableViewCell</a>
+                <a class="nav-group-task-link" href="Extensions/UITableViewCell.html">UITableViewCell</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UITextField.html">UITextField</a>
+                <a class="nav-group-task-link" href="Extensions/UITextField.html">UITextField</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UITextView.html">UITextView</a>
+                <a class="nav-group-task-link" href="Extensions/UITextView.html">UITextView</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UIView.html">UIView</a>
+                <a class="nav-group-task-link" href="Extensions/UIView.html">UIView</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UIViewController.html">UIViewController</a>
+                <a class="nav-group-task-link" href="Extensions/UIViewController.html">UIViewController</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Protocols.html">Protocols</a>
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Protocols/Localizable.html">Localizable</a>
+                <a class="nav-group-task-link" href="Protocols/Localizable.html">Localizable</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-        <section>
-          <section class="section">
+
+        <section class="section">
+          <div class="section-content">
             <h1>Protocols</h1>
             <p>The following protocols are available globally.</p>
 
-          </section>
-          <section class="section task-group-section">
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -139,14 +172,15 @@
                 </li>
               </ul>
             </div>
-          </section>
+          </div>
         </section>
-        <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://github.com/weiss19ja/LocalizableUI" target="_blank" rel="external">Jan Weiss and Philipp Weiss</a>. All rights reserved. (Last updated: 2017-11-25)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-        </section>
+
       </article>
     </div>
+    <section class="footer">
+      <p>&copy; 2017 <a class="link" href="https://github.com/weiss19ja/LocalizableUI" target="_blank" rel="external">Jan Weiss, Philipp Weiss</a>. All rights reserved. (Last updated: 2017-11-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
   </body>
 </div>
 </html>
