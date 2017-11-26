@@ -1,0 +1,7 @@
+author: Jan Weiss, Philipp Weiss
+github_url: https://github.com/weiss19ja/LocalizableUI/
+root_url: https://github.com/weiss19ja/LocalizableUI/
+module: LocalizableUI
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'LocalizableUI.xcworkspace', -scheme, 'LocalizableUI']

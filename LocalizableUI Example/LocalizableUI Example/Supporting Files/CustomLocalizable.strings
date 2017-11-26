@@ -14,6 +14,8 @@
 "example-cell-tabbar" = "Beispiel für UITabBar";
 "example-cell-language-change" = "Beispiel für eigenen Sprachwechsel";
 "example-overview-cell-description" = "Die Zellen wurden auch im Storyboard localisiert.";
+"example-cell-customView" = "Beispiel für eine custom View";
+"example-cell-alert" = "Beispiel für eine Alert";
 
 "example-tab-button-1" = "Tap 1";
 "example-tab-button-2" = "Tap 2";
@@ -32,3 +34,9 @@
 "example-textview-text" = "Dies ist eine Text View";
 
 "example-language-changed" = "Deaktivieren zum Sprachwechsel";
+
+"example-customView-label" = "Mein Custom View";
+
+"example-alert-title" = "Titel";
+"example-alert-message" = "Nachricht";
+"example-alert-button" = "Knopf";
