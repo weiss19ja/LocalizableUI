@@ -1,0 +1,180 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/Localizable.swift",
+      "line": null,
+      "symbol": "Localizable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/Localizable.swift",
+      "line": 11,
+      "symbol": "Localizable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizableError.swift",
+      "line": 11,
+      "symbol": "LocalizableError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizableError.swift",
+      "line": 13,
+      "symbol": "LocalizableError.languageFileNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizationManager.swift",
+      "line": 11,
+      "symbol": "LocalizationManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIAlertAction+LocalizableUI.swift",
+      "line": 14,
+      "symbol": "UIAlertAction.init(localzedTitleKey:style:handler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIAlertController+LocalizableUI.swift",
+      "line": 17,
+      "symbol": "UIAlertController.localizedMessageKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIAlertController+LocalizableUI.swift",
+      "line": 30,
+      "symbol": "UIAlertController.init(localizedTitle:localizedMessage:preferredStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIBarButtonItem+LocalizableUI.swift",
+      "line": 29,
+      "symbol": "UIBarButtonItem.init(localizedKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIBarButtonItem+LocalizableUI.swift",
+      "line": 34,
+      "symbol": "UIBarButtonItem.init(localizedKey:style:target:action:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UINavigationItem+LocalizableUI.swift",
+      "line": 18,
+      "symbol": "UINavigationItem.localizedTitleKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UINavigationItem+LocalizableUI.swift",
+      "line": 31,
+      "symbol": "UINavigationItem.localizedBackButtonKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UINavigationItem+LocalizableUI.swift",
+      "line": 44,
+      "symbol": "UINavigationItem.init(localizedKey:backButtonKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UISegmentedControl+LocalizableUI.swift",
+      "line": 13,
+      "symbol": "UISegmentedControl.init(items:localizedKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UITabBarItem+LocalizableUI.swift",
+      "line": 29,
+      "symbol": "UITabBarItem.init(localizedKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UITabBarItem+LocalizableUI.swift",
+      "line": 34,
+      "symbol": "UITabBarItem.init(localizedKey:image:tag:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UITabBarItem+LocalizableUI.swift",
+      "line": 40,
+      "symbol": "UITabBarItem.init(localizedKey:image:selectedImage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UITableViewCell+LocalizableUI.swift",
+      "line": 28,
+      "symbol": "UITableViewCell.init(style:reuseIdentifier:localizedKey:detailLocalizedKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UITextField+LocalizableUI.swift",
+      "line": 17,
+      "symbol": "UITextField.localizedPlaceholderKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UITextField+LocalizableUI.swift",
+      "line": 29,
+      "symbol": "UITextField.init(frame:localizedKey:localizedPlaceholderKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIView+LocalizableUI.swift",
+      "line": 17,
+      "symbol": "UIView.localizedKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIView+LocalizableUI.swift",
+      "line": 31,
+      "symbol": "UIView.init(localizedKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIView+LocalizableUI.swift",
+      "line": 36,
+      "symbol": "UIView.init(frame:localizedKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIViewController+LocalizableUI.swift",
+      "line": 18,
+      "symbol": "UIViewController.localizedTitleKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI/LocalizableUI/LocalizableUI/LocalizedItems/UIViewController+LocalizableUI.swift",
+      "line": 31,
+      "symbol": "UIViewController.localizedBackButtonKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/pweiss/Documents/Projekts/workspace/LocalizableUI"
+}
