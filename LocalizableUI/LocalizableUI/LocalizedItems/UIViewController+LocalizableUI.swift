@@ -21,8 +21,7 @@ extension UIViewController: Localizable {
         }
         set {
             objc_setAssociatedObject(self, &AssociatedObjectPointerTitle, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            updateLocalizedStrings()
-            
+
             // Add the Element to the LocalizationManager
             addToManager()
         }

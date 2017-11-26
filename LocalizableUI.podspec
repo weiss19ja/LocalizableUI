@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LocalizableUI"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "LocalizableUI is a library to handle localization of a app directly in xcode interface builder and for supporting custom language changes."
 
   s.description  = <<-DESC
@@ -20,10 +20,10 @@ Another feature of the library are custom language changes. The changes can be d
   s.homepage     = "https://github.com/weiss19ja/LocalizableUI"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.authors      = { "Jan Weiß" => "weiss19ja@gmail.com" }
+  s.authors      = { "Jan Weiss" => "weiss19ja@gmail.com", "Philipp Weiss" => "philipp307@gmail.com" }
   # s.social_media_url   = "http://twitter.com/weiss19ja"
 
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/weiss19ja/LocalizableUI.git", :tag => "#{s.version}" }
 
