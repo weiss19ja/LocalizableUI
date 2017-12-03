@@ -1,0 +1,43 @@
+/* 
+  CustomLocalizable.strings
+  LocalizableUI
+
+  Created by Jan Weiß on 29.08.17.
+  Copyright © 2017 Jan Weiß, Philipp Weiß. All rights reserved.
+*/
+
+"example-title-overview" = "ÜbersichtEN";
+"example-back-button" = "Spezierlles zurückEN";
+
+"example-cell-text-segmented-control" = "Beispiel für UIButton und UISegmentedControlEN";
+"example-cell-text-label" = "Beispiel für UILabel, UITextField und UITextViewEN";
+"example-cell-tabbar" = "Beispiel für UITabBarEN";
+"example-cell-language-change" = "Beispiel für eigenen SprachwechselEN";
+"example-overview-cell-description" = "Die Zellen wurden auch im Storyboard localisiert.EN";
+"example-cell-customView" = "Beispiel für eine custom ViewEN";
+"example-cell-alert" = "Beispiel für eine AlertEN";
+
+"example-tab-button-1" = "Tap 1EN";
+"example-tab-button-2" = "Tap 2EN";
+
+"example-bar-button-cancel" = "AbbrechenEN";
+
+"example-button" = "Beispiel Button TextEN";
+
+"example-segment-1" = "Segment 1EN";
+"example-segment-2" = "Segment 2EN";
+"example-segment-3" = "Segment 3EN";
+"example-segment-4" = "Segment 4EN";
+
+"example-label" = "Beispiel für ein LabelEN";
+"example-textfield-placeholder" = "Eigener PlatzhalterEN";
+"example-textview-text" = "Dies ist eine Text ViewEN";
+
+"example-language-changed" = "Deaktivieren zum SprachwechselEN";
+"example-language-changed-localized" = "Sprachwechsel zwischen DE und ENEN";
+
+"example-customView-label" = "Mein Custom ViewEN";
+
+"example-alert-title" = "TitelEN";
+"example-alert-message" = "NachrichtEN";
+"example-alert-button" = "KnopfEN";

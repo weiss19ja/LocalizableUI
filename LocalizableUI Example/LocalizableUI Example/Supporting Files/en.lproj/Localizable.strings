@@ -34,6 +34,7 @@
 "example-textview-text" = "Custom text view text";
 
 "example-language-changed" = "Click to change language";
+"example-language-changed-localized" = "Language change between DE and ENEN";
 
 "example-customView-label" = "My Custom View";
 

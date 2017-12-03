@@ -15,8 +15,8 @@ class UITextViewTests: BaseTestCase {
         let textView = UITextView(frame: CGRect.zero, textContainer: nil, localizedKey: Constants.sampleStringKey)
         XCTAssertEqual(textView.text, Constants.localizedSampleStringEn)
         
-        changeLanguage()
-        XCTAssertEqual(textView.text, Constants.localizedSampleStringDe)
+        changeLanguage(to: .custom)
+        XCTAssertEqual(textView.text, Constants.localizedSampleStringCustom)
     }
     
 }

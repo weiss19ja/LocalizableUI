@@ -15,14 +15,24 @@ class TextFieldTests: BaseTestCase {
         let textField = UITextField(frame: CGRect.zero,
                                     localizedKey: Constants.sampleStringKey,
                                     localizedPlaceholderKey: Constants.sampleStringKey2)
+
+        XCTAssertEqual(textField.text, Constants.localizedSampleStringEn)
+        XCTAssertEqual(textField.placeholder, Constants.localizedSampleStringEn2)
+
+        changeLanguage(to: .defaultEN)
         
         XCTAssertEqual(textField.text, Constants.localizedSampleStringEn)
         XCTAssertEqual(textField.placeholder, Constants.localizedSampleStringEn2)
-        
-        changeLanguage()
-        
-        XCTAssertEqual(textField.text, Constants.localizedSampleStringDe)
-        XCTAssertEqual(textField.placeholder, Constants.localizedSampleStringDe2)
+
+        changeLanguage(to: .defaultDE)
+
+        XCTAssertEqual(textField.text, Constants.localizedSampleStringDE)
+        XCTAssertEqual(textField.placeholder, Constants.localizedSampleStringDE2)
+
+        changeLanguage(to: .custom)
+
+        XCTAssertEqual(textField.text, Constants.localizedSampleStringCustom)
+        XCTAssertEqual(textField.placeholder, Constants.localizedSampleStringCustom2)
     }
     
 }

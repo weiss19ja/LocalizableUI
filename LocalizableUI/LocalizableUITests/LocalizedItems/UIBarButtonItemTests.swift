@@ -18,9 +18,9 @@ class UIBarButtonItemTests: BaseTestCase {
         XCTAssertEqual(barButtonItem.title, Constants.localizedSampleStringEn)
         XCTAssertEqual(barButtonItem2.title, Constants.localizedSampleStringEn2)
 
-        changeLanguage()
-        XCTAssertEqual(barButtonItem.title, Constants.localizedSampleStringDe)
-        XCTAssertEqual(barButtonItem2.title, Constants.localizedSampleStringDe2)
+        changeLanguage(to: .custom)
+        XCTAssertEqual(barButtonItem.title, Constants.localizedSampleStringCustom)
+        XCTAssertEqual(barButtonItem2.title, Constants.localizedSampleStringCustom2)
     }
 
 }
