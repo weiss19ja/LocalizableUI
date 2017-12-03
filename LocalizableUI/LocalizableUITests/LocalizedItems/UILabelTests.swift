@@ -15,8 +15,8 @@ class UILabelTests: BaseTestCase {
         let label = UILabel(localizedKey: Constants.sampleStringKey)
         XCTAssertEqual(label.text, Constants.localizedSampleStringEn)
 
-        changeLanguage()
-        XCTAssertEqual(label.text, Constants.localizedSampleStringDe)
+        changeLanguage(to: .custom)
+        XCTAssertEqual(label.text, Constants.localizedSampleStringCustom)
     }
 
 }

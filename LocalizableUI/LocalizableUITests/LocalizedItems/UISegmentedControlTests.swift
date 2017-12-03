@@ -18,10 +18,10 @@ class UISegmentedControlTests: BaseTestCase {
         XCTAssertEqual(segmentedControl.titleForSegment(at: 0), Constants.localizedSampleStringEn)
         XCTAssertEqual(segmentedControl.titleForSegment(at: 1), Constants.localizedSampleStringEn2)
 
-        changeLanguage()
+        changeLanguage(to: .custom)
 
-        XCTAssertEqual(segmentedControl.titleForSegment(at: 0), Constants.localizedSampleStringDe)
-        XCTAssertEqual(segmentedControl.titleForSegment(at: 1), Constants.localizedSampleStringDe2)
+        XCTAssertEqual(segmentedControl.titleForSegment(at: 0), Constants.localizedSampleStringCustom)
+        XCTAssertEqual(segmentedControl.titleForSegment(at: 1), Constants.localizedSampleStringCustom2)
     }
 
 }

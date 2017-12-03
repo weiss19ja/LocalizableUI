@@ -15,8 +15,8 @@ class UIButtonsTests: BaseTestCase {
         let button = UIButton(type: .custom, localizedKey: Constants.sampleStringKey)
         XCTAssertEqual(button.titleLabel?.text, Constants.localizedSampleStringEn)
 
-        changeLanguage()
-        XCTAssertEqual(button.titleLabel?.text, Constants.localizedSampleStringDe)
+        changeLanguage(to: .custom)
+        XCTAssertEqual(button.titleLabel?.text, Constants.localizedSampleStringCustom)
     }
 
 }

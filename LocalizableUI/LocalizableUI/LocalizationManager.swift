@@ -25,7 +25,7 @@ open class LocalizationManager {
     internal var weakHash = NSHashTable<AnyObject>(options: NSHashTableWeakMemory)
     
     /// The string table to search for localized values
-    public var tableName: String?
+    public var tableName: String = "Localizable"
     
     /// The bundle to that inclued the table information. Default is main
     public var bundle: Bundle = Bundle.main
@@ -67,16 +67,29 @@ open class LocalizationManager {
     ///
     /// - Parameters:
     ///   - tableName: The custom tableName or the default one if nil is passed
-    ///   - bundle: Optional Parameter. The bundle which contains the strings table or uses default bundle from the LocalizationManager
+    ///   - bundle: Optional Parameter. The bundle which contains the strings table or uses default bundle from the LocalizationManager class
+    ///   - languageCode: The language code that should be used for the localization. Defined in the Project Localizations
     /// - Throws: A `LocalizableError` if the string table does not exist
-    public func changeLanguage(to tableName: String?, from bundle: Bundle? = nil) throws {
-        let bundle = bundle ?? self.bundle
+    public func changeLanguage(to tableName: String = LocalizationManager.sharedInstance.tableName,
+                               from bundle: Bundle = Bundle.main,
+                               languageCode: String? = nil) throws {
+
         guard let filePath = bundle.path(forResource: tableName, ofType: "strings"),
             FileManager.default.fileExists(atPath: filePath) == true else {
                 
                 throw LocalizableError.languageFileNotFound
         }
-        
+
+        /// Change the Bundle to the language code bundle (if exists)
+        var bundle = bundle
+        if let languageCode = languageCode,
+            let languageBundlePath = bundle.path(forResource: languageCode, ofType: "lproj"),
+            let languageBundle = Bundle(path: languageBundlePath) {
+            bundle = languageBundle
+        } else if languageCode != nil {
+            assertionFailure("You have tried to change to an not existing language code file")
+        }
+
         self.tableName = tableName
         self.bundle = bundle
         
@@ -92,10 +105,12 @@ open class LocalizationManager {
     ///   - value: value -> default ""
     ///   - comment: comment -> default ""
     /// - Returns: The localized string
-    public static func localizedStringFor(_ key: String, bundle: Bundle = LocalizationManager.sharedInstance.bundle, value: String = "", comment: String = "") -> String {
-        let tableName = sharedInstance?.tableName
-        
-        return NSLocalizedString(key, tableName: tableName, bundle: bundle, value: value, comment: comment)
+    public static func localizedStringFor(_ key: String,
+                                          bundle: Bundle = LocalizationManager.sharedInstance.bundle,
+                                          value: String = "",
+                                          comment: String = "") -> String {
+
+        return NSLocalizedString(key, tableName: sharedInstance?.tableName, bundle: bundle, value: value, comment: comment)
     }
     
     /// Resets the manager

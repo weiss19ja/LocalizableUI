@@ -14,7 +14,7 @@ class LocalizationManagerTests: BaseTestCase {
     func testChangeLanguageWithCustomBundle() {
         XCTAssertEqual(NSLocalizedString(Constants.sampleStringKey, bundle: Bundle(for: type(of: self)), comment: ""), Constants.localizedSampleStringEn)
 
-        changeLanguage()
+        changeLanguage(to: .custom)
         XCTAssertEqual(NSLocalizedString(Constants.sampleStringKey, bundle: Bundle(for: type(of: self)), comment: ""), Constants.localizedSampleStringEn)
     }
 

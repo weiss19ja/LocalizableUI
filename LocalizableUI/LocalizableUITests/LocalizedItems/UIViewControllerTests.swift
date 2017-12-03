@@ -45,11 +45,11 @@ class UIViewControllerTests: BaseTestCase {
         XCTAssertEqual(navigationController.visibleViewController?.title, Constants.localizedSampleStringEn)
         XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringEn2)
         
-        changeLanguage()
+        changeLanguage(to: .custom)
         
-        XCTAssertEqual(viewController.title, Constants.localizedSampleStringDe)
-        XCTAssertEqual(viewController2.title, Constants.localizedSampleStringDe)
-        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringDe2)
+        XCTAssertEqual(viewController.title, Constants.localizedSampleStringCustom)
+        XCTAssertEqual(viewController2.title, Constants.localizedSampleStringCustom)
+        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringCustom2)
     }
     
     func testViewControllerLanguageChangedWithCustomBackButtons() {
@@ -73,11 +73,11 @@ class UIViewControllerTests: BaseTestCase {
         XCTAssertEqual(navigationController.visibleViewController?.title, Constants.localizedSampleStringEn)
         XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringEn2)
         
-        changeLanguage()
+        changeLanguage(to: .custom)
         
-        XCTAssertEqual(viewController.title, Constants.localizedSampleStringDe)
-        XCTAssertEqual(viewController2.title, Constants.localizedSampleStringDe)
-        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringDe2)
+        XCTAssertEqual(viewController.title, Constants.localizedSampleStringCustom)
+        XCTAssertEqual(viewController2.title, Constants.localizedSampleStringCustom)
+        XCTAssertEqual(navigationController.navigationBar.backItem?.backBarButtonItem?.title, Constants.localizedSampleStringCustom2)
     }
     
 }

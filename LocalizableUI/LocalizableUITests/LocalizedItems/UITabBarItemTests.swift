@@ -27,10 +27,10 @@ class UITabBarItemTests: BaseTestCase {
             XCTAssertEqual(item.title, Constants.localizedSampleStringEn)
         }
         
-        changeLanguage()
+        changeLanguage(to: .custom)
         
         for item in tabBarItems {
-            XCTAssertEqual(item.title, Constants.localizedSampleStringDe)
+            XCTAssertEqual(item.title, Constants.localizedSampleStringCustom)
         }
     }
 }

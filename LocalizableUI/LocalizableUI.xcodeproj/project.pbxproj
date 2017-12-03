@@ -25,8 +25,6 @@
 		3DA52CD61F92CF6A0039CB5F /* UITextView+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85171F92C66C00806968 /* UITextView+LocalizableUI.swift */; };
 		3DA52CD71F92CF6E0039CB5F /* UIView+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85151F92C66C00806968 /* UIView+LocalizableUI.swift */; };
 		3DA52CDD1F93C7FC0039CB5F /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F852A1F92C6DB00806968 /* SampleViewController.xib */; };
-		3DA52CDE1F93C7FF0039CB5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85281F92C6DB00806968 /* Localizable.strings */; };
-		3DA52CDF1F93C8020039CB5F /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F85291F92C6DB00806968 /* CustomLocalizable.strings */; };
 		3DA52CE21F93D0030039CB5F /* LocalizationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52CE11F93D0030039CB5F /* LocalizationManagerTests.swift */; };
 		3DD816011F93F4F400490F5A /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816001F93F4F400490F5A /* UITextViewTests.swift */; };
 		3DD816031F93F65600490F5A /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816021F93F65600490F5A /* BaseTestCase.swift */; };
@@ -42,6 +40,8 @@
 		DC02BA4F1F9671B90037ED60 /* UITableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */; };
 		DCDFA1E11F9DB83A00638440 /* UIAlertController+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E01F9DB83A00638440 /* UIAlertController+LocalizableUI.swift */; };
 		DCDFA1E91F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E81F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift */; };
+		DCE3742C1FD34CD4004A7F02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE3742E1FD34CD4004A7F02 /* Localizable.strings */; };
+		DCE374361FD49C5D004A7F02 /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE374381FD49C5D004A7F02 /* CustomLocalizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +74,6 @@
 		3D7F85211F92C68400806968 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
 		3D7F85221F92C68400806968 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		3D7F85231F92C68400806968 /* LocalizableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableError.swift; sourceTree = "<group>"; };
-		3D7F85281F92C6DB00806968 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		3D7F85291F92C6DB00806968 /* CustomLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CustomLocalizable.strings; sourceTree = "<group>"; };
 		3D7F852A1F92C6DB00806968 /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		3D7F852B1F92C6E900806968 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 		3DA52CE11F93D0030039CB5F /* LocalizationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManagerTests.swift; sourceTree = "<group>"; };
@@ -92,6 +90,9 @@
 		DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellTests.swift; sourceTree = "<group>"; };
 		DCDFA1E01F9DB83A00638440 /* UIAlertController+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+LocalizableUI.swift"; sourceTree = "<group>"; };
 		DCDFA1E81F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+LocalizableUI.swift"; sourceTree = "<group>"; };
+		DCE3742D1FD34CD4004A7F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCE3742F1FD47E1A004A7F02 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCE374391FD49C62004A7F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CustomLocalizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +179,8 @@
 			children = (
 				3D7F84E01F92BB5A00806968 /* Info.plist */,
 				3D7F852A1F92C6DB00806968 /* SampleViewController.xib */,
-				3D7F85281F92C6DB00806968 /* Localizable.strings */,
-				3D7F85291F92C6DB00806968 /* CustomLocalizable.strings */,
+				DCE3742E1FD34CD4004A7F02 /* Localizable.strings */,
+				DCE374381FD49C5D004A7F02 /* CustomLocalizable.strings */,
 				3DD816021F93F65600490F5A /* BaseTestCase.swift */,
 			);
 			path = "Supporting Files";
@@ -289,6 +290,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = 3D7F84C61F92BB5900806968;
 			productRefGroup = 3D7F84D11F92BB5900806968 /* Products */;
@@ -314,8 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA52CDD1F93C7FC0039CB5F /* SampleViewController.xib in Resources */,
-				3DA52CDE1F93C7FF0039CB5F /* Localizable.strings in Resources */,
-				3DA52CDF1F93C8020039CB5F /* CustomLocalizable.strings in Resources */,
+				DCE3742C1FD34CD4004A7F02 /* Localizable.strings in Resources */,
+				DCE374361FD49C5D004A7F02 /* CustomLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,11 +378,32 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		DCE3742E1FD34CD4004A7F02 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCE3742D1FD34CD4004A7F02 /* en */,
+				DCE3742F1FD47E1A004A7F02 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DCE374381FD49C5D004A7F02 /* CustomLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCE374391FD49C62004A7F02 /* en */,
+			);
+			name = CustomLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		3D7F84E21F92BB5A00806968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -441,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

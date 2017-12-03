@@ -17,9 +17,9 @@ class UITableViewCellTests: BaseTestCase {
         XCTAssertEqual(tableViewCell.textLabel?.text, Constants.localizedSampleStringEn)
         XCTAssertEqual(tableViewCell.detailTextLabel?.text, Constants.localizedSampleStringEn2)
 
-        changeLanguage()
-        XCTAssertEqual(tableViewCell.textLabel?.text, Constants.localizedSampleStringDe)
-        XCTAssertEqual(tableViewCell.detailTextLabel?.text, Constants.localizedSampleStringDe2)
+        changeLanguage(to: .custom)
+        XCTAssertEqual(tableViewCell.textLabel?.text, Constants.localizedSampleStringCustom)
+        XCTAssertEqual(tableViewCell.detailTextLabel?.text, Constants.localizedSampleStringCustom2)
     }
 
 }

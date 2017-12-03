@@ -15,8 +15,8 @@ class UINavigationItemTests: BaseTestCase {
         let navigationItem = UINavigationItem(localizedKey: Constants.sampleStringKey, backButtonKey: Constants.sampleStringKey2)
         XCTAssertEqual(navigationItem.title, Constants.localizedSampleStringEn)
         
-        changeLanguage()
-        XCTAssertEqual(navigationItem.title, Constants.localizedSampleStringDe)
+        changeLanguage(to: .custom)
+        XCTAssertEqual(navigationItem.title, Constants.localizedSampleStringCustom)
     }
     
 }

@@ -13,9 +13,18 @@ class LanguageChangeViewController: UIViewController {
 
     @IBAction func changeLanguage(_ sender: UISwitch) {
         if (sender.isOn) {
-            try! LocalizationManager.sharedInstance.changeLanguage(to: nil)
+            try! LocalizationManager.sharedInstance.changeLanguage(to: "Localizable")
         } else {
             try! LocalizationManager.sharedInstance.changeLanguage(to: "CustomLocalizable")
         }
     }
+
+    @IBAction func changeLanguageLocalized(_ sender: UISwitch) {
+        if (sender.isOn) {
+            try! LocalizationManager.sharedInstance.changeLanguage(languageCode: "de")
+        } else {
+            try! LocalizationManager.sharedInstance.changeLanguage(languageCode:  "en")
+        }
+    }
+
 }
