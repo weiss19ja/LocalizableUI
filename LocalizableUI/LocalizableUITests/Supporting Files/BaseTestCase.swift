@@ -29,8 +29,8 @@ class BaseTestCase: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        let bundle = Bundle(for: type(of: self))
-        try! LocalizationManager.sharedInstance.changeLanguage(from: bundle)
+
+        changeLanguage(to: .defaultEN)
     }
     
     func changeLanguage(to testLanguages: TestLanguages) {
