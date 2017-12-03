@@ -22,90 +22,112 @@ class LocalizableUIUITests: XCTestCase {
     }
     
     func testLanguageChange() {
-        
         let app = XCUIApplication()
         let overviewNavigationBar = app.navigationBars["Overview"]
         overviewNavigationBar.otherElements["Overview"].tap()
-        
+
         let tablesQuery = app.tables
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["This cells are also localized from the storyboard."]/*[[".cells.staticTexts[\"This cells are also localized from the storyboard.\"]",".staticTexts[\"This cells are also localized from the storyboard.\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example for UIButton and UISegmentedControl"]/*[[".cells.staticTexts[\"Example for UIButton and UISegmentedControl\"]",".staticTexts[\"Example for UIButton and UISegmentedControl\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        
-        let navigationBarsQuery = app.navigationBars
-        navigationBarsQuery.otherElements["Example for UIButton and UISegmentedControl"].tap()
         app.buttons["Custom button text"].tap()
-        
+
         let app2 = app
-        app2/*@START_MENU_TOKEN@*/.buttons["Segment 1"]/*[[".segmentedControls.buttons[\"Segment 1\"]",".buttons[\"Segment 1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app2/*@START_MENU_TOKEN@*/.buttons["Segment 2"]/*[[".segmentedControls.buttons[\"Segment 2\"]",".buttons[\"Segment 2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app2/*@START_MENU_TOKEN@*/.buttons["Segment 3"]/*[[".segmentedControls.buttons[\"Segment 3\"]",".buttons[\"Segment 3\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        
-        let overviewButton = navigationBarsQuery.buttons["Overview"]
-        overviewButton.tap()
+
+        let exampleForUibuttonAndUisegmentedcontrolNavigationBar = app.navigationBars["Example for UIButton and UISegmentedControl"]
+        exampleForUibuttonAndUisegmentedcontrolNavigationBar.otherElements["Example for UIButton and UISegmentedControl"].tap()
+        exampleForUibuttonAndUisegmentedcontrolNavigationBar.buttons["Overview"].tap()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example for UILabel, UITextField and UITextView"]/*[[".cells.staticTexts[\"Example for UILabel, UITextField and UITextView\"]",".staticTexts[\"Example for UILabel, UITextField and UITextView\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        navigationBarsQuery.otherElements["Example for UILabel, UITextField and UITextView"].tap()
+
+        let exampleForUilabelUitextfieldAndUitextviewNavigationBar = app.navigationBars["Example for UILabel, UITextField and UITextView"]
+        exampleForUilabelUitextfieldAndUitextviewNavigationBar.otherElements["Example for UILabel, UITextField and UITextView"].tap()
         app.staticTexts["Custom label text"].tap()
         app.textFields["Custom placeholder text"].tap()
-        overviewButton.tap()
+        app.otherElements.containing(.navigationBar, identifier:"Example for UILabel, UITextField and UITextView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textView).element.tap()
+        exampleForUilabelUitextfieldAndUitextviewNavigationBar.buttons["Overview"].tap()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example for UITabBar"]/*[[".cells.staticTexts[\"Example for UITabBar\"]",".staticTexts[\"Example for UITabBar\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["Tab 1"].otherElements["Tab 1"].tap()
         app.staticTexts["Tab 1"].tap()
-        
+
         let tabBarsQuery = app.tabBars
-        tabBarsQuery.buttons["Tab 1"].tap()
         tabBarsQuery.buttons["Tab 2"].tap()
         app.staticTexts["Tab 2"].tap()
-        
+
         let tab2NavigationBar = app.navigationBars["Tab 2"]
         tab2NavigationBar.otherElements["Tab 2"].tap()
         tab2NavigationBar.buttons["Cancel"].tap()
-        
-        let exampleForCustomLanguageChangeStaticText = tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example for custom language change"]/*[[".cells.staticTexts[\"Example for custom language change\"]",".staticTexts[\"Example for custom language change\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        exampleForCustomLanguageChangeStaticText.tap()
-        app.staticTexts["Click to change language"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example for a custom View"]/*[[".cells.staticTexts[\"Example for a custom View\"]",".staticTexts[\"Example for a custom View\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.staticTexts["My Custom View"].tap()
         overviewNavigationBar.buttons["Overview"].tap()
-        exampleForCustomLanguageChangeStaticText.tap()
-        app.switches["1"].swipeLeft()
-        app.staticTexts["Deaktivieren zum Sprachwechsel"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example Alert"]/*[[".cells.staticTexts[\"Example Alert\"]",".staticTexts[\"Example Alert\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
 
-        let bersichtNavigationBar = app.navigationBars["Übersicht"]
-        bersichtNavigationBar.buttons["Übersicht"].tap()
-        bersichtNavigationBar.otherElements["Übersicht"].tap()
-        
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Die Zellen wurden auch im Storyboard localisiert."]/*[[".cells.staticTexts[\"Die Zellen wurden auch im Storyboard localisiert.\"]",".staticTexts[\"Die Zellen wurden auch im Storyboard localisiert.\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UIButton und UISegmentedControl"]/*[[".cells.staticTexts[\"Beispiel für UIButton und UISegmentedControl\"]",".staticTexts[\"Beispiel für UIButton und UISegmentedControl\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let titleAlert = app.alerts["title"]
+        titleAlert.staticTexts["title"].tap()
+        titleAlert.staticTexts["message"].tap()
+        titleAlert.buttons["button"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["This cells are also localized from the storyboard."]/*[[".cells.staticTexts[\"This cells are also localized from the storyboard.\"]",".staticTexts[\"This cells are also localized from the storyboard.\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example for custom language change"]/*[[".cells.staticTexts[\"Example for custom language change\"]",".staticTexts[\"Example for custom language change\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.staticTexts["Click to change language"].tap()
+        app.otherElements.containing(.navigationBar, identifier:"Overview").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .switch).matching(identifier: "1").element(boundBy: 0).swipeLeft()
+        app.staticTexts["Deaktivieren zum SprachwechselEN"].tap()
 
-        app.navigationBars.otherElements["Beispiel für UIButton und UISegmentedControl"].tap()
-        app.buttons["Beispiel Button Text"].tap()
+        let bersichtenNavigationBar = app.navigationBars["ÜbersichtEN"]
+        let bersichtenButton = bersichtenNavigationBar.buttons["ÜbersichtEN"]
+        bersichtenButton.tap()
+        bersichtenNavigationBar.otherElements["ÜbersichtEN"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UIButton und UISegmentedControlEN"]/*[[".cells.staticTexts[\"Beispiel für UIButton und UISegmentedControlEN\"]",".staticTexts[\"Beispiel für UIButton und UISegmentedControlEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Beispiel Button TextEN"].tap()
+        app2/*@START_MENU_TOKEN@*/.buttons["Segment 2EN"]/*[[".segmentedControls.buttons[\"Segment 2EN\"]",".buttons[\"Segment 2EN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app2/*@START_MENU_TOKEN@*/.buttons["Segment 3EN"]/*[[".segmentedControls.buttons[\"Segment 3EN\"]",".buttons[\"Segment 3EN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
 
-        app/*@START_MENU_TOKEN@*/.buttons["Segment 1"]/*[[".segmentedControls.buttons[\"Segment 1\"]",".buttons[\"Segment 1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app/*@START_MENU_TOKEN@*/.buttons["Segment 2"]/*[[".segmentedControls.buttons[\"Segment 2\"]",".buttons[\"Segment 2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app/*@START_MENU_TOKEN@*/.buttons["Segment 3"]/*[[".segmentedControls.buttons[\"Segment 3\"]",".buttons[\"Segment 3\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let beispielFRUibuttonUndUisegmentedcontrolenNavigationBar = app.navigationBars["Beispiel für UIButton und UISegmentedControlEN"]
+        beispielFRUibuttonUndUisegmentedcontrolenNavigationBar.otherElements["Beispiel für UIButton und UISegmentedControlEN"].tap()
+        beispielFRUibuttonUndUisegmentedcontrolenNavigationBar.buttons["ÜbersichtEN"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UILabel, UITextField und UITextViewEN"]/*[[".cells.staticTexts[\"Beispiel für UILabel, UITextField und UITextViewEN\"]",".staticTexts[\"Beispiel für UILabel, UITextField und UITextViewEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.staticTexts["Beispiel für ein LabelEN"].tap()
+        app.textFields["Eigener PlatzhalterEN"].tap()
+        app.otherElements.containing(.navigationBar, identifier:"Beispiel für UILabel, UITextField und UITextViewEN").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textView).element.tap()
+        app.navigationBars["Beispiel für UILabel, UITextField und UITextViewEN"].buttons["ÜbersichtEN"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UITabBarEN"]/*[[".cells.staticTexts[\"Beispiel für UITabBarEN\"]",".staticTexts[\"Beispiel für UITabBarEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.staticTexts["Tap 1EN"].tap()
+        tabBarsQuery.buttons["Tap 2EN"].tap()
+        app.staticTexts["Tap 2EN"].tap()
 
-        let bersichtButton = navigationBarsQuery.buttons["Übersicht"]
-        bersichtButton.tap()
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UILabel, UITextField und UITextView"]/*[[".cells.staticTexts[\"Beispiel für UILabel, UITextField und UITextView\"]",".staticTexts[\"Beispiel für UILabel, UITextField und UITextView\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        navigationBarsQuery.otherElements["Beispiel für UILabel, UITextField und UITextView"].tap()
-        app.staticTexts["Beispiel für ein Label"].tap()
-        app.textFields["Eigener Platzhalter"].tap()
-        bersichtButton.tap()
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UITabBar"]/*[[".cells.staticTexts[\"Beispiel für UITabBar\"]",".staticTexts[\"Beispiel für UITabBar\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app.navigationBars["Tap 1"].otherElements["Tap 1"].tap()
-        app.staticTexts["Tap 1"].tap()
-        
-        app.tabBars.buttons["Tap 1"].tap()
-        app.tabBars.buttons["Tap 2"].tap()
-        app.staticTexts["Tap 2"].tap()
-        
-        let tap2NavigationBar = app.navigationBars["Tap 2"]
-        tap2NavigationBar.otherElements["Tap 2"].tap()
-        tap2NavigationBar.buttons["Abbrechen"].tap()
+        let tap2enNavigationBar = app.navigationBars["Tap 2EN"]
+        tap2enNavigationBar.otherElements["Tap 2EN"].tap()
+        tap2enNavigationBar.buttons["AbbrechenEN"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für eine AlertEN"]/*[[".cells.staticTexts[\"Beispiel für eine AlertEN\"]",".staticTexts[\"Beispiel für eine AlertEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
 
-        app.tables/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für eigenen Sprachwechsel"]/*[[".cells.staticTexts[\"Beispiel für eigenen Sprachwechsel\"]",".staticTexts[\"Beispiel für eigenen Sprachwechsel\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let titelenAlert = app.alerts["TitelEN"]
+        titelenAlert.staticTexts["TitelEN"].tap()
+        titelenAlert.staticTexts["NachrichtEN"].tap()
+        titelenAlert.buttons["KnopfEN"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Die Zellen wurden auch im Storyboard localisiert.EN"]/*[[".cells.staticTexts[\"Die Zellen wurden auch im Storyboard localisiert.EN\"]",".staticTexts[\"Die Zellen wurden auch im Storyboard localisiert.EN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für eine custom ViewEN"]/*[[".cells.staticTexts[\"Beispiel für eine custom ViewEN\"]",".staticTexts[\"Beispiel für eine custom ViewEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.staticTexts["Mein Custom ViewEN"].tap()
+        bersichtenButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für eigenen SprachwechselEN"]/*[[".cells.staticTexts[\"Beispiel für eigenen SprachwechselEN\"]",".staticTexts[\"Beispiel für eigenen SprachwechselEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
 
-        let switch2 = app.switches["1"]
-        switch2.swipeLeft()
+        let sprachwechselZwischenDeUndEnenStaticText = app.staticTexts["Sprachwechsel zwischen DE und ENEN"]
+        sprachwechselZwischenDeUndEnenStaticText.tap()
+        app.otherElements.containing(.navigationBar, identifier:"ÜbersichtEN").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .switch).matching(identifier: "1").element(boundBy: 1).tap()
+        sprachwechselZwischenDeUndEnenStaticText.tap()
 
-        app.switches["0"].swipeRight()
+        let switch2 = app.switches["0"]
+        switch2.swipeRight()
+        app.staticTexts["Deaktivieren zum SprachwechselDE"].tap()
+
+        let bersichtdeNavigationBar = app.navigationBars["ÜbersichtDE"]
+        bersichtdeNavigationBar.buttons["ÜbersichtDE"].tap()
+        bersichtdeNavigationBar.otherElements["ÜbersichtDE"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UIButton und UISegmentedControlDE"]/*[[".cells.staticTexts[\"Beispiel für UIButton und UISegmentedControlDE\"]",".staticTexts[\"Beispiel für UIButton und UISegmentedControlDE\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Beispiel Button TextDE"].tap()
+
+        let beispielFRUibuttonUndUisegmentedcontroldeNavigationBar = app.navigationBars["Beispiel für UIButton und UISegmentedControlDE"]
+        beispielFRUibuttonUndUisegmentedcontroldeNavigationBar.otherElements["Beispiel für UIButton und UISegmentedControlDE"].tap()
+        app2/*@START_MENU_TOKEN@*/.buttons["Segment 2DE"]/*[[".segmentedControls.buttons[\"Segment 2DE\"]",".buttons[\"Segment 2DE\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app2/*@START_MENU_TOKEN@*/.buttons["Segment 3DE"]/*[[".segmentedControls.buttons[\"Segment 3DE\"]",".buttons[\"Segment 3DE\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        beispielFRUibuttonUndUisegmentedcontroldeNavigationBar.buttons["ÜbersichtDE"].tap()
+
     }
 }
