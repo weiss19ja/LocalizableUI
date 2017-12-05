@@ -34,14 +34,11 @@ class LocalizableUIUITests: XCTestCase {
         exampleForUibuttonAndUisegmentedcontrolNavigationBar.otherElements["Example for UIButton and UISegmentedControl"].tap()
         app.buttons["Custom button text"].tap()
 
-        let app2 = app
-        app2/*@START_MENU_TOKEN@*/.buttons["Segment 2"]/*[[".segmentedControls.buttons[\"Segment 2\"]",".buttons[\"Segment 2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Segment 3"]/*[[".segmentedControls.buttons[\"Segment 3\"]",".buttons[\"Segment 3\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Segment 2"]/*[[".segmentedControls.buttons[\"Segment 2\"]",".buttons[\"Segment 2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Segment 3"]/*[[".segmentedControls.buttons[\"Segment 3\"]",".buttons[\"Segment 3\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         exampleForUibuttonAndUisegmentedcontrolNavigationBar.buttons["Overview"].tap()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Example for UILabel, UITextField and UITextView"]/*[[".cells.staticTexts[\"Example for UILabel, UITextField and UITextView\"]",".staticTexts[\"Example for UILabel, UITextField and UITextView\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.staticTexts["Custom label text"].tap()
-        app.textFields["Custom placeholder text"].tap()
-        app.otherElements.containing(.navigationBar, identifier:"Example for UILabel, UITextField and UITextView").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textView).element.tap()
 
         let exampleForUilabelUitextfieldAndUitextviewNavigationBar = app.navigationBars["Example for UILabel, UITextField and UITextView"]
         exampleForUilabelUitextfieldAndUitextviewNavigationBar.otherElements["Example for UILabel, UITextField and UITextView"].tap()
@@ -81,8 +78,8 @@ class LocalizableUIUITests: XCTestCase {
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UIButton und UISegmentedControlEN"]/*[[".cells.staticTexts[\"Beispiel für UIButton und UISegmentedControlEN\"]",".staticTexts[\"Beispiel für UIButton und UISegmentedControlEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.buttons["Beispiel Button TextEN"].tap()
         app.otherElements.containing(.navigationBar, identifier:"Beispiel für UIButton und UISegmentedControlEN").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Segment 2EN"]/*[[".segmentedControls.buttons[\"Segment 2EN\"]",".buttons[\"Segment 2EN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Segment 3EN"]/*[[".segmentedControls.buttons[\"Segment 3EN\"]",".buttons[\"Segment 3EN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Segment 2EN"]/*[[".segmentedControls.buttons[\"Segment 2EN\"]",".buttons[\"Segment 2EN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.buttons["Segment 3EN"]/*[[".segmentedControls.buttons[\"Segment 3EN\"]",".buttons[\"Segment 3EN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["Beispiel für UIButton und UISegmentedControlEN"].buttons["ÜbersichtEN"].tap()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Beispiel für UILabel, UITextField und UITextViewEN"]/*[[".cells.staticTexts[\"Beispiel für UILabel, UITextField und UITextViewEN\"]",".staticTexts[\"Beispiel für UILabel, UITextField und UITextViewEN\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.staticTexts["Beispiel für ein LabelEN"].tap()
