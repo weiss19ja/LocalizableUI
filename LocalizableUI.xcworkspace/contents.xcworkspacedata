@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LocalizableUI/LocalizableUI.xcodeproj">
+      location = "group:LocalizableUI.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:LocalizableUI Example/LocalizableUI Example.xcodeproj">
+      location = "group:LocalizableUI Example.xcodeproj">
    </FileRef>
 </Workspace>

@@ -10,12 +10,12 @@
 		3D7F84B51F92BB3D00806968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F84B41F92BB3D00806968 /* AppDelegate.swift */; };
 		3D7F84BC1F92BB3D00806968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F84BB1F92BB3D00806968 /* Assets.xcassets */; };
 		3D7F84BF1F92BB3D00806968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F84BD1F92BB3D00806968 /* LaunchScreen.storyboard */; };
-		3D7F85081F92BC3600806968 /* LocalizableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7F85031F92BBDF00806968 /* LocalizableUI.framework */; };
-		3D7F85091F92BC3600806968 /* LocalizableUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7F85031F92BBDF00806968 /* LocalizableUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D7F85101F92BCE600806968 /* LanguageChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F850D1F92BCE600806968 /* LanguageChangeViewController.swift */; };
 		3D7F85111F92BCE600806968 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F850E1F92BCE600806968 /* TabBarViewController.swift */; };
 		3D7F852D1F92C91500806968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F850F1F92BCE600806968 /* Main.storyboard */; };
 		DC089B9D1F95D875002DF892 /* LocalizableUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */; };
+		DC67AB951FD6B2E900D236DC /* LocalizableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */; };
+		DC67AB961FD6B2E900D236DC /* LocalizableUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCDFA1DB1F9DA8B200638440 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1DA1F9DA8B200638440 /* CustomView.swift */; };
 		DCDFA1E61F9DD55F00638440 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E51F9DD55F00638440 /* ExampleViewController.swift */; };
 		DCE374301FD495CF004A7F02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE374321FD495CF004A7F02 /* Localizable.strings */; };
@@ -23,27 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D7F85021F92BBDF00806968 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D7F84FD1F92BBDE00806968 /* LocalizableUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D7F84D01F92BB5900806968;
-			remoteInfo = LocalizableUI;
-		};
-		3D7F85041F92BBDF00806968 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D7F84FD1F92BBDE00806968 /* LocalizableUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D7F84D91F92BB5A00806968;
-			remoteInfo = LocalizableUITests;
-		};
-		3D7F850A1F92BC3600806968 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D7F84FD1F92BBDE00806968 /* LocalizableUI.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3D7F84CF1F92BB5900806968;
-			remoteInfo = LocalizableUI;
-		};
 		DC089B9F1F95D875002DF892 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D7F84A91F92BB3D00806968 /* Project object */;
@@ -51,16 +30,37 @@
 			remoteGlobalIDString = 3D7F84B01F92BB3D00806968;
 			remoteInfo = "LocalizableUI Example";
 		};
+		DC67AB971FD6B2E900D236DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF61A841FD6B275009AEE68 /* LocalizableUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D7F84CF1F92BB5900806968;
+			remoteInfo = LocalizableUI;
+		};
+		DCF61A891FD6B275009AEE68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF61A841FD6B275009AEE68 /* LocalizableUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D7F84D01F92BB5900806968;
+			remoteInfo = LocalizableUI;
+		};
+		DCF61A8B1FD6B275009AEE68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF61A841FD6B275009AEE68 /* LocalizableUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D7F84D91F92BB5A00806968;
+			remoteInfo = LocalizableUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3D7F850C1F92BC3600806968 /* Embed Frameworks */ = {
+		DCB38B641FD6B10600717121 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D7F85091F92BC3600806968 /* LocalizableUI.framework in Embed Frameworks */,
+				DC67AB961FD6B2E900D236DC /* LocalizableUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,19 +73,20 @@
 		3D7F84BB1F92BB3D00806968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D7F84BE1F92BB3D00806968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D7F84C01F92BB3D00806968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D7F84FD1F92BBDE00806968 /* LocalizableUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LocalizableUI.xcodeproj; path = ../../LocalizableUI/LocalizableUI.xcodeproj; sourceTree = "<group>"; };
 		3D7F850D1F92BCE600806968 /* LanguageChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangeViewController.swift; sourceTree = "<group>"; };
 		3D7F850E1F92BCE600806968 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3D7F850F1F92BCE600806968 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableUIUITests.swift; sourceTree = "<group>"; };
 		DC089B9E1F95D875002DF892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB38B5D1FD6B0E400717121 /* LocalizableUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LocalizableUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDFA1DA1F9DA8B200638440 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		DCDFA1E51F9DD55F00638440 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		DCE374311FD495CF004A7F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DCE374351FD495DE004A7F02 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DCE3743B1FD49C7D004A7F02 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/CustomLocalizable.strings; sourceTree = "<group>"; };
 		DCE3743D1FD49C7F004A7F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CustomLocalizable.strings; sourceTree = "<group>"; };
+		DCF61A841FD6B275009AEE68 /* LocalizableUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = LocalizableUI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7F85081F92BC3600806968 /* LocalizableUI.framework in Frameworks */,
+				DC67AB951FD6B2E900D236DC /* LocalizableUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,9 +111,11 @@
 		3D7F84A81F92BB3D00806968 = {
 			isa = PBXGroup;
 			children = (
+				DCF61A841FD6B275009AEE68 /* LocalizableUI.xcodeproj */,
 				3D7F84B31F92BB3D00806968 /* LocalizableUI Example */,
 				DC089B9B1F95D875002DF892 /* LocalizableUIUITests */,
 				3D7F84B21F92BB3D00806968 /* Products */,
+				DCB38B5B1FD6B0E400717121 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +139,6 @@
 				3D7F84BD1F92BB3D00806968 /* LaunchScreen.storyboard */,
 				DCDFA1DA1F9DA8B200638440 /* CustomView.swift */,
 				3D7F84F31F92BB7400806968 /* Supporting Files */,
-				3D7F84FD1F92BBDE00806968 /* LocalizableUI.xcodeproj */,
 			);
 			path = "LocalizableUI Example";
 			sourceTree = "<group>";
@@ -152,15 +154,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3D7F84FE1F92BBDE00806968 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3D7F85031F92BBDF00806968 /* LocalizableUI.framework */,
-				3D7F85051F92BBDF00806968 /* LocalizableUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		DC089B9B1F95D875002DF892 /* LocalizableUIUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +161,23 @@
 				DC089B9E1F95D875002DF892 /* Info.plist */,
 			);
 			path = LocalizableUIUITests;
+			sourceTree = "<group>";
+		};
+		DCB38B5B1FD6B0E400717121 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCB38B5D1FD6B0E400717121 /* LocalizableUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCF61A851FD6B275009AEE68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */,
+				DCF61A8C1FD6B275009AEE68 /* LocalizableUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,12 +190,12 @@
 				3D7F84AD1F92BB3D00806968 /* Sources */,
 				3D7F84AE1F92BB3D00806968 /* Frameworks */,
 				3D7F84AF1F92BB3D00806968 /* Resources */,
-				3D7F850C1F92BC3600806968 /* Embed Frameworks */,
+				DCB38B641FD6B10600717121 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D7F850B1F92BC3600806968 /* PBXTargetDependency */,
+				DC67AB981FD6B2E900D236DC /* PBXTargetDependency */,
 			);
 			name = "LocalizableUI Example";
 			productName = "LocalizableUI Example";
@@ -245,8 +255,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3D7F84FE1F92BBDE00806968 /* Products */;
-					ProjectRef = 3D7F84FD1F92BBDE00806968 /* LocalizableUI.xcodeproj */;
+					ProductGroup = DCF61A851FD6B275009AEE68 /* Products */;
+					ProjectRef = DCF61A841FD6B275009AEE68 /* LocalizableUI.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -258,18 +268,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3D7F85031F92BBDF00806968 /* LocalizableUI.framework */ = {
+		DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = LocalizableUI.framework;
-			remoteRef = 3D7F85021F92BBDF00806968 /* PBXContainerItemProxy */;
+			remoteRef = DCF61A891FD6B275009AEE68 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3D7F85051F92BBDF00806968 /* LocalizableUITests.xctest */ = {
+		DCF61A8C1FD6B275009AEE68 /* LocalizableUITests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = LocalizableUITests.xctest;
-			remoteRef = 3D7F85041F92BBDF00806968 /* PBXContainerItemProxy */;
+			remoteRef = DCF61A8B1FD6B275009AEE68 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -320,15 +330,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3D7F850B1F92BC3600806968 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LocalizableUI;
-			targetProxy = 3D7F850A1F92BC3600806968 /* PBXContainerItemProxy */;
-		};
 		DC089BA01F95D875002DF892 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3D7F84B01F92BB3D00806968 /* LocalizableUI Example */;
 			targetProxy = DC089B9F1F95D875002DF892 /* PBXContainerItemProxy */;
+		};
+		DC67AB981FD6B2E900D236DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LocalizableUI;
+			targetProxy = DC67AB971FD6B2E900D236DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -474,6 +484,7 @@
 		3D7F84C41F92BB3D00806968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/LocalizableUI Example/Supporting Files/Info.plist";
@@ -489,6 +500,7 @@
 		3D7F84C51F92BB3D00806968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/LocalizableUI Example/Supporting Files/Info.plist";
