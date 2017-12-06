@@ -44,7 +44,7 @@
         <!--Language Change View Controller-->
         <scene sceneID="pc8-E3-xNs">
             <objects>
-                <viewController id="2XC-ff-RtU" customClass="LanguageChangeViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LanguageChangeViewController" id="2XC-ff-RtU" customClass="LanguageChangeViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9P6-mc-Z4w"/>
                         <viewControllerLayoutGuide type="bottom" id="ydm-Tf-XaJ"/>
@@ -98,6 +98,9 @@
                             <constraint firstItem="awb-fW-AJK" firstAttribute="centerY" secondItem="Myx-Cx-QWX" secondAttribute="centerY" id="zRB-Rt-VWs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="languageChangeSwitchLabel" destination="yvm-nM-ObE" id="nmb-DH-uRc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIA-FD-67e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +109,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="RGs-3D-urW">
             <objects>
-                <viewController id="b2E-15-6dM" customClass="TabBarViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabBarViewController" id="b2E-15-6dM" customClass="TabBarViewController" customModule="LocalizableUI_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b7z-w6-Jj1"/>
                         <viewControllerLayoutGuide type="bottom" id="3TE-xs-phN"/>
