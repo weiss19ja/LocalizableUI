@@ -14,6 +14,8 @@
 		3D7F85111F92BCE600806968 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F850E1F92BCE600806968 /* TabBarViewController.swift */; };
 		3D7F852D1F92C91500806968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F850F1F92BCE600806968 /* Main.storyboard */; };
 		DC089B9D1F95D875002DF892 /* LocalizableUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */; };
+		DC20FF241FD8267E00F4D613 /* LanguageChangeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20FF221FD8267D00F4D613 /* LanguageChangeViewControllerTests.swift */; };
+		DC20FF251FD8267E00F4D613 /* TabBarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20FF231FD8267E00F4D613 /* TabBarViewControllerTests.swift */; };
 		DC67AB951FD6B2E900D236DC /* LocalizableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */; };
 		DC67AB961FD6B2E900D236DC /* LocalizableUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCDFA1DB1F9DA8B200638440 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1DA1F9DA8B200638440 /* CustomView.swift */; };
@@ -24,6 +26,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		DC089B9F1F95D875002DF892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D7F84A91F92BB3D00806968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D7F84B01F92BB3D00806968;
+			remoteInfo = "LocalizableUI Example";
+		};
+		DC20FF1D1FD8243700F4D613 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D7F84A91F92BB3D00806968 /* Project object */;
 			proxyType = 1;
@@ -76,9 +85,13 @@
 		3D7F850D1F92BCE600806968 /* LanguageChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangeViewController.swift; sourceTree = "<group>"; };
 		3D7F850E1F92BCE600806968 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3D7F850F1F92BCE600806968 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC089B9A1F95D875002DF892 /* LocalizableUIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableUIUITests.swift; sourceTree = "<group>"; };
 		DC089B9E1F95D875002DF892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC20FF181FD8243700F4D613 /* LocalizableUIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC20FF1C1FD8243700F4D613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC20FF221FD8267D00F4D613 /* LanguageChangeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageChangeViewControllerTests.swift; sourceTree = "<group>"; };
+		DC20FF231FD8267E00F4D613 /* TabBarViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerTests.swift; sourceTree = "<group>"; };
 		DCB38B5D1FD6B0E400717121 /* LocalizableUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LocalizableUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDFA1DA1F9DA8B200638440 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		DCDFA1E51F9DD55F00638440 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +118,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC20FF151FD8243700F4D613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,7 +133,8 @@
 			children = (
 				DCF61A841FD6B275009AEE68 /* LocalizableUI.xcodeproj */,
 				3D7F84B31F92BB3D00806968 /* LocalizableUI Example */,
-				DC089B9B1F95D875002DF892 /* LocalizableUIUITests */,
+				DC089B9B1F95D875002DF892 /* LocalizableUIExampleUITests */,
+				DC20FF191FD8243700F4D613 /* LocalizableUIExampleTests */,
 				3D7F84B21F92BB3D00806968 /* Products */,
 				DCB38B5B1FD6B0E400717121 /* Frameworks */,
 			);
@@ -123,7 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				3D7F84B11F92BB3D00806968 /* LocalizableUI Example.app */,
-				DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */,
+				DC089B9A1F95D875002DF892 /* LocalizableUIExampleUITests.xctest */,
+				DC20FF181FD8243700F4D613 /* LocalizableUIExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,13 +176,23 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DC089B9B1F95D875002DF892 /* LocalizableUIUITests */ = {
+		DC089B9B1F95D875002DF892 /* LocalizableUIExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
 				DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */,
 				DC089B9E1F95D875002DF892 /* Info.plist */,
 			);
-			path = LocalizableUIUITests;
+			path = LocalizableUIExampleUITests;
+			sourceTree = "<group>";
+		};
+		DC20FF191FD8243700F4D613 /* LocalizableUIExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC20FF221FD8267D00F4D613 /* LanguageChangeViewControllerTests.swift */,
+				DC20FF231FD8267E00F4D613 /* TabBarViewControllerTests.swift */,
+				DC20FF1C1FD8243700F4D613 /* Info.plist */,
+			);
+			path = LocalizableUIExampleTests;
 			sourceTree = "<group>";
 		};
 		DCB38B5B1FD6B0E400717121 /* Frameworks */ = {
@@ -202,9 +234,9 @@
 			productReference = 3D7F84B11F92BB3D00806968 /* LocalizableUI Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC089B991F95D875002DF892 /* LocalizableUIUITests */ = {
+		DC089B991F95D875002DF892 /* LocalizableUIExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC089BA11F95D875002DF892 /* Build configuration list for PBXNativeTarget "LocalizableUIUITests" */;
+			buildConfigurationList = DC089BA11F95D875002DF892 /* Build configuration list for PBXNativeTarget "LocalizableUIExampleUITests" */;
 			buildPhases = (
 				DC089B961F95D875002DF892 /* Sources */,
 				DC089B971F95D875002DF892 /* Frameworks */,
@@ -215,10 +247,28 @@
 			dependencies = (
 				DC089BA01F95D875002DF892 /* PBXTargetDependency */,
 			);
-			name = LocalizableUIUITests;
+			name = LocalizableUIExampleUITests;
 			productName = LocalizableUIUITests;
-			productReference = DC089B9A1F95D875002DF892 /* LocalizableUIUITests.xctest */;
+			productReference = DC089B9A1F95D875002DF892 /* LocalizableUIExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DC20FF171FD8243700F4D613 /* LocalizableUIExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC20FF1F1FD8243700F4D613 /* Build configuration list for PBXNativeTarget "LocalizableUIExampleTests" */;
+			buildPhases = (
+				DC20FF141FD8243700F4D613 /* Sources */,
+				DC20FF151FD8243700F4D613 /* Frameworks */,
+				DC20FF161FD8243700F4D613 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC20FF1E1FD8243700F4D613 /* PBXTargetDependency */,
+			);
+			name = LocalizableUIExampleTests;
+			productName = LocalizableUIExampleTests;
+			productReference = DC20FF181FD8243700F4D613 /* LocalizableUIExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -226,7 +276,7 @@
 		3D7F84A91F92BB3D00806968 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Jan Weiß, Philipp Weiß";
 				TargetAttributes = {
@@ -236,6 +286,11 @@
 					};
 					DC089B991F95D875002DF892 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3D7F84B01F92BB3D00806968;
+					};
+					DC20FF171FD8243700F4D613 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3D7F84B01F92BB3D00806968;
 					};
@@ -262,7 +317,8 @@
 			projectRoot = "";
 			targets = (
 				3D7F84B01F92BB3D00806968 /* LocalizableUI Example */,
-				DC089B991F95D875002DF892 /* LocalizableUIUITests */,
+				DC089B991F95D875002DF892 /* LocalizableUIExampleUITests */,
+				DC20FF171FD8243700F4D613 /* LocalizableUIExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,6 +360,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC20FF161FD8243700F4D613 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -327,6 +390,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC20FF141FD8243700F4D613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC20FF241FD8267E00F4D613 /* LanguageChangeViewControllerTests.swift in Sources */,
+				DC20FF251FD8267E00F4D613 /* TabBarViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -334,6 +406,11 @@
 			isa = PBXTargetDependency;
 			target = 3D7F84B01F92BB3D00806968 /* LocalizableUI Example */;
 			targetProxy = DC089B9F1F95D875002DF892 /* PBXContainerItemProxy */;
+		};
+		DC20FF1E1FD8243700F4D613 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D7F84B01F92BB3D00806968 /* LocalizableUI Example */;
+			targetProxy = DC20FF1D1FD8243700F4D613 /* PBXContainerItemProxy */;
 		};
 		DC67AB981FD6B2E900D236DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -517,7 +594,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LocalizableUIUITests/Info.plist;
+				INFOPLIST_FILE = LocalizableUIExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,13 +608,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LocalizableUIUITests/Info.plist;
+				INFOPLIST_FILE = LocalizableUIExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUIUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "LocalizableUI Example";
+			};
+			name = Release;
+		};
+		DC20FF201FD8243700F4D613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LocalizableUIExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalizableUI Example.app/LocalizableUI Example";
+			};
+			name = Debug;
+		};
+		DC20FF211FD8243700F4D613 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LocalizableUIExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalizableUI Example.app/LocalizableUI Example";
 			};
 			name = Release;
 		};
@@ -562,11 +671,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC089BA11F95D875002DF892 /* Build configuration list for PBXNativeTarget "LocalizableUIUITests" */ = {
+		DC089BA11F95D875002DF892 /* Build configuration list for PBXNativeTarget "LocalizableUIExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC089BA21F95D875002DF892 /* Debug */,
 				DC089BA31F95D875002DF892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC20FF1F1FD8243700F4D613 /* Build configuration list for PBXNativeTarget "LocalizableUIExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC20FF201FD8243700F4D613 /* Debug */,
+				DC20FF211FD8243700F4D613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

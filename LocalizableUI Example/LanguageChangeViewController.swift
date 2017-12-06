@@ -11,6 +11,8 @@ import LocalizableUI
 
 class LanguageChangeViewController: UIViewController {
 
+    @IBOutlet weak var languageChangeSwitchLabel: UILabel!
+
     @IBAction func changeLanguage(_ sender: UISwitch) {
         if (sender.isOn) {
             try! LocalizationManager.sharedInstance.changeLanguage(to: "Localizable")

@@ -40,6 +40,16 @@
                ReferencedContainer = "container:LocalizableUI/LocalizableUI.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DCA240EC1FD81D1700DF277F"
+               BuildableName = "LocalizableUIExampleTests.xctest"
+               BlueprintName = "LocalizableUIExampleTests"
+               ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -43,9 +43,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DCA240EC1FD81D1700DF277F"
+               BuildableName = "LocalizableUIExampleTests.xctest"
+               BlueprintName = "LocalizableUIExampleTests"
+               ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC089B991F95D875002DF892"
-               BuildableName = "LocalizableUIUITests.xctest"
-               BlueprintName = "LocalizableUIUITests"
+               BuildableName = "LocalizableUIExampleUITests.xctest"
+               BlueprintName = "LocalizableUIExampleUITests"
                ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
