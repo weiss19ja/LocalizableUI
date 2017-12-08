@@ -36,7 +36,17 @@
                BlueprintIdentifier = "3D7F84D81F92BB5A00806968"
                BuildableName = "LocalizableUITests.xctest"
                BlueprintName = "LocalizableUITests"
-               ReferencedContainer = "container:LocalizableUI/LocalizableUI.xcodeproj">
+               ReferencedContainer = "container:LocalizableUI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DCA240EC1FD81D1700DF277F"
+               BuildableName = "LocalizableUIExampleTests.xctest"
+               BlueprintName = "LocalizableUIExampleTests"
+               ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,9 +54,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC089B991F95D875002DF892"
-               BuildableName = "LocalizableUIUITests.xctest"
-               BlueprintName = "LocalizableUIUITests"
-               ReferencedContainer = "container:LocalizableUI Example/LocalizableUI Example.xcodeproj">
+               BuildableName = "LocalizableUIExampleUITests.xctest"
+               BlueprintName = "LocalizableUIExampleUITests"
+               ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,7 +66,7 @@
             BlueprintIdentifier = "3D7F84B01F92BB3D00806968"
             BuildableName = "LocalizableUI Example.app"
             BlueprintName = "LocalizableUI Example"
-            ReferencedContainer = "container:LocalizableUI Example/LocalizableUI Example.xcodeproj">
+            ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,7 +90,7 @@
             BlueprintIdentifier = "3D7F84B01F92BB3D00806968"
             BuildableName = "LocalizableUI Example.app"
             BlueprintName = "LocalizableUI Example"
-            ReferencedContainer = "container:LocalizableUI Example/LocalizableUI Example.xcodeproj">
+            ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

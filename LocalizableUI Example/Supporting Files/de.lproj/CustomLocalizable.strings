@@ -1,0 +1,43 @@
+/* 
+  CustomLocalizable.strings
+  LocalizableUI
+
+  Created by Jan Weiß on 29.08.17.
+  Copyright © 2017 Jan Weiß, Philipp Weiß. All rights reserved.
+*/
+
+"example-title-overview" = "ÜbersichtDE";
+"example-back-button" = "Spezierlles zurückDE";
+
+"example-cell-text-segmented-control" = "Beispiel für UIButton und UISegmentedControlDE";
+"example-cell-text-label" = "Beispiel für UILabel, UITextField und UITextViewDE";
+"example-cell-tabbar" = "Beispiel für UITabBarDE";
+"example-cell-language-change" = "Beispiel für eigenen SprachwechselDE";
+"example-overview-cell-description" = "Die Zellen wurden auch im Storyboard localisiert.DE";
+"example-cell-customView" = "Beispiel für eine custom ViewDE";
+"example-cell-alert" = "Beispiel für eine AlertDE";
+
+"example-tab-button-1" = "Tap 1DE";
+"example-tab-button-2" = "Tap 2DE";
+
+"example-bar-button-cancel" = "AbbrechenDE";
+
+"example-button" = "Beispiel Button TextDE";
+
+"example-segment-1" = "Segment 1DE";
+"example-segment-2" = "Segment 2DE";
+"example-segment-3" = "Segment 3DE";
+"example-segment-4" = "Segment 4DE";
+
+"example-label" = "Beispiel für ein LabelDE";
+"example-textfield-placeholder" = "Eigener PlatzhalterDE";
+"example-textview-text" = "Dies ist eine Text ViewDE";
+
+"example-language-changed" = "Deaktivieren zum SprachwechselDE";
+"example-language-changed-localized" = "Sprachwechsel zwischen DE und ENDE";
+
+"example-customView-label" = "Mein Custom ViewDE";
+
+"example-alert-title" = "TitelDE";
+"example-alert-message" = "NachrichtDE";
+"example-alert-button" = "KnopfDE";

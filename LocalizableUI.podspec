@@ -27,7 +27,7 @@ Another feature of the library are custom language changes. The changes can be d
 
   s.source       = { :git => "https://github.com/weiss19ja/LocalizableUI.git", :tag => "#{s.version}" }
 
-  s.source_files  = "LocalizableUI/LocalizableUI/**/*"
+  s.source_files  = "LocalizableUI/**/*"
   # s.exclude_files = "Classes/Exclude"
   # s.public_header_files = "Classes/**/*.h"
 
