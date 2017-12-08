@@ -15,6 +15,8 @@ private enum Constants {
     static let languageChangeViewControllerStoryBoardId = "LanguageChangeViewController"
     static let switchLabelTextEn = "Click to change language"
     static let switchLabelTextDe = "Deaktivieren zum SprachwechselEN"
+    static let switchLabelLanguageChangeEn = "Language change between DE and ENEN"
+    static let switchLabelLanguageChangeDe = "Language change between DE and ENDE"
 }
 
 class LanguageChangeViewControllerTests: XCTestCase {
@@ -33,7 +35,7 @@ class LanguageChangeViewControllerTests: XCTestCase {
         super.tearDown()
     }
     
-    func testLanguageChange() {
+    func testCustomLanguageChange() {
         XCTAssertEqual(languagedChangedViewController.languageChangeSwitchLabel.text, Constants.switchLabelTextEn)
         let languageSwitch = UISwitch()
         languagedChangedViewController.changeLanguage(languageSwitch)
@@ -41,5 +43,16 @@ class LanguageChangeViewControllerTests: XCTestCase {
         languageSwitch.isOn = true
         languagedChangedViewController.changeLanguage(languageSwitch)
         XCTAssertEqual(languagedChangedViewController.languageChangeSwitchLabel.text, Constants.switchLabelTextEn)
+    }
+    
+    func testLanguageChange() {
+        XCTAssertEqual(languagedChangedViewController.languageChangeEnToDeSwitchLabel.text, Constants.switchLabelLanguageChangeEn)
+        let languageSwitch = UISwitch()
+        languageSwitch.isOn = true
+        languagedChangedViewController.changeLanguageLocalized(languageSwitch)
+        XCTAssertEqual(languagedChangedViewController.languageChangeEnToDeSwitchLabel.text, Constants.switchLabelLanguageChangeDe)
+        languageSwitch.isOn = false
+        languagedChangedViewController.changeLanguageLocalized(languageSwitch)
+        XCTAssertEqual(languagedChangedViewController.languageChangeEnToDeSwitchLabel.text, Constants.switchLabelLanguageChangeEn)
     }
 }

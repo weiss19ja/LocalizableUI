@@ -31,6 +31,7 @@
 		3DD816051F93FA6800490F5A /* UINavigationItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */; };
 		3DFEF1481F965CDD001AD572 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEF1471F965CDD001AD572 /* UIViewTests.swift */; };
 		3DFEF14A1F966BE1001AD572 /* TextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEF1491F966BE1001AD572 /* TextFieldTests.swift */; };
+		9044BEF81FDAA7FB007E7B9C /* UIAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044BEF71FDAA7FB007E7B9C /* UIAlertControllerTests.swift */; };
 		DC02BA3F1F96540F0037ED60 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		DC02BA431F966CE80037ED60 /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA421F966CE80037ED60 /* UIButtonTests.swift */; };
 		DC02BA471F966D4F0037ED60 /* UIBarButtonItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA441F966D270037ED60 /* UIBarButtonItemTests.swift */; };
@@ -82,6 +83,7 @@
 		3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItemTests.swift; sourceTree = "<group>"; };
 		3DFEF1471F965CDD001AD572 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 		3DFEF1491F966BE1001AD572 /* TextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTests.swift; sourceTree = "<group>"; };
+		9044BEF71FDAA7FB007E7B9C /* UIAlertControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerTests.swift; sourceTree = "<group>"; };
 		DC02BA421F966CE80037ED60 /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
 		DC02BA441F966D270037ED60 /* UIBarButtonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemTests.swift; sourceTree = "<group>"; };
 		DC02BA481F966DEF0037ED60 /* UILabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTests.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				3DD816001F93F4F400490F5A /* UITextViewTests.swift */,
 				3DFEF1471F965CDD001AD572 /* UIViewTests.swift */,
 				3DFEF1491F966BE1001AD572 /* TextFieldTests.swift */,
+				9044BEF71FDAA7FB007E7B9C /* UIAlertControllerTests.swift */,
 			);
 			path = LocalizedItems;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				3DD816011F93F4F400490F5A /* UITextViewTests.swift in Sources */,
 				3D7F852C1F92C6E900806968 /* UIViewControllerTests.swift in Sources */,
 				3DA52CE21F93D0030039CB5F /* LocalizationManagerTests.swift in Sources */,
+				9044BEF81FDAA7FB007E7B9C /* UIAlertControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
