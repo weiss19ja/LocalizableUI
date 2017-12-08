@@ -19,16 +19,6 @@ private enum Constants {
 
 class CustomViewTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testLanguageChangeForCustomView() {
         let mainStoryboard = UIStoryboard(name: Constants.mainStoryboardName, bundle: Bundle.main)
         let customViewViewController = mainStoryboard.instantiateViewController(withIdentifier: Constants.customViewStoryboardId)
