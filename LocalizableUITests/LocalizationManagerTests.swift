@@ -63,7 +63,6 @@ class LocalizationManagerTests: BaseTestCase {
         }
 
         XCTAssertEqual(uiManager.weakHash.allObjects.count, 1)
-
     }
     
 }
