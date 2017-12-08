@@ -27,7 +27,8 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -43,7 +44,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCA240EC1FD81D1700DF277F"
+               BlueprintIdentifier = "DC20FF171FD8243700F4D613"
                BuildableName = "LocalizableUIExampleTests.xctest"
                BlueprintName = "LocalizableUIExampleTests"
                ReferencedContainer = "container:LocalizableUI Example.xcodeproj">

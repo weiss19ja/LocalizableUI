@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0910"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,7 +17,7 @@
                BlueprintIdentifier = "3D7F84CF1F92BB5900806968"
                BuildableName = "LocalizableUI.framework"
                BlueprintName = "LocalizableUI"
-               ReferencedContainer = "container:LocalizableUI/LocalizableUI.xcodeproj">
+               ReferencedContainer = "container:LocalizableUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -37,27 +37,17 @@
                BlueprintIdentifier = "3D7F84D81F92BB5A00806968"
                BuildableName = "LocalizableUITests.xctest"
                BlueprintName = "LocalizableUITests"
-               ReferencedContainer = "container:LocalizableUI/LocalizableUI.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCA240EC1FD81D1700DF277F"
-               BuildableName = "LocalizableUIExampleTests.xctest"
-               BlueprintName = "LocalizableUIExampleTests"
-               ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
+               ReferencedContainer = "container:LocalizableUI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3D7F84B01F92BB3D00806968"
-            BuildableName = "LocalizableUI Example.app"
-            BlueprintName = "LocalizableUI Example"
-            ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
+            BlueprintIdentifier = "3D7F84CF1F92BB5900806968"
+            BuildableName = "LocalizableUI.framework"
+            BlueprintName = "LocalizableUI"
+            ReferencedContainer = "container:LocalizableUI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -74,16 +64,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3D7F84B01F92BB3D00806968"
-            BuildableName = "LocalizableUI Example.app"
-            BlueprintName = "LocalizableUI Example"
-            ReferencedContainer = "container:LocalizableUI Example.xcodeproj">
+            BlueprintIdentifier = "3D7F84CF1F92BB5900806968"
+            BuildableName = "LocalizableUI.framework"
+            BlueprintName = "LocalizableUI"
+            ReferencedContainer = "container:LocalizableUI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -99,7 +88,7 @@
             BlueprintIdentifier = "3D7F84CF1F92BB5900806968"
             BuildableName = "LocalizableUI.framework"
             BlueprintName = "LocalizableUI"
-            ReferencedContainer = "container:LocalizableUI/LocalizableUI.xcodeproj">
+            ReferencedContainer = "container:LocalizableUI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
