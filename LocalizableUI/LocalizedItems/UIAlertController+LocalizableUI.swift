@@ -48,8 +48,15 @@ extension UIAlertController {
         }
 
         func updateLocalizedStrings() {
-            alertController?.title = LocalizationManager.localizedStringFor(alertController?.localizedTitleKey ?? "")
-            alertController?.message = LocalizationManager.localizedStringFor(alertController?.localizedMessageKey ?? "")
+            if let alertController = self.alertController {
+                if let localizedTitleKey = alertController.localizedTitleKey {
+                    alertController.title = LocalizationManager.localizedStringFor(localizedTitleKey)
+                }
+                
+                if let localizedMessageKey = alertController.localizedMessageKey {
+                    alertController.message = LocalizationManager.localizedStringFor(localizedMessageKey)
+                }
+            }
         }
     }
 }
