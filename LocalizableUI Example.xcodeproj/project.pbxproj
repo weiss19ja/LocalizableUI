@@ -13,6 +13,9 @@
 		3D7F85101F92BCE600806968 /* LanguageChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F850D1F92BCE600806968 /* LanguageChangeViewController.swift */; };
 		3D7F85111F92BCE600806968 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F850E1F92BCE600806968 /* TabBarViewController.swift */; };
 		3D7F852D1F92C91500806968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F850F1F92BCE600806968 /* Main.storyboard */; };
+		9044BEFA1FDADCC3007E7B9C /* CustomViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044BEF91FDADCC3007E7B9C /* CustomViewTests.swift */; };
+		9044BEFC1FDAE288007E7B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F850F1F92BCE600806968 /* Main.storyboard */; };
+		9044BEFE1FDAEA0A007E7B9C /* ExampleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9044BEFD1FDAEA0A007E7B9C /* ExampleViewControllerTests.swift */; };
 		DC089B9D1F95D875002DF892 /* LocalizableUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */; };
 		DC20FF241FD8267E00F4D613 /* LanguageChangeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20FF221FD8267D00F4D613 /* LanguageChangeViewControllerTests.swift */; };
 		DC20FF251FD8267E00F4D613 /* TabBarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20FF231FD8267E00F4D613 /* TabBarViewControllerTests.swift */; };
@@ -85,6 +88,8 @@
 		3D7F850D1F92BCE600806968 /* LanguageChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChangeViewController.swift; sourceTree = "<group>"; };
 		3D7F850E1F92BCE600806968 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3D7F850F1F92BCE600806968 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9044BEF91FDADCC3007E7B9C /* CustomViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTests.swift; sourceTree = "<group>"; };
+		9044BEFD1FDAEA0A007E7B9C /* ExampleViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewControllerTests.swift; sourceTree = "<group>"; };
 		DC089B9A1F95D875002DF892 /* LocalizableUIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizableUIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC089B9C1F95D875002DF892 /* LocalizableUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableUIUITests.swift; sourceTree = "<group>"; };
 		DC089B9E1F95D875002DF892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,6 +196,8 @@
 				DC20FF221FD8267D00F4D613 /* LanguageChangeViewControllerTests.swift */,
 				DC20FF231FD8267E00F4D613 /* TabBarViewControllerTests.swift */,
 				DC20FF1C1FD8243700F4D613 /* Info.plist */,
+				9044BEF91FDADCC3007E7B9C /* CustomViewTests.swift */,
+				9044BEFD1FDAEA0A007E7B9C /* ExampleViewControllerTests.swift */,
 			);
 			path = LocalizableUIExampleTests;
 			sourceTree = "<group>";
@@ -364,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9044BEFC1FDAE288007E7B9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +404,8 @@
 			files = (
 				DC20FF241FD8267E00F4D613 /* LanguageChangeViewControllerTests.swift in Sources */,
 				DC20FF251FD8267E00F4D613 /* TabBarViewControllerTests.swift in Sources */,
+				9044BEFE1FDAEA0A007E7B9C /* ExampleViewControllerTests.swift in Sources */,
+				9044BEFA1FDADCC3007E7B9C /* CustomViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
