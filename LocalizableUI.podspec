@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LocalizableUI"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "LocalizableUI is a library to handle localization of a app directly in xcode interface builder and for supporting custom language changes."
 
   s.description  = <<-DESC
