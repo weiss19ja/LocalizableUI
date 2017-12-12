@@ -21,6 +21,8 @@
 		DC20FF251FD8267E00F4D613 /* TabBarViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20FF231FD8267E00F4D613 /* TabBarViewControllerTests.swift */; };
 		DC67AB951FD6B2E900D236DC /* LocalizableUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */; };
 		DC67AB961FD6B2E900D236DC /* LocalizableUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCAF5C5C1FE0403300341369 /* CustomLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE3743C1FD49C7D004A7F02 /* CustomLocalizable.strings */; };
+		DCAF5C5E1FE0404300341369 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE374321FD495CF004A7F02 /* Localizable.strings */; };
 		DCDFA1DB1F9DA8B200638440 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1DA1F9DA8B200638440 /* CustomView.swift */; };
 		DCDFA1E61F9DD55F00638440 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E51F9DD55F00638440 /* ExampleViewController.swift */; };
 		DCE374301FD495CF004A7F02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE374321FD495CF004A7F02 /* Localizable.strings */; };
@@ -371,6 +373,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCAF5C5C1FE0403300341369 /* CustomLocalizable.strings in Resources */,
+				DCAF5C5E1FE0404300341369 /* Localizable.strings in Resources */,
 				9044BEFC1FDAE288007E7B9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

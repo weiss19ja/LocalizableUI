@@ -28,14 +28,17 @@ class CustomViewTests: XCTestCase {
         let customView = customViewViewController.view.subviews[0] as! CustomView
         
         XCTAssertEqual(customView.label.text, Constants.customViewLabelTextEn)
+        XCTAssertEqual(customView.labelOrganized.text, Constants.customViewLabelTextEn)
         
         try! LocalizationManager.sharedInstance.changeLanguage(languageCode: "de")
         
         XCTAssertEqual(customView.label.text, Constants.customViewLabelTextDe)
+        XCTAssertEqual(customView.labelOrganized.text, Constants.customViewLabelTextDe)
         
         try! LocalizationManager.sharedInstance.changeLanguage(languageCode: "en")
         
         XCTAssertEqual(customView.label.text, Constants.customViewLabelTextEn)
+        XCTAssertEqual(customView.labelOrganized.text, Constants.customViewLabelTextEn)
     }
     
 }

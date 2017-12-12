@@ -10,7 +10,6 @@ import Foundation
 
 private var AssociatedObjectPointerLocalizable: UInt8 = 0
 
-// Since the title is get only it is not possible to change the button text live nor to implement Localizable ... :(
 extension UIAlertAction: Localizable {
     
     // Stores the property of the localized key

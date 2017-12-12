@@ -30,4 +30,27 @@ class LanguageChangeViewController: UIViewController {
         }
     }
 
+    /// An Example how to use the LocalizationManager to get a simple string by any localized key
+    ///
+    /// - Returns: Localized String
+    func loadLocalizedText() -> String {
+        let localizedText = LocalizationManager.localizedStringFor("example-language-changed-localized")
+        return localizedText
+    }
+
+    /// An Example how to use the LocalizationManager with a custom Bundle to get a simple string by any localized key
+    ///
+    /// - Returns: Localized String
+    func loadLocalizedTextFromDifferentBundle(bundle: Bundle) -> String {
+        let localizedText = LocalizationManager.localizedStringFor("example-language-changed-localized", bundle: bundle, value: "", comment: "")
+        return localizedText
+    }
+
+    /// An Example how to use the LocalizationManager with the string extension
+    ///
+    /// - Returns: Localized String
+    func loadLocalizedTextStringExtension() -> String {
+        let localizedText = "example-language-changed-localized".localized
+        return localizedText
+    }
 }
