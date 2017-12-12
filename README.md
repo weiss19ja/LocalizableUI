@@ -101,6 +101,18 @@ let localizedText = LocalizationManager.localizedStringFor("LocalizedKey", bundl
 let localizedText = "LocalizedKey".localized
 ```
 
+##### Custom View
+To localize any class or struct you can simply implement the Localizable Protocol
+
+```swift
+extension CustomView: Localizable {
+    func updateLocalizedStrings() {
+    	/// do your localization stuff
+        text = LocalizationManager.localizedStringFor("LocalizedKey")
+    }
+}
+```
+
 ##### Language change manual
 You can change the language while the app is active. You simply have to use the LocalizationManager changeLanguage(...) method. All your Views will update without any further adjustments.
 
@@ -114,18 +126,7 @@ do {
 	...
 }	
 ```
-
-##### Custom View
-To localize any class or struct you can simply implement the Localizable Protocol
-
-```swift
-extension CustomView: Localizable {
-    func updateLocalizedStrings() {
-    	/// do your localization stuff
-        text = LocalizationManager.localizedStringFor("LocalizedKey")
-    }
-}
-```
+![Label](./ScreenShots/ExampleApp.gif)
 
 ## Authors
 
