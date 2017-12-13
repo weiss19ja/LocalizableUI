@@ -27,9 +27,4 @@ extension WKInterfaceObject {
         }
     }
     
-    public convenience init(localizedKey: String) {
-        self.init()
-        self.localizedKey = localizedKey
-    }
-    
 }

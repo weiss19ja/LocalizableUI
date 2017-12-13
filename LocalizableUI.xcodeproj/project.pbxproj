@@ -238,9 +238,8 @@
 		3DB880591FE1E41000E8A506 /* LocalizableWatchUI */ = {
 			isa = PBXGroup;
 			children = (
-				3DB8805A1FE1E41000E8A506 /* LocalizableWatchUI.h */,
-				3DB8805B1FE1E41000E8A506 /* Info.plist */,
-				3DB880611FE1E4B000E8A506 /* WKInterfaceObject+LocalizableUI.swift */,
+				3DB880681FE1E69B00E8A506 /* LocalizedItems */,
+				3DB880671FE1E68000E8A506 /* Supporting Files */,
 			);
 			path = LocalizableWatchUI;
 			sourceTree = "<group>";
@@ -254,6 +253,23 @@
 				DC1FE2BB1FE0207A00389A0A /* String+LocalizableUI.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		3DB880671FE1E68000E8A506 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8805A1FE1E41000E8A506 /* LocalizableWatchUI.h */,
+				3DB8805B1FE1E41000E8A506 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DB880681FE1E69B00E8A506 /* LocalizedItems */ = {
+			isa = PBXGroup;
+			children = (
+				3DB880611FE1E4B000E8A506 /* WKInterfaceObject+LocalizableUI.swift */,
+			);
+			path = LocalizedItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -694,7 +710,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LocalizableWatchUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LocalizableWatchUI/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableWatchUI;
@@ -704,7 +720,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -719,7 +735,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LocalizableWatchUI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LocalizableWatchUI/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableWatchUI;
@@ -728,7 +744,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
