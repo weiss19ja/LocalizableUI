@@ -15,7 +15,7 @@ class UIAlertControllerTests: BaseTestCase {
                                                 localizedMessage: Constants.sampleStringKey2,
                                                 preferredStyle: .alert)
         
-        let alertConfirmAction = UIAlertAction(localzedTitleKey: Constants.sampleStringKey, style: .default, handler: nil)
+        let alertConfirmAction = UIAlertAction(localizedTitleKey: Constants.sampleStringKey, style: .default, handler: nil)
         alertController.addAction(alertConfirmAction)
         
         let presentingVC = UIViewController()

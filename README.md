@@ -54,10 +54,12 @@ Add `github "weiss19ja/LocalizableUI"`to your Cartfile.
 ### Swift Package Manager
 ```swift
 dependencies: [
-    .package(url: "https://github.com/weiss19ja/LocalizableUI.git", from: "0.2.0")
+    .package(url: "https://github.com/weiss19ja/LocalizableUI.git", from: "0.3.1")
 ]
 ```
 ## Usage
+
+#### Storyboard
 The easiest way to use LocalizableUI is the Storyboard. Here you can enter your Localizable.strings Keys.
 ![Label](./ScreenShots/Label.png)
 
@@ -70,11 +72,61 @@ The BackButton can be set in the prior ViewController. Here you can use the View
 If you are using an NavigationItem this will override the Title and the BackButton of the ViewController.
 ![Label](./ScreenShots/NavigationItem.png)
 
+#### Code
+##### Localization of Views
+It is also possible to set the LocalizableKeys in the Code. This includes all features of the Stotyboard LocalizableKeys
+
+```swift
+let newLabel = UILabel(frame: frame)
+newLabel.localizedKey = "LocalizedKey"
+```
+
+##### AlertViewController
 AlertViews must be configured in the code.
-![Label](./ScreenShots/AlertController.png)
 
-It is also possible to set the LocalizableKeys in the Code.
+```swift
+let alertController = UIAlertController(localizedTitle: Constants.titleKey, localizedMessage: Constants.messagekey, preferredStyle: .alert)
+let action = UIAlertAction(localzedTitleKey: Constants.buttonKey, style: .cancel, handler: nil)
+alertController.addAction(action)
+```
 
+##### LocalizedKey to text
+
+```swift
+// #1
+let localizedText = LocalizationManager.localizedStringFor("LocalizedKey")
+// #2
+let localizedText = LocalizationManager.localizedStringFor("LocalizedKey", bundle: bundle, value: "", comment: "")
+// #3
+let localizedText = "LocalizedKey".localized
+```
+
+##### Custom View
+To localize any class or struct you can simply implement the Localizable Protocol
+
+```swift
+extension CustomView: Localizable {
+    func updateLocalizedStrings() {
+    	/// do your localization stuff
+        text = LocalizationManager.localizedStringFor("LocalizedKey")
+    }
+}
+```
+
+##### Language change manual
+You can change the language while the app is active. You simply have to use the LocalizationManager changeLanguage(...) method. All your Views will update without any further adjustments.
+
+```swift
+do {
+	let tableName = "Localizable"
+	let bundle = Bundle(for: type(of: self))
+	let languageCode = "en"
+	try LocalizationManager.sharedInstance.changeLanguage(to: tableName, from: bundle, languageCode: languageCode)
+} catch {
+	...
+}	
+```
+![Label](./ScreenShots/ExampleApp.gif)
 
 ## Authors
 

@@ -39,6 +39,7 @@
 		DC02BA4B1F966E6A0037ED60 /* UISegmentedControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4A1F966E6A0037ED60 /* UISegmentedControlTests.swift */; };
 		DC02BA4D1F9670EF0037ED60 /* UITabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4C1F9670EF0037ED60 /* UITabBarItemTests.swift */; };
 		DC02BA4F1F9671B90037ED60 /* UITableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */; };
+		DC1FE2BC1FE0207A00389A0A /* String+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FE2BB1FE0207A00389A0A /* String+LocalizableUI.swift */; };
 		DCDFA1E11F9DB83A00638440 /* UIAlertController+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E01F9DB83A00638440 /* UIAlertController+LocalizableUI.swift */; };
 		DCDFA1E91F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFA1E81F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift */; };
 		DCE3742C1FD34CD4004A7F02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE3742E1FD34CD4004A7F02 /* Localizable.strings */; };
@@ -90,6 +91,7 @@
 		DC02BA4A1F966E6A0037ED60 /* UISegmentedControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlTests.swift; sourceTree = "<group>"; };
 		DC02BA4C1F9670EF0037ED60 /* UITabBarItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemTests.swift; sourceTree = "<group>"; };
 		DC02BA4E1F9671B90037ED60 /* UITableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellTests.swift; sourceTree = "<group>"; };
+		DC1FE2BB1FE0207A00389A0A /* String+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LocalizableUI.swift"; sourceTree = "<group>"; };
 		DCDFA1E01F9DB83A00638440 /* UIAlertController+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+LocalizableUI.swift"; sourceTree = "<group>"; };
 		DCDFA1E81F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+LocalizableUI.swift"; sourceTree = "<group>"; };
 		DCE3742D1FD34CD4004A7F02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				3D7F85221F92C68400806968 /* Localizable.swift */,
 				3D7F85231F92C68400806968 /* LocalizableError.swift */,
 				3D7F85211F92C68400806968 /* LocalizationManager.swift */,
+				DC1FE2BB1FE0207A00389A0A /* String+LocalizableUI.swift */,
 				3D7F85141F92C65600806968 /* LocalizedItems */,
 				3DA52CD81F92D0650039CB5F /* Supporting Files */,
 			);
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1FE2BC1FE0207A00389A0A /* String+LocalizableUI.swift in Sources */,
 				3DA52CD61F92CF6A0039CB5F /* UITextView+LocalizableUI.swift in Sources */,
 				3DA52CD11F92CF5D0039CB5F /* UINavigationItem+LocalizableUI.swift in Sources */,
 				DCDFA1E91F9DD7EA00638440 /* UIAlertAction+LocalizableUI.swift in Sources */,
