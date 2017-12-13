@@ -26,10 +26,10 @@ extension UIAlertAction: Localizable {
         }
     }
     
-    public convenience init(localzedTitleKey: String, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? ) {
-        let title = LocalizationManager.localizedStringFor(localzedTitleKey)
+    public convenience init(localizedTitleKey: String, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? ) {
+        let title = LocalizationManager.localizedStringFor(localizedTitleKey)
         self.init(title: title, style: style, handler: handler)
-        self.localizedTitleKey = localzedTitleKey
+        self.localizedTitleKey = localizedTitleKey
     }
     
     public func updateLocalizedStrings() {

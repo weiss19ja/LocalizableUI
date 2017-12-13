@@ -25,7 +25,7 @@ class CustomViewTests: XCTestCase {
         
         XCTAssertNotNil(customViewViewController)
         
-        var customView = customViewViewController.view.subviews[0] as! CustomView
+        let customView = customViewViewController.view.subviews[0] as! CustomView
 
         XCTAssertEqual(customView.label.text, Constants.customViewLabelTextEn)
         XCTAssertEqual(customView.labelOrganized.text, Constants.customViewLabelTextEn)

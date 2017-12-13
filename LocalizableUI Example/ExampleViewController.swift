@@ -19,7 +19,7 @@ class ExampleViewController: UITableViewController {
     @IBAction func didSelectAlertButton(_ sender: Any) {
         let alertController = UIAlertController(localizedTitle: Constants.titleKey, localizedMessage: Constants.messagekey, preferredStyle: .alert)
 
-        let action = UIAlertAction(localzedTitleKey: Constants.buttonKey, style: .cancel, handler: nil)
+        let action = UIAlertAction(localizedTitleKey: Constants.buttonKey, style: .cancel, handler: nil)
 
         alertController.addAction(action)
 
