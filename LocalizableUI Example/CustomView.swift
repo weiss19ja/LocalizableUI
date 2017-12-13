@@ -21,7 +21,7 @@ class CustomView: UIView {
     let label = UILabel(frame: CGRect(x: 0, y: 50, width: 300, height: 50))
 
     /// Label where the text is organized by the Localizable Property
-    let labelOrganized: UILabel = {
+    lazy var labelOrganized: UILabel = {
         let newLabel = UILabel(frame: CGRect(x: 0, y: 150, width: 300, height: 50))
         newLabel.localizedKey = Constants.titleStringID
 
@@ -31,6 +31,10 @@ class CustomView: UIView {
     required init(coder: NSCoder) {
         super.init(coder: coder)!
 
+        setupView()
+    }
+
+    func setupView() {
         // add subviews
         addSubview(label)
         addSubview(labelOrganized)
@@ -39,7 +43,6 @@ class CustomView: UIView {
         addToManager()
     }
 }
-
 
 // MARK: - Implement Localizable
 extension CustomView: Localizable {

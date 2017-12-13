@@ -11,5 +11,6 @@ import Foundation
 public enum LocalizableError: Error {
     
     case languageFileNotFound
+    case languageCodeNotFound
     
 }

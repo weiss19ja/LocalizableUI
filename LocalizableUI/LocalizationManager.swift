@@ -87,7 +87,7 @@ open class LocalizationManager {
             let languageBundle = Bundle(path: languageBundlePath) {
             bundle = languageBundle
         } else if languageCode != nil {
-            assertionFailure("You have tried to change to an not existing language code file")
+            throw LocalizableError.languageCodeNotFound
         }
 
         self.tableName = tableName
