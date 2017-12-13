@@ -26,6 +26,12 @@
 		3DA52CD71F92CF6E0039CB5F /* UIView+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85151F92C66C00806968 /* UIView+LocalizableUI.swift */; };
 		3DA52CDD1F93C7FC0039CB5F /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F852A1F92C6DB00806968 /* SampleViewController.xib */; };
 		3DA52CE21F93D0030039CB5F /* LocalizationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA52CE11F93D0030039CB5F /* LocalizationManagerTests.swift */; };
+		3DB8805C1FE1E41000E8A506 /* LocalizableWatchUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB8805A1FE1E41000E8A506 /* LocalizableWatchUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DB880621FE1E4B000E8A506 /* WKInterfaceObject+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB880611FE1E4B000E8A506 /* WKInterfaceObject+LocalizableUI.swift */; };
+		3DB880631FE1E4BA00E8A506 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85221F92C68400806968 /* Localizable.swift */; };
+		3DB880641FE1E4BF00E8A506 /* LocalizableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85231F92C68400806968 /* LocalizableError.swift */; };
+		3DB880651FE1E4C200E8A506 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F85211F92C68400806968 /* LocalizationManager.swift */; };
+		3DB880661FE1E4C600E8A506 /* String+LocalizableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1FE2BB1FE0207A00389A0A /* String+LocalizableUI.swift */; };
 		3DD816011F93F4F400490F5A /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816001F93F4F400490F5A /* UITextViewTests.swift */; };
 		3DD816031F93F65600490F5A /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816021F93F65600490F5A /* BaseTestCase.swift */; };
 		3DD816051F93FA6800490F5A /* UINavigationItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */; };
@@ -79,6 +85,10 @@
 		3D7F852A1F92C6DB00806968 /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		3D7F852B1F92C6E900806968 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 		3DA52CE11F93D0030039CB5F /* LocalizationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManagerTests.swift; sourceTree = "<group>"; };
+		3DB880581FE1E41000E8A506 /* LocalizableWatchUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalizableWatchUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB8805A1FE1E41000E8A506 /* LocalizableWatchUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableWatchUI.h; sourceTree = "<group>"; };
+		3DB8805B1FE1E41000E8A506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB880611FE1E4B000E8A506 /* WKInterfaceObject+LocalizableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKInterfaceObject+LocalizableUI.swift"; sourceTree = "<group>"; };
 		3DD816001F93F4F400490F5A /* UITextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewTests.swift; sourceTree = "<group>"; };
 		3DD816021F93F65600490F5A /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		3DD816041F93FA6800490F5A /* UINavigationItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationItemTests.swift; sourceTree = "<group>"; };
@@ -115,6 +125,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DB880541FE1E41000E8A506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				3D7F84D21F92BB5900806968 /* LocalizableUI */,
+				3DB880591FE1E41000E8A506 /* LocalizableWatchUI */,
+				3DB880601FE1E42500E8A506 /* Shared */,
 				3D7F84DD1F92BB5A00806968 /* LocalizableUITests */,
 				3D7F84D11F92BB5900806968 /* Products */,
 			);
@@ -132,6 +151,7 @@
 			children = (
 				3D7F84D01F92BB5900806968 /* LocalizableUI.framework */,
 				3D7F84D91F92BB5A00806968 /* LocalizableUITests.xctest */,
+				3DB880581FE1E41000E8A506 /* LocalizableWatchUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,10 +159,6 @@
 		3D7F84D21F92BB5900806968 /* LocalizableUI */ = {
 			isa = PBXGroup;
 			children = (
-				3D7F85221F92C68400806968 /* Localizable.swift */,
-				3D7F85231F92C68400806968 /* LocalizableError.swift */,
-				3D7F85211F92C68400806968 /* LocalizationManager.swift */,
-				DC1FE2BB1FE0207A00389A0A /* String+LocalizableUI.swift */,
 				3D7F85141F92C65600806968 /* LocalizedItems */,
 				3DA52CD81F92D0650039CB5F /* Supporting Files */,
 			);
@@ -219,6 +235,27 @@
 			path = LocalizedItems;
 			sourceTree = "<group>";
 		};
+		3DB880591FE1E41000E8A506 /* LocalizableWatchUI */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8805A1FE1E41000E8A506 /* LocalizableWatchUI.h */,
+				3DB8805B1FE1E41000E8A506 /* Info.plist */,
+				3DB880611FE1E4B000E8A506 /* WKInterfaceObject+LocalizableUI.swift */,
+			);
+			path = LocalizableWatchUI;
+			sourceTree = "<group>";
+		};
+		3DB880601FE1E42500E8A506 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3D7F85221F92C68400806968 /* Localizable.swift */,
+				3D7F85231F92C68400806968 /* LocalizableError.swift */,
+				3D7F85211F92C68400806968 /* LocalizationManager.swift */,
+				DC1FE2BB1FE0207A00389A0A /* String+LocalizableUI.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -227,6 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7F84E11F92BB5A00806968 /* LocalizableUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB880551FE1E41000E8A506 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB8805C1FE1E41000E8A506 /* LocalizableWatchUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +314,24 @@
 			productReference = 3D7F84D91F92BB5A00806968 /* LocalizableUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3DB880571FE1E41000E8A506 /* LocalizableWatchUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB8805F1FE1E41000E8A506 /* Build configuration list for PBXNativeTarget "LocalizableWatchUI" */;
+			buildPhases = (
+				3DB880531FE1E41000E8A506 /* Sources */,
+				3DB880541FE1E41000E8A506 /* Frameworks */,
+				3DB880551FE1E41000E8A506 /* Headers */,
+				3DB880561FE1E41000E8A506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalizableWatchUI;
+			productName = LocalizableWatchUI;
+			productReference = 3DB880581FE1E41000E8A506 /* LocalizableWatchUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,6 +351,11 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
+					3DB880571FE1E41000E8A506 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 3D7F84CA1F92BB5900806968 /* Build configuration list for PBXProject "LocalizableUI" */;
@@ -305,6 +373,7 @@
 			targets = (
 				3D7F84CF1F92BB5900806968 /* LocalizableUI */,
 				3D7F84D81F92BB5A00806968 /* LocalizableUITests */,
+				3DB880571FE1E41000E8A506 /* LocalizableWatchUI */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +393,13 @@
 				3DA52CDD1F93C7FC0039CB5F /* SampleViewController.xib in Resources */,
 				DCE3742C1FD34CD4004A7F02 /* Localizable.strings in Resources */,
 				DCE374361FD49C5D004A7F02 /* CustomLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB880561FE1E41000E8A506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +449,18 @@
 				3D7F852C1F92C6E900806968 /* UIViewControllerTests.swift in Sources */,
 				3DA52CE21F93D0030039CB5F /* LocalizationManagerTests.swift in Sources */,
 				9044BEF81FDAA7FB007E7B9C /* UIAlertControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB880531FE1E41000E8A506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB880651FE1E4C200E8A506 /* LocalizationManager.swift in Sources */,
+				3DB880641FE1E4BF00E8A506 /* LocalizableError.swift in Sources */,
+				3DB880661FE1E4C600E8A506 /* String+LocalizableUI.swift in Sources */,
+				3DB880631FE1E4BA00E8A506 /* Localizable.swift in Sources */,
+				3DB880621FE1E4B000E8A506 /* WKInterfaceObject+LocalizableUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +683,55 @@
 			};
 			name = Release;
 		};
+		3DB8805D1FE1E41000E8A506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LocalizableWatchUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableWatchUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		3DB8805E1FE1E41000E8A506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LocalizableWatchUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.weiss.LocalizableWatchUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -621,6 +758,15 @@
 			buildConfigurations = (
 				3D7F84E81F92BB5A00806968 /* Debug */,
 				3D7F84E91F92BB5A00806968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB8805F1FE1E41000E8A506 /* Build configuration list for PBXNativeTarget "LocalizableWatchUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB8805D1FE1E41000E8A506 /* Debug */,
+				3DB8805E1FE1E41000E8A506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
