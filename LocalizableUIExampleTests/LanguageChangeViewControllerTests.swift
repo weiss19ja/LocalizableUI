@@ -55,4 +55,19 @@ class LanguageChangeViewControllerTests: XCTestCase {
         languagedChangedViewController.changeLanguageLocalized(languageSwitch)
         XCTAssertEqual(languagedChangedViewController.languageChangeEnToDeSwitchLabel.text, Constants.switchLabelLanguageChangeEn)
     }
+
+    func testLoadLocalizedText() {
+        XCTAssertEqual(languagedChangedViewController.loadLocalizedText(), Constants.switchLabelLanguageChangeEn)
+        XCTAssertEqual(languagedChangedViewController.loadLocalizedTextFromDifferentBundle(bundle: Bundle.main), Constants.switchLabelLanguageChangeEn)
+        XCTAssertEqual(languagedChangedViewController.loadLocalizedTextStringExtension(), Constants.switchLabelLanguageChangeEn)
+
+        let languageSwitch = UISwitch()
+        languageSwitch.isOn = true
+        languagedChangedViewController.changeLanguageLocalized(languageSwitch)
+
+        XCTAssertEqual(languagedChangedViewController.loadLocalizedText(), Constants.switchLabelLanguageChangeDe)
+        XCTAssertEqual(languagedChangedViewController.loadLocalizedTextStringExtension(), Constants.switchLabelLanguageChangeDe)
+        let bundle = Bundle(for: LanguageChangeViewController.self)
+        XCTAssertEqual(languagedChangedViewController.loadLocalizedTextFromDifferentBundle(bundle: bundle), Constants.switchLabelLanguageChangeEn)
+    }
 }

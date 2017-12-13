@@ -87,7 +87,7 @@ open class LocalizationManager {
             let languageBundle = Bundle(path: languageBundlePath) {
             bundle = languageBundle
         } else if languageCode != nil {
-            assertionFailure("You have tried to change to an not existing language code file")
+            throw LocalizableError.languageCodeNotFound
         }
 
         self.tableName = tableName
@@ -101,7 +101,7 @@ open class LocalizationManager {
     ///
     /// - Parameters:
     ///   - key: key
-    ///   - bundle: bundle -> default bundle stored in the LocalizationManager -> Default main.
+    ///   - bundle: bundle -> default bundle stored in the LocalizationManager -> Default main. If you have changed to a custom locale you will ovverride it with this parameter. Don not implement if you want your enabled your custom language settings
     ///   - value: value -> default ""
     ///   - comment: comment -> default ""
     /// - Returns: The localized string
