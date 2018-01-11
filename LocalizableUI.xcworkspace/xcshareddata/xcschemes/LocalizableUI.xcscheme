@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0910"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -35,8 +35,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3D7F84D81F92BB5A00806968"
-               BuildableName = "LocalizableUITests.xctest"
-               BlueprintName = "LocalizableUITests"
+               BuildableName = "LocalizableTests.xctest"
+               BlueprintName = "LocalizableTests"
                ReferencedContainer = "container:LocalizableUI.xcodeproj">
             </BuildableReference>
          </TestableReference>
