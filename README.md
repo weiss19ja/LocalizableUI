@@ -61,16 +61,16 @@ dependencies: [
 
 #### Storyboard
 The easiest way to use LocalizableUI is the Storyboard. Here you can enter your Localizable.strings Keys.
-![Label](./ScreenShots/Label.png)
+![Label](/ScreenShots/Label.png)
 
 For the SegmentedControl you can enter an array of Localizable.strings Keys separated by ",".
-![Label](./ScreenShots/segmentedControl.png)
+![Label](/ScreenShots/segmentedControl.png)
 
 The BackButton can be set in the prior ViewController. Here you can use the ViewController fields in the Storyboard.
-![Label](./ScreenShots/ViewController.png)
+![Label](/ScreenShots/ViewController.png)
 
 If you are using an NavigationItem this will override the Title and the BackButton of the ViewController.
-![Label](./ScreenShots/NavigationItem.png)
+![Label](/ScreenShots/NavigationItem.png)
 
 #### Code
 ##### Localization of Views
@@ -126,7 +126,7 @@ do {
 	...
 }	
 ```
-![Label](./ScreenShots/ExampleApp.gif)
+![Label](/ScreenShots/ExampleApp.gif)
 
 ## Authors
 
