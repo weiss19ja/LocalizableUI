@@ -216,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF61A8A1FD6B275009AEE68 /* LocalizableUI.framework */,
-				DCF61A8C1FD6B275009AEE68 /* LocalizableUITests.xctest */,
+				DCF61A8C1FD6B275009AEE68 /* LocalizableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,10 +340,10 @@
 			remoteRef = DCF61A891FD6B275009AEE68 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DCF61A8C1FD6B275009AEE68 /* LocalizableUITests.xctest */ = {
+		DCF61A8C1FD6B275009AEE68 /* LocalizableTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = LocalizableUITests.xctest;
+			path = LocalizableTests.xctest;
 			remoteRef = DCF61A8B1FD6B275009AEE68 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
